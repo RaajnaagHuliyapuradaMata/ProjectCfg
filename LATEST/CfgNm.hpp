@@ -15,6 +15,7 @@
 /******************************************************************************/
 #define Nm_DevErrorDetect                                         DevErrorDetect
 #define Nm_InitCheck                                                      STD_ON
+#define NM_VERSION_INFO_API                                       VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

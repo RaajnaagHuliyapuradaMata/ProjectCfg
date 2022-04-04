@@ -15,6 +15,7 @@
 /******************************************************************************/
 #define PduR_DevErrorDetect                                       DevErrorDetect
 #define PduR_InitCheck                                                    STD_ON
+#define PDUR_VERSION_INFO_API                                     VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

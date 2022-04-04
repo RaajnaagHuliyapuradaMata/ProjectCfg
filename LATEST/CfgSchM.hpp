@@ -15,6 +15,7 @@
 /******************************************************************************/
 #define SchM_DevErrorDetect                                       DevErrorDetect
 #define SchM_InitCheck                                                    STD_ON
+#define SCHM_VERSION_INFO_API                                     VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

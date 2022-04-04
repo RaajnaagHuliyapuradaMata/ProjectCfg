@@ -15,6 +15,7 @@
 /******************************************************************************/
 #define Icu_DevErrorDetect                                        DevErrorDetect
 #define Icu_InitCheck                                                     STD_ON
+#define ICU_VERSION_INFO_API                                      VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

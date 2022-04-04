@@ -15,6 +15,7 @@
 /******************************************************************************/
 #define Fee_DevErrorDetect                                        DevErrorDetect
 #define Fee_InitCheck                                                     STD_ON
+#define FEE_VERSION_INFO_API                                      VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

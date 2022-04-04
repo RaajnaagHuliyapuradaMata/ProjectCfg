@@ -15,6 +15,7 @@
 /******************************************************************************/
 #define Cry_DevErrorDetect                                        DevErrorDetect
 #define Cry_InitCheck                                                     STD_ON
+#define CRY_VERSION_INFO_API                                      VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

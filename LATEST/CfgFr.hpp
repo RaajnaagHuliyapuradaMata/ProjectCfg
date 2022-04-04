@@ -15,6 +15,7 @@
 /******************************************************************************/
 #define Fr_DevErrorDetect                                         DevErrorDetect
 #define Fr_InitCheck                                                      STD_ON
+#define FR_VERSION_INFO_API                                       VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

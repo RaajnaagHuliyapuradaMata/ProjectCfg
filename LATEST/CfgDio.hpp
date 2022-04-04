@@ -15,6 +15,7 @@
 /******************************************************************************/
 #define Dio_DevErrorDetect                                        DevErrorDetect
 #define Dio_InitCheck                                                     STD_ON
+#define DIO_VERSION_INFO_API                                      VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

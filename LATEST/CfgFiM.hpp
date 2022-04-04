@@ -15,6 +15,7 @@
 /******************************************************************************/
 #define FiM_DevErrorDetect                                        DevErrorDetect
 #define FiM_InitCheck                                                     STD_ON
+#define FIM_VERSION_INFO_API                                      VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

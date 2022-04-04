@@ -15,6 +15,7 @@
 /******************************************************************************/
 #define Wdg_DevErrorDetect                                        DevErrorDetect
 #define Wdg_InitCheck                                                     STD_ON
+#define WDG_VERSION_INFO_API                                      VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

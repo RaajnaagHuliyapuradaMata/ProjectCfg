@@ -15,6 +15,7 @@
 /******************************************************************************/
 #define Ea_DevErrorDetect                                         DevErrorDetect
 #define Ea_InitCheck                                                      STD_ON
+#define EA_VERSION_INFO_API                                       VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

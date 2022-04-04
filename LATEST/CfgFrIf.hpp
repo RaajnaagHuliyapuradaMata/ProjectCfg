@@ -15,6 +15,7 @@
 /******************************************************************************/
 #define FrIf_DevErrorDetect                                       DevErrorDetect
 #define FrIf_InitCheck                                                    STD_ON
+#define FRIF_VERSION_INFO_API                                     VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

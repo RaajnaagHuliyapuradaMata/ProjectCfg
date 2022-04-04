@@ -15,6 +15,7 @@
 /******************************************************************************/
 #define SecOC_DevErrorDetect                                      DevErrorDetect
 #define SecOC_InitCheck                                                   STD_ON
+#define SECOC_VERSION_INFO_API                                    VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

@@ -15,6 +15,7 @@
 /******************************************************************************/
 #define Gpt_DevErrorDetect                                        DevErrorDetect
 #define Gpt_InitCheck                                                     STD_ON
+#define GPT_VERSION_INFO_API                                      VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

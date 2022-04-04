@@ -15,6 +15,7 @@
 /******************************************************************************/
 #define Can_DevErrorDetect                                        DevErrorDetect
 #define Can_InitCheck                                                     STD_ON
+#define CAN_VERSION_INFO_API                                      VersionInfoApi 
 
 /******************************************************************************/
 /* MACROS                                                                     */

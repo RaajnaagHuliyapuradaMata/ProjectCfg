@@ -15,6 +15,7 @@
 /******************************************************************************/
 #define Ocu_DevErrorDetect                                        DevErrorDetect
 #define Ocu_InitCheck                                                     STD_ON
+#define OCU_VERSION_INFO_API                                      VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

@@ -15,6 +15,7 @@
 /******************************************************************************/
 #define Adc_DevErrorDetect                                        DevErrorDetect
 #define Adc_InitCheck                                                     STD_ON
+#define ADC_VERSION_INFO_API                                      VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

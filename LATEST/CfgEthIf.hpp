@@ -15,6 +15,7 @@
 /******************************************************************************/
 #define EthIf_DevErrorDetect                                      DevErrorDetect
 #define EthIf_InitCheck                                                   STD_ON
+#define ETHIF_VERSION_INFO_API                                    VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

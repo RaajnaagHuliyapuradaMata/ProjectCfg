@@ -15,6 +15,7 @@
 /******************************************************************************/
 #define Os_DevErrorDetect                                         DevErrorDetect
 #define Os_InitCheck                                                      STD_ON
+#define OS_VERSION_INFO_API                                       VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

@@ -15,6 +15,7 @@
 /******************************************************************************/
 #define StbM_DevErrorDetect                                       DevErrorDetect
 #define StbM_InitCheck                                                    STD_ON
+#define STBM_VERSION_INFO_API                                     VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

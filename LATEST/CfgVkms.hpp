@@ -15,6 +15,7 @@
 /******************************************************************************/
 #define Vkms_DevErrorDetect                                       DevErrorDetect
 #define Vkms_InitCheck                                                    STD_ON
+#define VKMS_VERSION_INFO_API                                     VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

@@ -15,6 +15,7 @@
 /******************************************************************************/
 #define ComM_DevErrorDetect                                       DevErrorDetect
 #define ComM_InitCheck                                                    STD_ON
+#define COMM_VERSION_INFO_API                                     VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */
