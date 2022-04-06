@@ -12,18 +12,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGFR_AR_RELEASE_MAJOR_VERSION                                         4
-#define CFGFR_AR_RELEASE_MINOR_VERSION                                         3
+#define CFGFR_AR_RELEASE_VERSION_MAJOR                                         4
+#define CFGFR_AR_RELEASE_VERSION_MINOR                                         3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGFR_AR_RELEASE_MAJOR_VERSION != STD_AR_RELEASE_MAJOR_VERSION)
-   #error "Incompatible CFGFR_AR_RELEASE_MAJOR_VERSION!"
+#if(CFGFR_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGFR_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGFR_AR_RELEASE_MINOR_VERSION != STD_AR_RELEASE_MINOR_VERSION)
-   #error "Incompatible CFGFR_AR_RELEASE_MINOR_VERSION!"
+#if(CFGFR_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGFR_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -39,8 +39,10 @@
 /******************************************************************************/
 CONST(CfgFr_Type, CFGFR_CONFIG_DATA) PBcfgFr = {
    {
-         0x0000
-      ,  0xFFFF
+         CFGFR_AR_RELEASE_VERSION_MAJOR
+      ,  CFGFR_AR_RELEASE_VERSION_MINOR
+      ,  0x00
+      ,  0xFF
       ,  0x01
       ,  '0'
       ,  '1'

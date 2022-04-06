@@ -12,18 +12,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGEA_AR_RELEASE_MAJOR_VERSION                                         4
-#define CFGEA_AR_RELEASE_MINOR_VERSION                                         3
+#define CFGEA_AR_RELEASE_VERSION_MAJOR                                         4
+#define CFGEA_AR_RELEASE_VERSION_MINOR                                         3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGEA_AR_RELEASE_MAJOR_VERSION != STD_AR_RELEASE_MAJOR_VERSION)
-   #error "Incompatible CFGEA_AR_RELEASE_MAJOR_VERSION!"
+#if(CFGEA_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGEA_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGEA_AR_RELEASE_MINOR_VERSION != STD_AR_RELEASE_MINOR_VERSION)
-   #error "Incompatible CFGEA_AR_RELEASE_MINOR_VERSION!"
+#if(CFGEA_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGEA_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -39,8 +39,10 @@
 /******************************************************************************/
 CONST(CfgEa_Type, CFGEA_CONFIG_DATA) PBcfgEa = {
    {
-         0x0000
-      ,  0xFFFF
+         CFGEA_AR_RELEASE_VERSION_MAJOR
+      ,  CFGEA_AR_RELEASE_VERSION_MINOR
+      ,  0x00
+      ,  0xFF
       ,  0x01
       ,  '0'
       ,  '1'

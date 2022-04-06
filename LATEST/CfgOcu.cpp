@@ -12,18 +12,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGOCU_AR_RELEASE_MAJOR_VERSION                                        4
-#define CFGOCU_AR_RELEASE_MINOR_VERSION                                        3
+#define CFGOCU_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGOCU_AR_RELEASE_VERSION_MINOR                                        3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGOCU_AR_RELEASE_MAJOR_VERSION != STD_AR_RELEASE_MAJOR_VERSION)
-   #error "Incompatible CFGOCU_AR_RELEASE_MAJOR_VERSION!"
+#if(CFGOCU_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGOCU_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGOCU_AR_RELEASE_MINOR_VERSION != STD_AR_RELEASE_MINOR_VERSION)
-   #error "Incompatible CFGOCU_AR_RELEASE_MINOR_VERSION!"
+#if(CFGOCU_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGOCU_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -39,8 +39,10 @@
 /******************************************************************************/
 CONST(CfgOcu_Type, CFGOCU_CONFIG_DATA) PBcfgOcu = {
    {
-         0x0000
-      ,  0xFFFF
+         CFGOCU_AR_RELEASE_VERSION_MAJOR
+      ,  CFGOCU_AR_RELEASE_VERSION_MINOR
+      ,  0x00
+      ,  0xFF
       ,  0x01
       ,  '0'
       ,  '1'

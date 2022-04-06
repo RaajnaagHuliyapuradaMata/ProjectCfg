@@ -12,18 +12,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGSTBM_AR_RELEASE_MAJOR_VERSION                                       4
-#define CFGSTBM_AR_RELEASE_MINOR_VERSION                                       3
+#define CFGSTBM_AR_RELEASE_VERSION_MAJOR                                       4
+#define CFGSTBM_AR_RELEASE_VERSION_MINOR                                       3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGSTBM_AR_RELEASE_MAJOR_VERSION != STD_AR_RELEASE_MAJOR_VERSION)
-   #error "Incompatible CFGSTBM_AR_RELEASE_MAJOR_VERSION!"
+#if(CFGSTBM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSTBM_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGSTBM_AR_RELEASE_MINOR_VERSION != STD_AR_RELEASE_MINOR_VERSION)
-   #error "Incompatible CFGSTBM_AR_RELEASE_MINOR_VERSION!"
+#if(CFGSTBM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSTBM_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -39,8 +39,10 @@
 /******************************************************************************/
 CONST(CfgStbM_Type, CFGSTBM_CONFIG_DATA) PBcfgStbM = {
    {
-         0x0000
-      ,  0xFFFF
+         CFGSTBM_AR_RELEASE_VERSION_MAJOR
+      ,  CFGSTBM_AR_RELEASE_VERSION_MINOR
+      ,  0x00
+      ,  0xFF
       ,  0x01
       ,  '0'
       ,  '1'

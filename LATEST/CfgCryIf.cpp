@@ -12,18 +12,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGCRYIF_AR_RELEASE_MAJOR_VERSION                                      4
-#define CFGCRYIF_AR_RELEASE_MINOR_VERSION                                      3
+#define CFGCRYIF_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGCRYIF_AR_RELEASE_VERSION_MINOR                                      3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGCRYIF_AR_RELEASE_MAJOR_VERSION != STD_AR_RELEASE_MAJOR_VERSION)
-   #error "Incompatible CFGCRYIF_AR_RELEASE_MAJOR_VERSION!"
+#if(CFGCRYIF_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGCRYIF_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGCRYIF_AR_RELEASE_MINOR_VERSION != STD_AR_RELEASE_MINOR_VERSION)
-   #error "Incompatible CFGCRYIF_AR_RELEASE_MINOR_VERSION!"
+#if(CFGCRYIF_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGCRYIF_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -39,8 +39,10 @@
 /******************************************************************************/
 CONST(CfgCryIf_Type, CFGCRYIF_CONFIG_DATA) PBcfgCryIf = {
    {
-         0x0000
-      ,  0xFFFF
+         CFGCRYIF_AR_RELEASE_VERSION_MAJOR
+      ,  CFGCRYIF_AR_RELEASE_VERSION_MINOR
+      ,  0x00
+      ,  0xFF
       ,  0x01
       ,  '0'
       ,  '1'

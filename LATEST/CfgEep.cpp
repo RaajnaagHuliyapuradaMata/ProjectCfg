@@ -12,18 +12,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGEEP_AR_RELEASE_MAJOR_VERSION                                        4
-#define CFGEEP_AR_RELEASE_MINOR_VERSION                                        3
+#define CFGEEP_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGEEP_AR_RELEASE_VERSION_MINOR                                        3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGEEP_AR_RELEASE_MAJOR_VERSION != STD_AR_RELEASE_MAJOR_VERSION)
-   #error "Incompatible CFGEEP_AR_RELEASE_MAJOR_VERSION!"
+#if(CFGEEP_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGEEP_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGEEP_AR_RELEASE_MINOR_VERSION != STD_AR_RELEASE_MINOR_VERSION)
-   #error "Incompatible CFGEEP_AR_RELEASE_MINOR_VERSION!"
+#if(CFGEEP_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGEEP_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -39,8 +39,10 @@
 /******************************************************************************/
 CONST(CfgEep_Type, CFGEEP_CONFIG_DATA) PBcfgEep = {
    {
-         0x0000
-      ,  0xFFFF
+         CFGEEP_AR_RELEASE_VERSION_MAJOR
+      ,  CFGEEP_AR_RELEASE_VERSION_MINOR
+      ,  0x00
+      ,  0xFF
       ,  0x01
       ,  '0'
       ,  '1'

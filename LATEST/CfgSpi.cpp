@@ -12,18 +12,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGSPI_AR_RELEASE_MAJOR_VERSION                                        4
-#define CFGSPI_AR_RELEASE_MINOR_VERSION                                        3
+#define CFGSPI_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGSPI_AR_RELEASE_VERSION_MINOR                                        3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGSPI_AR_RELEASE_MAJOR_VERSION != STD_AR_RELEASE_MAJOR_VERSION)
-   #error "Incompatible CFGSPI_AR_RELEASE_MAJOR_VERSION!"
+#if(CFGSPI_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSPI_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGSPI_AR_RELEASE_MINOR_VERSION != STD_AR_RELEASE_MINOR_VERSION)
-   #error "Incompatible CFGSPI_AR_RELEASE_MINOR_VERSION!"
+#if(CFGSPI_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSPI_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -39,8 +39,10 @@
 /******************************************************************************/
 CONST(CfgSpi_Type, CFGSPI_CONFIG_DATA) PBcfgSpi = {
    {
-         0x0000
-      ,  0xFFFF
+         CFGSPI_AR_RELEASE_VERSION_MAJOR
+      ,  CFGSPI_AR_RELEASE_VERSION_MINOR
+      ,  0x00
+      ,  0xFF
       ,  0x01
       ,  '0'
       ,  '1'

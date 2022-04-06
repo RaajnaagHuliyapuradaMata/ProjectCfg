@@ -12,18 +12,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGETH_AR_RELEASE_MAJOR_VERSION                                        4
-#define CFGETH_AR_RELEASE_MINOR_VERSION                                        3
+#define CFGETH_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGETH_AR_RELEASE_VERSION_MINOR                                        3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGETH_AR_RELEASE_MAJOR_VERSION != STD_AR_RELEASE_MAJOR_VERSION)
-   #error "Incompatible CFGETH_AR_RELEASE_MAJOR_VERSION!"
+#if(CFGETH_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGETH_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGETH_AR_RELEASE_MINOR_VERSION != STD_AR_RELEASE_MINOR_VERSION)
-   #error "Incompatible CFGETH_AR_RELEASE_MINOR_VERSION!"
+#if(CFGETH_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGETH_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -39,8 +39,10 @@
 /******************************************************************************/
 CONST(CfgEth_Type, CFGETH_CONFIG_DATA) PBcfgEth = {
    {
-         0x0000
-      ,  0xFFFF
+         CFGETH_AR_RELEASE_VERSION_MAJOR
+      ,  CFGETH_AR_RELEASE_VERSION_MINOR
+      ,  0x00
+      ,  0xFF
       ,  0x01
       ,  '0'
       ,  '1'

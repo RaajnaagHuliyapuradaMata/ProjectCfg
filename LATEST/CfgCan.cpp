@@ -12,18 +12,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGCAN_AR_RELEASE_MAJOR_VERSION                                        4
-#define CFGCAN_AR_RELEASE_MINOR_VERSION                                        3
+#define CFGCAN_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGCAN_AR_RELEASE_VERSION_MINOR                                        3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGCAN_AR_RELEASE_MAJOR_VERSION != STD_AR_RELEASE_MAJOR_VERSION)
-   #error "Incompatible CFGCAN_AR_RELEASE_MAJOR_VERSION!"
+#if(CFGCAN_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGCAN_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGCAN_AR_RELEASE_MINOR_VERSION != STD_AR_RELEASE_MINOR_VERSION)
-   #error "Incompatible CFGCAN_AR_RELEASE_MINOR_VERSION!"
+#if(CFGCAN_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGCAN_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -39,8 +39,10 @@
 /******************************************************************************/
 CONST(CfgCan_Type, CFGCAN_CONFIG_DATA) PBcfgCan = {
    {
-         0x0000
-      ,  0xFFFF
+         CFGCAN_AR_RELEASE_VERSION_MAJOR
+      ,  CFGCAN_AR_RELEASE_VERSION_MINOR
+      ,  0x00
+      ,  0xFF
       ,  0x01
       ,  '0'
       ,  '1'

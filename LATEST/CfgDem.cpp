@@ -12,18 +12,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGDEM_AR_RELEASE_MAJOR_VERSION                                        4
-#define CFGDEM_AR_RELEASE_MINOR_VERSION                                        3
+#define CFGDEM_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGDEM_AR_RELEASE_VERSION_MINOR                                        3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGDEM_AR_RELEASE_MAJOR_VERSION != STD_AR_RELEASE_MAJOR_VERSION)
-   #error "Incompatible CFGDEM_AR_RELEASE_MAJOR_VERSION!"
+#if(CFGDEM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGDEM_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGDEM_AR_RELEASE_MINOR_VERSION != STD_AR_RELEASE_MINOR_VERSION)
-   #error "Incompatible CFGDEM_AR_RELEASE_MINOR_VERSION!"
+#if(CFGDEM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGDEM_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -39,8 +39,10 @@
 /******************************************************************************/
 CONST(CfgDem_Type, CFGDEM_CONFIG_DATA) PBcfgDem = {
    {
-         0x0000
-      ,  0xFFFF
+         CFGDEM_AR_RELEASE_VERSION_MAJOR
+      ,  CFGDEM_AR_RELEASE_VERSION_MINOR
+      ,  0x00
+      ,  0xFF
       ,  0x01
       ,  '0'
       ,  '1'

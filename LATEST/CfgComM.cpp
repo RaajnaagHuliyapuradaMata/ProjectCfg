@@ -12,18 +12,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGCOMM_AR_RELEASE_MAJOR_VERSION                                       4
-#define CFGCOMM_AR_RELEASE_MINOR_VERSION                                       3
+#define CFGCOMM_AR_RELEASE_VERSION_MAJOR                                       4
+#define CFGCOMM_AR_RELEASE_VERSION_MINOR                                       3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGCOMM_AR_RELEASE_MAJOR_VERSION != STD_AR_RELEASE_MAJOR_VERSION)
-   #error "Incompatible CFGCOMM_AR_RELEASE_MAJOR_VERSION!"
+#if(CFGCOMM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGCOMM_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGCOMM_AR_RELEASE_MINOR_VERSION != STD_AR_RELEASE_MINOR_VERSION)
-   #error "Incompatible CFGCOMM_AR_RELEASE_MINOR_VERSION!"
+#if(CFGCOMM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGCOMM_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -39,8 +39,10 @@
 /******************************************************************************/
 CONST(CfgComM_Type, CFGCOMM_CONFIG_DATA) PBcfgComM = {
    {
-         0x0000
-      ,  0xFFFF
+         CFGCOMM_AR_RELEASE_VERSION_MAJOR
+      ,  CFGCOMM_AR_RELEASE_VERSION_MINOR
+      ,  0x00
+      ,  0xFF
       ,  0x01
       ,  '0'
       ,  '1'

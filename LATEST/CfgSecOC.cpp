@@ -12,18 +12,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGSECOC_AR_RELEASE_MAJOR_VERSION                                      4
-#define CFGSECOC_AR_RELEASE_MINOR_VERSION                                      3
+#define CFGSECOC_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGSECOC_AR_RELEASE_VERSION_MINOR                                      3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGSECOC_AR_RELEASE_MAJOR_VERSION != STD_AR_RELEASE_MAJOR_VERSION)
-   #error "Incompatible CFGSECOC_AR_RELEASE_MAJOR_VERSION!"
+#if(CFGSECOC_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSECOC_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGSECOC_AR_RELEASE_MINOR_VERSION != STD_AR_RELEASE_MINOR_VERSION)
-   #error "Incompatible CFGSECOC_AR_RELEASE_MINOR_VERSION!"
+#if(CFGSECOC_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSECOC_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -39,8 +39,10 @@
 /******************************************************************************/
 CONST(CfgSecOC_Type, CFGSECOC_CONFIG_DATA) PBcfgSecOC = {
    {
-         0x0000
-      ,  0xFFFF
+         CFGSECOC_AR_RELEASE_VERSION_MAJOR
+      ,  CFGSECOC_AR_RELEASE_VERSION_MINOR
+      ,  0x00
+      ,  0xFF
       ,  0x01
       ,  '0'
       ,  '1'

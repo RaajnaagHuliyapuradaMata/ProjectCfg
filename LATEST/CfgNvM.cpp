@@ -12,18 +12,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGNVM_AR_RELEASE_MAJOR_VERSION                                        4
-#define CFGNVM_AR_RELEASE_MINOR_VERSION                                        3
+#define CFGNVM_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGNVM_AR_RELEASE_VERSION_MINOR                                        3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGNVM_AR_RELEASE_MAJOR_VERSION != STD_AR_RELEASE_MAJOR_VERSION)
-   #error "Incompatible CFGNVM_AR_RELEASE_MAJOR_VERSION!"
+#if(CFGNVM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGNVM_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGNVM_AR_RELEASE_MINOR_VERSION != STD_AR_RELEASE_MINOR_VERSION)
-   #error "Incompatible CFGNVM_AR_RELEASE_MINOR_VERSION!"
+#if(CFGNVM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGNVM_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -33,19 +33,115 @@
 /******************************************************************************/
 /* CONSTS                                                                     */
 /******************************************************************************/
+extern const CfgModule_TypeAbstract PBcfgAdc;
+extern const CfgModule_TypeAbstract PBcfgBswM;
+extern const CfgModule_TypeAbstract PBcfgCan;
+extern const CfgModule_TypeAbstract PBcfgCanIf;
+extern const CfgModule_TypeAbstract PBcfgCom;
+extern const CfgModule_TypeAbstract PBcfgComM;
+extern const CfgModule_TypeAbstract PBcfgCry;
+extern const CfgModule_TypeAbstract PBcfgCryIf;
+extern const CfgModule_TypeAbstract PBcfgCsm;
+extern const CfgModule_TypeAbstract PBcfgDcm;
+extern const CfgModule_TypeAbstract PBcfgDem;
+extern const CfgModule_TypeAbstract PBcfgDet;
+extern const CfgModule_TypeAbstract PBcfgDio;
+extern const CfgModule_TypeAbstract PBcfgEa;
+extern const CfgModule_TypeAbstract PBcfgEcuM;
+extern const CfgModule_TypeAbstract PBcfgEep;
+extern const CfgModule_TypeAbstract PBcfgEth;
+extern const CfgModule_TypeAbstract PBcfgEthIf;
+extern const CfgModule_TypeAbstract PBcfgFee;
+extern const CfgModule_TypeAbstract PBcfgFiM;
+extern const CfgModule_TypeAbstract PBcfgFls;
+extern const CfgModule_TypeAbstract PBcfgFr;
+extern const CfgModule_TypeAbstract PBcfgFrIf;
+extern const CfgModule_TypeAbstract PBcfgGpt;
+extern const CfgModule_TypeAbstract PBcfgIcu;
+extern const CfgModule_TypeAbstract PBcfgLin;
+extern const CfgModule_TypeAbstract PBcfgLinIf;
+extern const CfgModule_TypeAbstract PBcfgLinTp;
+extern const CfgModule_TypeAbstract PBcfgMcu;
+extern const CfgModule_TypeAbstract PBcfgMemIf;
+extern const CfgModule_TypeAbstract PBcfgNm;
+//extern const CfgModule_TypeAbstract PBcfgNvM;
+extern const CfgModule_TypeAbstract PBcfgOcu;
+extern const CfgModule_TypeAbstract PBcfgOs;
+extern const CfgModule_TypeAbstract PBcfgPduR;
+extern const CfgModule_TypeAbstract PBcfgPort;
+extern const CfgModule_TypeAbstract PBcfgPwm;
+extern const CfgModule_TypeAbstract PBcfgSchM;
+extern const CfgModule_TypeAbstract PBcfgSecOC;
+extern const CfgModule_TypeAbstract PBcfgSokFm;
+extern const CfgModule_TypeAbstract PBcfgSpi;
+extern const CfgModule_TypeAbstract PBcfgStbM;
+extern const CfgModule_TypeAbstract PBcfgVkms;
+extern const CfgModule_TypeAbstract PBcfgWdg;
+extern const CfgModule_TypeAbstract PBcfgWdgIf;
+extern const CfgModule_TypeAbstract PBcfgWdgM;
 
 /******************************************************************************/
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgNvM_Type, CFGNVM_CONFIG_DATA) PBcfgNvM = {
-   {
-         0x0000
-      ,  0xFFFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      {
+            CFGNVM_AR_RELEASE_VERSION_MAJOR
+         ,  CFGNVM_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
+   ,  {
+            &PBcfgAdc
+         ,  &PBcfgBswM
+         ,  &PBcfgCan
+         ,  &PBcfgCanIf
+         ,  &PBcfgCom
+         ,  &PBcfgComM
+         ,  &PBcfgCry
+         ,  &PBcfgCryIf
+         ,  &PBcfgCsm
+         ,  &PBcfgDcm
+         ,  &PBcfgDem
+         ,  &PBcfgDet
+         ,  &PBcfgDio
+         ,  &PBcfgEa
+         ,  &PBcfgEcuM
+         ,  &PBcfgEep
+         ,  &PBcfgEth
+         ,  &PBcfgEthIf
+         ,  &PBcfgFee
+         ,  &PBcfgFiM
+         ,  &PBcfgFls
+         ,  &PBcfgFr
+         ,  &PBcfgFrIf
+         ,  &PBcfgGpt
+         ,  &PBcfgIcu
+         ,  &PBcfgLin
+         ,  &PBcfgLinIf
+         ,  &PBcfgLinTp
+         ,  &PBcfgMcu
+         ,  &PBcfgMemIf
+         ,  &PBcfgNm
+         ,  &PBcfgNvM
+         ,  &PBcfgOcu
+         ,  &PBcfgOs
+         ,  &PBcfgPduR
+         ,  &PBcfgPort
+         ,  &PBcfgPwm
+         ,  &PBcfgSchM
+         ,  &PBcfgSecOC
+         ,  &PBcfgSokFm
+         ,  &PBcfgSpi
+         ,  &PBcfgStbM
+         ,  &PBcfgVkms
+         ,  &PBcfgWdg
+         ,  &PBcfgWdgIf
+         ,  &PBcfgWdgM
+      }
 };
 
 /******************************************************************************/

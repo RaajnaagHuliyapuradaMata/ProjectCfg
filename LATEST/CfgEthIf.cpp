@@ -12,18 +12,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGETHIF_AR_RELEASE_MAJOR_VERSION                                      4
-#define CFGETHIF_AR_RELEASE_MINOR_VERSION                                      3
+#define CFGETHIF_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGETHIF_AR_RELEASE_VERSION_MINOR                                      3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGETHIF_AR_RELEASE_MAJOR_VERSION != STD_AR_RELEASE_MAJOR_VERSION)
-   #error "Incompatible CFGETHIF_AR_RELEASE_MAJOR_VERSION!"
+#if(CFGETHIF_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGETHIF_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGETHIF_AR_RELEASE_MINOR_VERSION != STD_AR_RELEASE_MINOR_VERSION)
-   #error "Incompatible CFGETHIF_AR_RELEASE_MINOR_VERSION!"
+#if(CFGETHIF_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGETHIF_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -39,8 +39,10 @@
 /******************************************************************************/
 CONST(CfgEthIf_Type, CFGETHIF_CONFIG_DATA) PBcfgEthIf = {
    {
-         0x0000
-      ,  0xFFFF
+         CFGETHIF_AR_RELEASE_VERSION_MAJOR
+      ,  CFGETHIF_AR_RELEASE_VERSION_MINOR
+      ,  0x00
+      ,  0xFF
       ,  0x01
       ,  '0'
       ,  '1'

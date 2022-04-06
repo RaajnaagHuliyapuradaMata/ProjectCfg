@@ -12,18 +12,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGSCHM_AR_RELEASE_MAJOR_VERSION                                       4
-#define CFGSCHM_AR_RELEASE_MINOR_VERSION                                       3
+#define CFGSCHM_AR_RELEASE_VERSION_MAJOR                                       4
+#define CFGSCHM_AR_RELEASE_VERSION_MINOR                                       3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGSCHM_AR_RELEASE_MAJOR_VERSION != STD_AR_RELEASE_MAJOR_VERSION)
-   #error "Incompatible CFGSCHM_AR_RELEASE_MAJOR_VERSION!"
+#if(CFGSCHM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSCHM_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGSCHM_AR_RELEASE_MINOR_VERSION != STD_AR_RELEASE_MINOR_VERSION)
-   #error "Incompatible CFGSCHM_AR_RELEASE_MINOR_VERSION!"
+#if(CFGSCHM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSCHM_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -39,8 +39,10 @@
 /******************************************************************************/
 CONST(CfgSchM_Type, CFGSCHM_CONFIG_DATA) PBcfgSchM = {
    {
-         0x0000
-      ,  0xFFFF
+         CFGSCHM_AR_RELEASE_VERSION_MAJOR
+      ,  CFGSCHM_AR_RELEASE_VERSION_MINOR
+      ,  0x00
+      ,  0xFF
       ,  0x01
       ,  '0'
       ,  '1'

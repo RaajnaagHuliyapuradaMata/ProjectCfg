@@ -12,18 +12,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGGPT_AR_RELEASE_MAJOR_VERSION                                        4
-#define CFGGPT_AR_RELEASE_MINOR_VERSION                                        3
+#define CFGGPT_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGGPT_AR_RELEASE_VERSION_MINOR                                        3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGGPT_AR_RELEASE_MAJOR_VERSION != STD_AR_RELEASE_MAJOR_VERSION)
-   #error "Incompatible CFGGPT_AR_RELEASE_MAJOR_VERSION!"
+#if(CFGGPT_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGGPT_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGGPT_AR_RELEASE_MINOR_VERSION != STD_AR_RELEASE_MINOR_VERSION)
-   #error "Incompatible CFGGPT_AR_RELEASE_MINOR_VERSION!"
+#if(CFGGPT_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGGPT_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -39,8 +39,10 @@
 /******************************************************************************/
 CONST(CfgGpt_Type, CFGGPT_CONFIG_DATA) PBcfgGpt = {
    {
-         0x0000
-      ,  0xFFFF
+         CFGGPT_AR_RELEASE_VERSION_MAJOR
+      ,  CFGGPT_AR_RELEASE_VERSION_MINOR
+      ,  0x00
+      ,  0xFF
       ,  0x01
       ,  '0'
       ,  '1'

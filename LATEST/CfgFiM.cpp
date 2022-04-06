@@ -12,18 +12,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGFIM_AR_RELEASE_MAJOR_VERSION                                        4
-#define CFGFIM_AR_RELEASE_MINOR_VERSION                                        3
+#define CFGFIM_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGFIM_AR_RELEASE_VERSION_MINOR                                        3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGFIM_AR_RELEASE_MAJOR_VERSION != STD_AR_RELEASE_MAJOR_VERSION)
-   #error "Incompatible CFGFIM_AR_RELEASE_MAJOR_VERSION!"
+#if(CFGFIM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGFIM_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGFIM_AR_RELEASE_MINOR_VERSION != STD_AR_RELEASE_MINOR_VERSION)
-   #error "Incompatible CFGFIM_AR_RELEASE_MINOR_VERSION!"
+#if(CFGFIM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGFIM_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -39,8 +39,10 @@
 /******************************************************************************/
 CONST(CfgFiM_Type, CFGFIM_CONFIG_DATA) PBcfgFiM = {
    {
-         0x0000
-      ,  0xFFFF
+         CFGFIM_AR_RELEASE_VERSION_MAJOR
+      ,  CFGFIM_AR_RELEASE_VERSION_MINOR
+      ,  0x00
+      ,  0xFF
       ,  0x01
       ,  '0'
       ,  '1'

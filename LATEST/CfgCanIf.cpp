@@ -12,18 +12,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGCANIF_AR_RELEASE_MAJOR_VERSION                                      4
-#define CFGCANIF_AR_RELEASE_MINOR_VERSION                                      3
+#define CFGCANIF_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGCANIF_AR_RELEASE_VERSION_MINOR                                      3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGCANIF_AR_RELEASE_MAJOR_VERSION != STD_AR_RELEASE_MAJOR_VERSION)
-   #error "Incompatible CFGCANIF_AR_RELEASE_MAJOR_VERSION!"
+#if(CFGCANIF_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGCANIF_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGCANIF_AR_RELEASE_MINOR_VERSION != STD_AR_RELEASE_MINOR_VERSION)
-   #error "Incompatible CFGCANIF_AR_RELEASE_MINOR_VERSION!"
+#if(CFGCANIF_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGCANIF_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -39,8 +39,10 @@
 /******************************************************************************/
 CONST(CfgCanIf_Type, CFGCANIF_CONFIG_DATA) PBcfgCanIf = {
    {
-         0x0000
-      ,  0xFFFF
+         CFGCANIF_AR_RELEASE_VERSION_MAJOR
+      ,  CFGCANIF_AR_RELEASE_VERSION_MINOR
+      ,  0x00
+      ,  0xFF
       ,  0x01
       ,  '0'
       ,  '1'

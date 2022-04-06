@@ -12,18 +12,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGPDUR_AR_RELEASE_MAJOR_VERSION                                       4
-#define CFGPDUR_AR_RELEASE_MINOR_VERSION                                       3
+#define CFGPDUR_AR_RELEASE_VERSION_MAJOR                                       4
+#define CFGPDUR_AR_RELEASE_VERSION_MINOR                                       3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGPDUR_AR_RELEASE_MAJOR_VERSION != STD_AR_RELEASE_MAJOR_VERSION)
-   #error "Incompatible CFGPDUR_AR_RELEASE_MAJOR_VERSION!"
+#if(CFGPDUR_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGPDUR_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGPDUR_AR_RELEASE_MINOR_VERSION != STD_AR_RELEASE_MINOR_VERSION)
-   #error "Incompatible CFGPDUR_AR_RELEASE_MINOR_VERSION!"
+#if(CFGPDUR_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGPDUR_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -39,8 +39,10 @@
 /******************************************************************************/
 CONST(CfgPduR_Type, CFGPDUR_CONFIG_DATA) PBcfgPduR = {
    {
-         0x0000
-      ,  0xFFFF
+         CFGPDUR_AR_RELEASE_VERSION_MAJOR
+      ,  CFGPDUR_AR_RELEASE_VERSION_MINOR
+      ,  0x00
+      ,  0xFF
       ,  0x01
       ,  '0'
       ,  '1'

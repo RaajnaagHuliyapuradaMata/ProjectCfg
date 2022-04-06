@@ -12,18 +12,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGWDGIF_AR_RELEASE_MAJOR_VERSION                                      4
-#define CFGWDGIF_AR_RELEASE_MINOR_VERSION                                      3
+#define CFGWDGIF_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGWDGIF_AR_RELEASE_VERSION_MINOR                                      3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGWDGIF_AR_RELEASE_MAJOR_VERSION != STD_AR_RELEASE_MAJOR_VERSION)
-   #error "Incompatible CFGWDGIF_AR_RELEASE_MAJOR_VERSION!"
+#if(CFGWDGIF_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGWDGIF_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGWDGIF_AR_RELEASE_MINOR_VERSION != STD_AR_RELEASE_MINOR_VERSION)
-   #error "Incompatible CFGWDGIF_AR_RELEASE_MINOR_VERSION!"
+#if(CFGWDGIF_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGWDGIF_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -39,8 +39,10 @@
 /******************************************************************************/
 CONST(CfgWdgIf_Type, CFGWDGIF_CONFIG_DATA) PBcfgWdgIf = {
    {
-         0x0000
-      ,  0xFFFF
+         CFGWDGIF_AR_RELEASE_VERSION_MAJOR
+      ,  CFGWDGIF_AR_RELEASE_VERSION_MINOR
+      ,  0x00
+      ,  0xFF
       ,  0x01
       ,  '0'
       ,  '1'

@@ -12,18 +12,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGPORT_AR_RELEASE_MAJOR_VERSION                                       4
-#define CFGPORT_AR_RELEASE_MINOR_VERSION                                       3
+#define CFGPORT_AR_RELEASE_VERSION_MAJOR                                       4
+#define CFGPORT_AR_RELEASE_VERSION_MINOR                                       3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGPORT_AR_RELEASE_MAJOR_VERSION != STD_AR_RELEASE_MAJOR_VERSION)
-   #error "Incompatible CFGPORT_AR_RELEASE_MAJOR_VERSION!"
+#if(CFGPORT_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGPORT_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGPORT_AR_RELEASE_MINOR_VERSION != STD_AR_RELEASE_MINOR_VERSION)
-   #error "Incompatible CFGPORT_AR_RELEASE_MINOR_VERSION!"
+#if(CFGPORT_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGPORT_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -39,8 +39,10 @@
 /******************************************************************************/
 CONST(CfgPort_Type, CFGPORT_CONFIG_DATA) PBcfgPort = {
    {
-         0x0000
-      ,  0xFFFF
+         CFGPORT_AR_RELEASE_VERSION_MAJOR
+      ,  CFGPORT_AR_RELEASE_VERSION_MINOR
+      ,  0x00
+      ,  0xFF
       ,  0x01
       ,  '0'
       ,  '1'
