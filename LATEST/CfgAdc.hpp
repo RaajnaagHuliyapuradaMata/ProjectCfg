@@ -16,6 +16,9 @@
 #define Adc_DevErrorDetect                                        DevErrorDetect
 #define Adc_InitCheck                                                     STD_ON
 #define ADC_VERSION_INFO_API                                      VersionInfoApi
+#define LevelPriorityMin                                                       0
+#define LevelPriorityMax                                                     255
+#define Adc_EnableQueing                                                 STD_OFF
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -27,6 +30,7 @@
 typedef enum{
       eModeConversion_OneShot = 0
    ,  eModeConversion_Continuous
+   //TBD: Streaming?
 }Adc_TypeModeConversion;
 
 typedef enum{
@@ -34,7 +38,14 @@ typedef enum{
    ,  eSourceTrigger_EventHardware
 }Adc_TypeSourceTrigger;
 
+typedef enum{
+      eMechanismPriority_Disable = 0
+   ,  eMechanismPriority_HW
+   ,  eMechanismPriority_HW_SW
+}Adc_TypeMechanismPriority;
+
 typedef struct{
+   Std_ReturnType CheckLimit;
 }Adc_TypeChannel;
 
 typedef enum{
@@ -43,10 +54,13 @@ typedef enum{
 }Adc_TypeStateGroup;
 
 typedef struct{
-   Adc_TypeChannel*      ptrListChannel;
-   Adc_TypeSourceTrigger SourceTrigger;
-   uint8                 LevelPriority;
-   Adc_TypeStateGroup    StateGroup;
+   Adc_TypeChannel*          ptrListChannel;
+   Adc_TypeModeConversion    ModeConversion;
+   uint8                     NumberOfSamples; //per trigger, TBD: Applicable for Streaming
+   Adc_TypeSourceTrigger     SourceTrigger;
+   Adc_TypeMechanismPriority MechanismPriority;
+   uint8                     LevelPriority;
+   Adc_TypeStateGroup        StateGroup;
 }Adc_TypeChannelGroup;
 
 typedef struct{
@@ -54,6 +68,7 @@ typedef struct{
 
 typedef enum{
       eStatusGroup_Unknown = 0
+   ,  eStatusGroup_Idle
    ,  eStatusGroup_StreamCompleted
 }Adc_TypeStatusGroup;
 
