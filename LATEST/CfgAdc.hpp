@@ -19,6 +19,8 @@
 #define LevelPriorityMin                                                       0
 #define LevelPriorityMax                                                     255
 #define Adc_EnableQueing                                                 STD_OFF
+#define ydc_SupportStatePowerLow                                          STD_ON
+#define Adc_StatePowerModeTransitionAsynch                               STD_OFF 
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -30,7 +32,6 @@
 typedef enum{
       eModeConversion_OneShot = 0
    ,  eModeConversion_Continuous
-   //TBD: Streaming?
 }Adc_TypeModeConversion;
 
 typedef enum{
@@ -45,7 +46,7 @@ typedef enum{
 }Adc_TypeMechanismPriority;
 
 typedef struct{
-   Std_ReturnType CheckLimit;
+   Std_TypeReturn CheckLimit;
 }Adc_TypeChannel;
 
 typedef enum{
@@ -56,7 +57,7 @@ typedef enum{
 typedef struct{
    Adc_TypeChannel*          ptrListChannel;
    Adc_TypeModeConversion    ModeConversion;
-   uint8                     NumberOfSamples; //per trigger, TBD: Applicable for Streaming
+   uint8                     NumberOfSamples; //per trigger, eModeConversion_Continuous ...TBD: needed?
    Adc_TypeSourceTrigger     SourceTrigger;
    Adc_TypeMechanismPriority MechanismPriority;
    uint8                     LevelPriority;
@@ -67,8 +68,9 @@ typedef struct{
 }Adc_TypeResultsGroupConversion;
 
 typedef enum{
-      eStatusGroup_Unknown = 0
-   ,  eStatusGroup_Idle
+      eStatusGroup_Idle = 0
+   ,  eStatusGroup_Busy
+   ,  eStatusGroup_Completed
    ,  eStatusGroup_StreamCompleted
 }Adc_TypeStatusGroup;
 
