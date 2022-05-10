@@ -55,16 +55,6 @@ typedef enum{
 }Adc_TypeStateGroup;
 
 typedef struct{
-   Adc_TypeChannel*          ptrListChannel;
-   Adc_TypeModeConversion    ModeConversion;
-   uint8                     NumberOfSamples; //per trigger, eModeConversion_Continuous ...TBD: needed?
-   Adc_TypeSourceTrigger     SourceTrigger;
-   Adc_TypeMechanismPriority MechanismPriority;
-   uint8                     LevelPriority;
-   Adc_TypeStateGroup        StateGroup;
-}Adc_TypeChannelGroup;
-
-typedef struct{
 }Adc_TypeResultsGroupConversion;
 
 typedef enum{
@@ -79,6 +69,17 @@ typedef struct{
    uint8                           NumberResultsValid; // = 1, for eModeConversion_OneShot 
    Adc_TypeStatusGroup             StatusGroup;
 }Adc_TypeBufferResults;
+
+typedef struct{
+   Adc_TypeChannel*          ptrListChannel;
+   Adc_TypeModeConversion    ModeConversion;
+   uint8                     NumberOfSamples; //per trigger, eModeConversion_Continuous ...TBD: needed?
+   Adc_TypeSourceTrigger     SourceTrigger;
+   Adc_TypeMechanismPriority MechanismPriority;
+   uint8                     LevelPriority;
+   Adc_TypeStateGroup        StateGroup;
+   Adc_TypeBufferResults     BufferResults;
+}Adc_TypeChannelGroup;
 
 class CfgAdc_Type:
       public CfgModule_TypeAbstract
