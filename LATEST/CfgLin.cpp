@@ -39,6 +39,9 @@
 /******************************************************************************/
 CONST(CfgLin_Type, CFGLIN_CONFIG_DATA) PBcfgLin = {
    {
+#if(STD_ON == _ReSIM)
+#else
+#endif
          CFGLIN_AR_RELEASE_VERSION_MAJOR
       ,  CFGLIN_AR_RELEASE_VERSION_MINOR
       ,  0x00

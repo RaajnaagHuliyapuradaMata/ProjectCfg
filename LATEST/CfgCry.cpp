@@ -39,6 +39,9 @@
 /******************************************************************************/
 CONST(CfgCry_Type, CFGCRY_CONFIG_DATA) PBcfgCry = {
    {
+#if(STD_ON == _ReSIM)
+#else
+#endif
          CFGCRY_AR_RELEASE_VERSION_MAJOR
       ,  CFGCRY_AR_RELEASE_VERSION_MINOR
       ,  0x00

@@ -39,6 +39,9 @@
 /******************************************************************************/
 CONST(CfgFee_Type, CFGFEE_CONFIG_DATA) PBcfgFee = {
    {
+#if(STD_ON == _ReSIM)
+#else
+#endif
          CFGFEE_AR_RELEASE_VERSION_MAJOR
       ,  CFGFEE_AR_RELEASE_VERSION_MINOR
       ,  0x00

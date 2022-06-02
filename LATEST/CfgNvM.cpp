@@ -37,6 +37,7 @@ extern const CfgModule_TypeAbstract PBcfgAdc;
 extern const CfgModule_TypeAbstract PBcfgBswM;
 extern const CfgModule_TypeAbstract PBcfgCan;
 extern const CfgModule_TypeAbstract PBcfgCanIf;
+//extern const CfgModule_TypeAbstract PBcfgCanTp;
 extern const CfgModule_TypeAbstract PBcfgCom;
 extern const CfgModule_TypeAbstract PBcfgComM;
 extern const CfgModule_TypeAbstract PBcfgCry;
@@ -85,6 +86,9 @@ extern const CfgModule_TypeAbstract PBcfgWdgM;
 /******************************************************************************/
 CONST(CfgNvM_Type, CFGNVM_CONFIG_DATA) PBcfgNvM = {
       {
+#if(STD_ON == _ReSIM)
+#else
+#endif
             CFGNVM_AR_RELEASE_VERSION_MAJOR
          ,  CFGNVM_AR_RELEASE_VERSION_MINOR
          ,  0x00
@@ -99,6 +103,7 @@ CONST(CfgNvM_Type, CFGNVM_CONFIG_DATA) PBcfgNvM = {
          ,  &PBcfgBswM
          ,  &PBcfgCan
          ,  &PBcfgCanIf
+//       ,  &PBcfgCanTp
          ,  &PBcfgCom
          ,  &PBcfgComM
          ,  &PBcfgCry

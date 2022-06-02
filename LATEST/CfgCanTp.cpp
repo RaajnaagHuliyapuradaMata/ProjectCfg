@@ -1,5 +1,5 @@
 /******************************************************************************/
-/* File   : CfgDcm.cpp                                                        */
+/* File   : CfgCanTp.cpp                                                      */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
@@ -7,23 +7,23 @@
 /* #INCLUDES                                                                  */
 /******************************************************************************/
 #include "Std_Types.hpp"
-#include "CfgDcm.hpp"
+#include "CfgCanTp.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGDCM_AR_RELEASE_VERSION_MAJOR                                        4
-#define CFGDCM_AR_RELEASE_VERSION_MINOR                                        3
+#define CFGCANTP_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGCANTP_AR_RELEASE_VERSION_MINOR                                      3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGDCM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGDCM_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGCANTP_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGCANTP_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGDCM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGDCM_AR_RELEASE_VERSION_MINOR!"
+#if(CFGCANTP_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGCANTP_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -37,13 +37,13 @@
 /******************************************************************************/
 /* PARAMS                                                                     */
 /******************************************************************************/
-CONST(CfgDcm_Type, CFGDCM_CONFIG_DATA) PBcfgDcm = {
+CONST(CfgCanTp_Type, CFGCANTP_CONFIG_DATA) PBcfgCanTp = {
    {
 #if(STD_ON == _ReSIM)
 #else
 #endif
-         CFGDCM_AR_RELEASE_VERSION_MAJOR
-      ,  CFGDCM_AR_RELEASE_VERSION_MINOR
+         CFGCANTP_AR_RELEASE_VERSION_MAJOR
+      ,  CFGCANTP_AR_RELEASE_VERSION_MINOR
       ,  0x00
       ,  0xFF
       ,  0x01

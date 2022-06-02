@@ -39,6 +39,9 @@
 /******************************************************************************/
 CONST(CfgPwm_Type, CFGPWM_CONFIG_DATA) PBcfgPwm = {
    {
+#if(STD_ON == _ReSIM)
+#else
+#endif
          CFGPWM_AR_RELEASE_VERSION_MAJOR
       ,  CFGPWM_AR_RELEASE_VERSION_MINOR
       ,  0x00

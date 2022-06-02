@@ -39,6 +39,9 @@
 /******************************************************************************/
 CONST(CfgCanIf_Type, CFGCANIF_CONFIG_DATA) PBcfgCanIf = {
    {
+#if(STD_ON == _ReSIM)
+#else
+#endif
          CFGCANIF_AR_RELEASE_VERSION_MAJOR
       ,  CFGCANIF_AR_RELEASE_VERSION_MINOR
       ,  0x00

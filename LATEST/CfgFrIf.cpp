@@ -39,6 +39,9 @@
 /******************************************************************************/
 CONST(CfgFrIf_Type, CFGFRIF_CONFIG_DATA) PBcfgFrIf = {
    {
+#if(STD_ON == _ReSIM)
+#else
+#endif
          CFGFRIF_AR_RELEASE_VERSION_MAJOR
       ,  CFGFRIF_AR_RELEASE_VERSION_MINOR
       ,  0x00

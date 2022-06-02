@@ -39,6 +39,9 @@
 /******************************************************************************/
 CONST(CfgMemIf_Type, CFGMEMIF_CONFIG_DATA) PBcfgMemIf = {
    {
+#if(STD_ON == _ReSIM)
+#else
+#endif
          CFGMEMIF_AR_RELEASE_VERSION_MAJOR
       ,  CFGMEMIF_AR_RELEASE_VERSION_MINOR
       ,  0x00

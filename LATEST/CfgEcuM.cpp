@@ -39,6 +39,9 @@
 /******************************************************************************/
 CONST(CfgEcuM_Type, CFGECUM_CONFIG_DATA) PBcfgEcuM = {
    {
+#if(STD_ON == _ReSIM)
+#else
+#endif
          CFGECUM_AR_RELEASE_VERSION_MAJOR
       ,  CFGECUM_AR_RELEASE_VERSION_MINOR
       ,  0x00

@@ -39,6 +39,9 @@
 /******************************************************************************/
 CONST(CfgFls_Type, CFGFLS_CONFIG_DATA) PBcfgFls = {
    {
+#if(STD_ON == _ReSIM)
+#else
+#endif
          CFGFLS_AR_RELEASE_VERSION_MAJOR
       ,  CFGFLS_AR_RELEASE_VERSION_MINOR
       ,  0x00

@@ -39,6 +39,9 @@
 /******************************************************************************/
 CONST(CfgSwcApplFoc_Type, CFGSWCAPPLFOC_CONFIG_DATA) PBcfgSwcApplFoc = {
    {
+#if(STD_ON == _ReSIM)
+#else
+#endif
          CFGSWCAPPLFOC_AR_RELEASE_VERSION_MAJOR
       ,  CFGSWCAPPLFOC_AR_RELEASE_VERSION_MINOR
       ,  0x00

@@ -39,6 +39,9 @@
 /******************************************************************************/
 CONST(CfgNm_Type, CFGNM_CONFIG_DATA) PBcfgNm = {
    {
+#if(STD_ON == _ReSIM)
+#else
+#endif
          CFGNM_AR_RELEASE_VERSION_MAJOR
       ,  CFGNM_AR_RELEASE_VERSION_MINOR
       ,  0x00

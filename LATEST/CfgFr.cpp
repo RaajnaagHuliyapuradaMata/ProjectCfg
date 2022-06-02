@@ -39,6 +39,9 @@
 /******************************************************************************/
 CONST(CfgFr_Type, CFGFR_CONFIG_DATA) PBcfgFr = {
    {
+#if(STD_ON == _ReSIM)
+#else
+#endif
          CFGFR_AR_RELEASE_VERSION_MAJOR
       ,  CFGFR_AR_RELEASE_VERSION_MINOR
       ,  0x00
