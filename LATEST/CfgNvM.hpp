@@ -28,7 +28,7 @@ class CfgNvM_Type:
       public CfgModule_TypeAbstract
 {
    public:
-      const CfgModule_TypeAbstract* laptrListCfg[46];
+      const CfgModule_TypeAbstract* laptrListCfg[47];
 };
 
 /******************************************************************************/

@@ -37,7 +37,7 @@ extern const CfgModule_TypeAbstract PBcfgAdc;
 extern const CfgModule_TypeAbstract PBcfgBswM;
 extern const CfgModule_TypeAbstract PBcfgCan;
 extern const CfgModule_TypeAbstract PBcfgCanIf;
-//extern const CfgModule_TypeAbstract PBcfgCanTp;
+extern const CfgModule_TypeAbstract PBcfgCanTp;
 extern const CfgModule_TypeAbstract PBcfgCom;
 extern const CfgModule_TypeAbstract PBcfgComM;
 extern const CfgModule_TypeAbstract PBcfgCry;
@@ -103,7 +103,7 @@ CONST(CfgNvM_Type, CFGNVM_CONFIG_DATA) PBcfgNvM = {
          ,  &PBcfgBswM
          ,  &PBcfgCan
          ,  &PBcfgCanIf
-//       ,  &PBcfgCanTp
+         ,  &PBcfgCanTp
          ,  &PBcfgCom
          ,  &PBcfgComM
          ,  &PBcfgCry
