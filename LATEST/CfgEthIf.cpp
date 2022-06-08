@@ -40,9 +40,10 @@
 CONST(CfgEthIf_Type, CFGETHIF_CONFIG_DATA) PBcfgEthIf = {
    {
 #if(STD_ON == _ReSIM)
+         "CfgEthIf"
 #else
 #endif
-         CFGETHIF_AR_RELEASE_VERSION_MAJOR
+      ,  CFGETHIF_AR_RELEASE_VERSION_MAJOR
       ,  CFGETHIF_AR_RELEASE_VERSION_MINOR
       ,  0x00
       ,  0xFF

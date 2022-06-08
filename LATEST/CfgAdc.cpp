@@ -40,9 +40,10 @@
 CONST(CfgAdc_Type, CFGADC_CONFIG_DATA) PBcfgAdc = {
    {
 #if(STD_ON == _ReSIM)
+         "CfgAdc"
 #else
 #endif
-         CFGADC_AR_RELEASE_VERSION_MAJOR
+      ,  CFGADC_AR_RELEASE_VERSION_MAJOR
       ,  CFGADC_AR_RELEASE_VERSION_MINOR
       ,  0x00
       ,  0xFF

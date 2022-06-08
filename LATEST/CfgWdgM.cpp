@@ -40,9 +40,10 @@
 CONST(CfgWdgM_Type, CFGWDGM_CONFIG_DATA) PBcfgWdgM = {
    {
 #if(STD_ON == _ReSIM)
+         "CfgWdgM"
 #else
 #endif
-         CFGWDGM_AR_RELEASE_VERSION_MAJOR
+      ,  CFGWDGM_AR_RELEASE_VERSION_MAJOR
       ,  CFGWDGM_AR_RELEASE_VERSION_MINOR
       ,  0x00
       ,  0xFF

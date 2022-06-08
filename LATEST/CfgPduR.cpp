@@ -40,9 +40,10 @@
 CONST(CfgPduR_Type, CFGPDUR_CONFIG_DATA) PBcfgPduR = {
    {
 #if(STD_ON == _ReSIM)
+         "CfgPduR"
 #else
 #endif
-         CFGPDUR_AR_RELEASE_VERSION_MAJOR
+      ,  CFGPDUR_AR_RELEASE_VERSION_MAJOR
       ,  CFGPDUR_AR_RELEASE_VERSION_MINOR
       ,  0x00
       ,  0xFF

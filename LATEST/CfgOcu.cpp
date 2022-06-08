@@ -40,9 +40,10 @@
 CONST(CfgOcu_Type, CFGOCU_CONFIG_DATA) PBcfgOcu = {
    {
 #if(STD_ON == _ReSIM)
+         "CfgOcu"
 #else
 #endif
-         CFGOCU_AR_RELEASE_VERSION_MAJOR
+      ,  CFGOCU_AR_RELEASE_VERSION_MAJOR
       ,  CFGOCU_AR_RELEASE_VERSION_MINOR
       ,  0x00
       ,  0xFF
