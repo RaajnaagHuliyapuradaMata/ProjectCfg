@@ -40,10 +40,10 @@
 CONST(CfgEth_Type, CFGETH_CONFIG_DATA) PBcfgEth = {
    {
 #if(STD_ON == _ReSIM)
-         "CfgEth"
+         "CfgEth",
 #else
 #endif
-      ,  CFGETH_AR_RELEASE_VERSION_MAJOR
+         CFGETH_AR_RELEASE_VERSION_MAJOR
       ,  CFGETH_AR_RELEASE_VERSION_MINOR
       ,  0x00
       ,  0xFF

@@ -40,10 +40,10 @@
 CONST(CfgLinTp_Type, CFGLINTP_CONFIG_DATA) PBcfgLinTp = {
    {
 #if(STD_ON == _ReSIM)
-         "CfgLinTp"
+         "CfgLinTp",
 #else
 #endif
-      ,  CFGLINTP_AR_RELEASE_VERSION_MAJOR
+         CFGLINTP_AR_RELEASE_VERSION_MAJOR
       ,  CFGLINTP_AR_RELEASE_VERSION_MINOR
       ,  0x00
       ,  0xFF

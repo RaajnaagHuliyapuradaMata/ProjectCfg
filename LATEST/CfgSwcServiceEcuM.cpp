@@ -40,10 +40,10 @@
 CONST(CfgSwcServiceEcuM_Type, CFGSWCSERVICEECUM_CONFIG_DATA) PBcfgSwcServiceEcuM = {
    {
 #if(STD_ON == _ReSIM)
-         "CfgSwcServiceEcuM"
+         "CfgSwcServiceEcuM",
 #else
 #endif
-      ,  CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MAJOR
+         CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MAJOR
       ,  CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MINOR
       ,  0x00
       ,  0xFF

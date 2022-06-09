@@ -40,10 +40,10 @@
 CONST(CfgCsm_Type, CFGCSM_CONFIG_DATA) PBcfgCsm = {
    {
 #if(STD_ON == _ReSIM)
-         "CfgCsm"
+         "CfgCsm",
 #else
 #endif
-      ,  CFGCSM_AR_RELEASE_VERSION_MAJOR
+         CFGCSM_AR_RELEASE_VERSION_MAJOR
       ,  CFGCSM_AR_RELEASE_VERSION_MINOR
       ,  0x00
       ,  0xFF

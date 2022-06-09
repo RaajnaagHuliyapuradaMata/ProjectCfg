@@ -40,10 +40,10 @@
 CONST(CfgCan_Type, CFGCAN_CONFIG_DATA) PBcfgCan = {
    {
 #if(STD_ON == _ReSIM)
-         "CfgCan"
+         "CfgCan",
 #else
 #endif
-      ,  CFGCAN_AR_RELEASE_VERSION_MAJOR
+         CFGCAN_AR_RELEASE_VERSION_MAJOR
       ,  CFGCAN_AR_RELEASE_VERSION_MINOR
       ,  0x00
       ,  0xFF

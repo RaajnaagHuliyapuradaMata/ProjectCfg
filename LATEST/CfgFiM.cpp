@@ -40,10 +40,10 @@
 CONST(CfgFiM_Type, CFGFIM_CONFIG_DATA) PBcfgFiM = {
    {
 #if(STD_ON == _ReSIM)
-         "CfgFiM"
+         "CfgFiM",
 #else
 #endif
-      ,  CFGFIM_AR_RELEASE_VERSION_MAJOR
+         CFGFIM_AR_RELEASE_VERSION_MAJOR
       ,  CFGFIM_AR_RELEASE_VERSION_MINOR
       ,  0x00
       ,  0xFF

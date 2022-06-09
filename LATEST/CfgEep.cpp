@@ -40,10 +40,10 @@
 CONST(CfgEep_Type, CFGEEP_CONFIG_DATA) PBcfgEep = {
    {
 #if(STD_ON == _ReSIM)
-         "CfgEep"
+         "CfgEep",
 #else
 #endif
-      ,  CFGEEP_AR_RELEASE_VERSION_MAJOR
+         CFGEEP_AR_RELEASE_VERSION_MAJOR
       ,  CFGEEP_AR_RELEASE_VERSION_MINOR
       ,  0x00
       ,  0xFF

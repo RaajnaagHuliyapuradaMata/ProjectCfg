@@ -40,10 +40,10 @@
 CONST(CfgCryIf_Type, CFGCRYIF_CONFIG_DATA) PBcfgCryIf = {
    {
 #if(STD_ON == _ReSIM)
-         "CfgCryIf"
+         "CfgCryIf",
 #else
 #endif
-      ,  CFGCRYIF_AR_RELEASE_VERSION_MAJOR
+         CFGCRYIF_AR_RELEASE_VERSION_MAJOR
       ,  CFGCRYIF_AR_RELEASE_VERSION_MINOR
       ,  0x00
       ,  0xFF

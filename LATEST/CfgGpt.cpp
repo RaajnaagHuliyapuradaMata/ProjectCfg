@@ -40,10 +40,10 @@
 CONST(CfgGpt_Type, CFGGPT_CONFIG_DATA) PBcfgGpt = {
    {
 #if(STD_ON == _ReSIM)
-         "CfgGpt"
+         "CfgGpt",
 #else
 #endif
-      ,  CFGGPT_AR_RELEASE_VERSION_MAJOR
+         CFGGPT_AR_RELEASE_VERSION_MAJOR
       ,  CFGGPT_AR_RELEASE_VERSION_MINOR
       ,  0x00
       ,  0xFF
