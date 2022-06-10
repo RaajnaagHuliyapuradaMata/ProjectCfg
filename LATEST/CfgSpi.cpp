@@ -39,10 +39,6 @@
 /******************************************************************************/
 CONST(CfgSpi_Type, CFGSPI_CONFIG_DATA) PBcfgSpi = {
    {
-#if(STD_ON == _ReSIM)
-         "CfgSpi",
-#else
-#endif
          CFGSPI_AR_RELEASE_VERSION_MAJOR
       ,  CFGSPI_AR_RELEASE_VERSION_MINOR
       ,  0x00

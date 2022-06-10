@@ -39,10 +39,6 @@
 /******************************************************************************/
 CONST(CfgStartUp_Type, CFGSTARTUP_CONFIG_DATA) PBcfgStartUp = {
    {
-#if(STD_ON == _ReSIM)
-         "CfgStartUp",
-#else
-#endif
          CFGSTARTUP_AR_RELEASE_VERSION_MAJOR
       ,  CFGSTARTUP_AR_RELEASE_VERSION_MINOR
       ,  0x00

@@ -39,10 +39,6 @@
 /******************************************************************************/
 CONST(CfgSecOC_Type, CFGSECOC_CONFIG_DATA) PBcfgSecOC = {
    {
-#if(STD_ON == _ReSIM)
-         "CfgSecOC",
-#else
-#endif
          CFGSECOC_AR_RELEASE_VERSION_MAJOR
       ,  CFGSECOC_AR_RELEASE_VERSION_MINOR
       ,  0x00

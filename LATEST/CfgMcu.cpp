@@ -39,10 +39,6 @@
 /******************************************************************************/
 CONST(CfgMcu_Type, CFGMCU_CONFIG_DATA) PBcfgMcu = {
    {
-#if(STD_ON == _ReSIM)
-         "CfgMcu",
-#else
-#endif
          CFGMCU_AR_RELEASE_VERSION_MAJOR
       ,  CFGMCU_AR_RELEASE_VERSION_MINOR
       ,  0x00

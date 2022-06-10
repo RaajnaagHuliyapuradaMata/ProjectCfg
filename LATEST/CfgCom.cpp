@@ -39,10 +39,6 @@
 /******************************************************************************/
 CONST(CfgCom_Type, CFGCOM_CONFIG_DATA) PBcfgCom = {
    {
-#if(STD_ON == _ReSIM)
-         "CfgCom",
-#else
-#endif
          CFGCOM_AR_RELEASE_VERSION_MAJOR
       ,  CFGCOM_AR_RELEASE_VERSION_MINOR
       ,  0x00

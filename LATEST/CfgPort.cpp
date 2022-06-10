@@ -39,10 +39,6 @@
 /******************************************************************************/
 CONST(CfgPort_Type, CFGPORT_CONFIG_DATA) PBcfgPort = {
    {
-#if(STD_ON == _ReSIM)
-         "CfgPort",
-#else
-#endif
          CFGPORT_AR_RELEASE_VERSION_MAJOR
       ,  CFGPORT_AR_RELEASE_VERSION_MINOR
       ,  0x00

@@ -39,10 +39,6 @@
 /******************************************************************************/
 CONST(CfgDcm_Type, CFGDCM_CONFIG_DATA) PBcfgDcm = {
    {
-#if(STD_ON == _ReSIM)
-         "CfgDcm",
-#else
-#endif
          CFGDCM_AR_RELEASE_VERSION_MAJOR
       ,  CFGDCM_AR_RELEASE_VERSION_MINOR
       ,  0x00

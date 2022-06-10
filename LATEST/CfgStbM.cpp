@@ -39,10 +39,6 @@
 /******************************************************************************/
 CONST(CfgStbM_Type, CFGSTBM_CONFIG_DATA) PBcfgStbM = {
    {
-#if(STD_ON == _ReSIM)
-         "CfgStbM",
-#else
-#endif
          CFGSTBM_AR_RELEASE_VERSION_MAJOR
       ,  CFGSTBM_AR_RELEASE_VERSION_MINOR
       ,  0x00

@@ -39,10 +39,6 @@
 /******************************************************************************/
 CONST(CfgOs_Type, CFGOS_CONFIG_DATA) PBcfgOs = {
    {
-#if(STD_ON == _ReSIM)
-         "CfgOs",
-#else
-#endif
          CFGOS_AR_RELEASE_VERSION_MAJOR
       ,  CFGOS_AR_RELEASE_VERSION_MINOR
       ,  0x00

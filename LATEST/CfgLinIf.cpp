@@ -39,10 +39,6 @@
 /******************************************************************************/
 CONST(CfgLinIf_Type, CFGLINIF_CONFIG_DATA) PBcfgLinIf = {
    {
-#if(STD_ON == _ReSIM)
-         "CfgLinIf",
-#else
-#endif
          CFGLINIF_AR_RELEASE_VERSION_MAJOR
       ,  CFGLINIF_AR_RELEASE_VERSION_MINOR
       ,  0x00

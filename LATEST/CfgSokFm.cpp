@@ -39,10 +39,6 @@
 /******************************************************************************/
 CONST(CfgSokFm_Type, CFGSOKFM_CONFIG_DATA) PBcfgSokFm = {
    {
-#if(STD_ON == _ReSIM)
-         "CfgSokFm",
-#else
-#endif
          CFGSOKFM_AR_RELEASE_VERSION_MAJOR
       ,  CFGSOKFM_AR_RELEASE_VERSION_MINOR
       ,  0x00

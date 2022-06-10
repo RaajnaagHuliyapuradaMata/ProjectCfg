@@ -39,10 +39,6 @@
 /******************************************************************************/
 CONST(CfgWdg_Type, CFGWDG_CONFIG_DATA) PBcfgWdg = {
    {
-#if(STD_ON == _ReSIM)
-         "CfgWdg",
-#else
-#endif
          CFGWDG_AR_RELEASE_VERSION_MAJOR
       ,  CFGWDG_AR_RELEASE_VERSION_MINOR
       ,  0x00

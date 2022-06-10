@@ -86,10 +86,6 @@ extern const CfgModule_TypeAbstract PBcfgWdgM;
 /******************************************************************************/
 CONST(CfgNvM_Type, CFGNVM_CONFIG_DATA) PBcfgNvM = {
       {
-#if(STD_ON == _ReSIM)
-            "CfgNvM",
-#else
-#endif
             CFGNVM_AR_RELEASE_VERSION_MAJOR
          ,  CFGNVM_AR_RELEASE_VERSION_MINOR
          ,  0x00

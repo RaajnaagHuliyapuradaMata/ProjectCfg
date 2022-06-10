@@ -39,10 +39,6 @@
 /******************************************************************************/
 CONST(CfgRte_Type, CFGRTE_CONFIG_DATA) PBcfgRte = {
    {
-#if(STD_ON == _ReSIM)
-         "CfgRte",
-#else
-#endif
          CFGRTE_AR_RELEASE_VERSION_MAJOR
       ,  CFGRTE_AR_RELEASE_VERSION_MINOR
       ,  0x00

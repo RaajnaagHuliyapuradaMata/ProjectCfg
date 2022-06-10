@@ -39,10 +39,6 @@
 /******************************************************************************/
 CONST(CfgEa_Type, CFGEA_CONFIG_DATA) PBcfgEa = {
    {
-#if(STD_ON == _ReSIM)
-         "CfgEa",
-#else
-#endif
          CFGEA_AR_RELEASE_VERSION_MAJOR
       ,  CFGEA_AR_RELEASE_VERSION_MINOR
       ,  0x00

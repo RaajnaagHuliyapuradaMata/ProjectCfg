@@ -39,10 +39,6 @@
 /******************************************************************************/
 CONST(CfgDio_Type, CFGDIO_CONFIG_DATA) PBcfgDio = {
    {
-#if(STD_ON == _ReSIM)
-         "CfgDio",
-#else
-#endif
          CFGDIO_AR_RELEASE_VERSION_MAJOR
       ,  CFGDIO_AR_RELEASE_VERSION_MINOR
       ,  0x00

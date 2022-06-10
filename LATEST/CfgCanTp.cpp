@@ -39,10 +39,6 @@
 /******************************************************************************/
 CONST(CfgCanTp_Type, CFGCANTP_CONFIG_DATA) PBcfgCanTp = {
    {
-#if(STD_ON == _ReSIM)
-         "CfgCanTp",
-#else
-#endif
          CFGCANTP_AR_RELEASE_VERSION_MAJOR
       ,  CFGCANTP_AR_RELEASE_VERSION_MINOR
       ,  0x00

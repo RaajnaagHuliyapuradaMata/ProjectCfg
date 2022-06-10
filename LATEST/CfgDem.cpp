@@ -39,10 +39,6 @@
 /******************************************************************************/
 CONST(CfgDem_Type, CFGDEM_CONFIG_DATA) PBcfgDem = {
    {
-#if(STD_ON == _ReSIM)
-         "CfgDem",
-#else
-#endif
          CFGDEM_AR_RELEASE_VERSION_MAJOR
       ,  CFGDEM_AR_RELEASE_VERSION_MINOR
       ,  0x00

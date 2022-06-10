@@ -39,10 +39,6 @@
 /******************************************************************************/
 CONST(CfgVkms_Type, CFGVKMS_CONFIG_DATA) PBcfgVkms = {
    {
-#if(STD_ON == _ReSIM)
-         "CfgVkms",
-#else
-#endif
          CFGVKMS_AR_RELEASE_VERSION_MAJOR
       ,  CFGVKMS_AR_RELEASE_VERSION_MINOR
       ,  0x00

@@ -39,10 +39,6 @@
 /******************************************************************************/
 CONST(CfgSwcServiceOs_Type, CFGSWCSERVICEOS_CONFIG_DATA) PBcfgSwcServiceOs = {
    {
-#if(STD_ON == _ReSIM)
-         "CfgSwcServiceOs",
-#else
-#endif
          CFGSWCSERVICEOS_AR_RELEASE_VERSION_MAJOR
       ,  CFGSWCSERVICEOS_AR_RELEASE_VERSION_MINOR
       ,  0x00

@@ -39,10 +39,6 @@
 /******************************************************************************/
 CONST(CfgIcu_Type, CFGICU_CONFIG_DATA) PBcfgIcu = {
    {
-#if(STD_ON == _ReSIM)
-         "CfgIcu",
-#else
-#endif
          CFGICU_AR_RELEASE_VERSION_MAJOR
       ,  CFGICU_AR_RELEASE_VERSION_MINOR
       ,  0x00
