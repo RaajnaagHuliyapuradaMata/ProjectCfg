@@ -37,6 +37,8 @@ extern const CfgModule_TypeAbstract PBcfgAdc;
 extern const CfgModule_TypeAbstract PBcfgBswM;
 extern const CfgModule_TypeAbstract PBcfgCan;
 extern const CfgModule_TypeAbstract PBcfgCanIf;
+extern const CfgModule_TypeAbstract PBcfgCanNm;
+extern const CfgModule_TypeAbstract PBcfgCanSm;
 extern const CfgModule_TypeAbstract PBcfgCanTp;
 extern const CfgModule_TypeAbstract PBcfgCom;
 extern const CfgModule_TypeAbstract PBcfgComM;
@@ -47,6 +49,7 @@ extern const CfgModule_TypeAbstract PBcfgDcm;
 extern const CfgModule_TypeAbstract PBcfgDem;
 extern const CfgModule_TypeAbstract PBcfgDet;
 extern const CfgModule_TypeAbstract PBcfgDio;
+extern const CfgModule_TypeAbstract PBcfgDlt;
 extern const CfgModule_TypeAbstract PBcfgEa;
 extern const CfgModule_TypeAbstract PBcfgEcuM;
 extern const CfgModule_TypeAbstract PBcfgEep;
@@ -57,8 +60,12 @@ extern const CfgModule_TypeAbstract PBcfgFiM;
 extern const CfgModule_TypeAbstract PBcfgFls;
 extern const CfgModule_TypeAbstract PBcfgFr;
 extern const CfgModule_TypeAbstract PBcfgFrIf;
+extern const CfgModule_TypeAbstract PBcfgFrNm;
+extern const CfgModule_TypeAbstract PBcfgFrTp;
 extern const CfgModule_TypeAbstract PBcfgGpt;
 extern const CfgModule_TypeAbstract PBcfgIcu;
+extern const CfgModule_TypeAbstract PBcfgIpduM;
+extern const CfgModule_TypeAbstract PBcfgJ1939Tp;
 extern const CfgModule_TypeAbstract PBcfgLin;
 extern const CfgModule_TypeAbstract PBcfgLinIf;
 extern const CfgModule_TypeAbstract PBcfgLinTp;
@@ -100,6 +107,8 @@ CONST(CfgNvM_Type, CFGNVM_CONFIG_DATA) PBcfgNvM = {
          ,  &PBcfgBswM
          ,  &PBcfgCan
          ,  &PBcfgCanIf
+         ,  &PBcfgCanNm
+         ,  &PBcfgCanSm
          ,  &PBcfgCanTp
          ,  &PBcfgCom
          ,  &PBcfgComM
@@ -110,6 +119,7 @@ CONST(CfgNvM_Type, CFGNVM_CONFIG_DATA) PBcfgNvM = {
          ,  &PBcfgDem
          ,  &PBcfgDet
          ,  &PBcfgDio
+         ,  &PBcfgDlt
          ,  &PBcfgEa
          ,  &PBcfgEcuM
          ,  &PBcfgEep
@@ -120,8 +130,12 @@ CONST(CfgNvM_Type, CFGNVM_CONFIG_DATA) PBcfgNvM = {
          ,  &PBcfgFls
          ,  &PBcfgFr
          ,  &PBcfgFrIf
+         ,  &PBcfgFrNm
+         ,  &PBcfgFrTp
          ,  &PBcfgGpt
          ,  &PBcfgIcu
+         ,  &PBcfgIpduM
+         ,  &PBcfgJ1939Tp
          ,  &PBcfgLin
          ,  &PBcfgLinIf
          ,  &PBcfgLinTp
