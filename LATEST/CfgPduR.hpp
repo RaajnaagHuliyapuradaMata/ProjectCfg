@@ -24,9 +24,54 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
+//TBD: move to core_finctionalities
+typedef enum{
+      e_State_UnInit
+   ,  e_State_Online
+}TypeState;
+
+typedef uint16 TypeId;
+
+typedef struct{
+   //TBD: bit fields?
+   bool bUpperModule;
+   bool bLowerModule;
+   bool bCommunicationInterface;
+   bool bTransportProtocol;
+   bool bTransmit;
+   bool bTransmitTp;
+   bool bTxConfirmation;
+   bool bTxConfirmationTp;
+   bool bRxIndication;
+   bool bRxIndicationTp;
+   bool bCancelTransmit;
+   bool bCancelReceive;
+   bool bCopyTxData;
+   bool bCopyRxData;
+   bool bTriggerTransmit;
+   bool bReTransmition;
+   bool bStartOfReception;
+   bool bUseTag;
+}TypeClient;
+
+typedef struct{
+   TypePdu *ptrSrc;
+   TypePdu *ptrDst;
+}TypeRoutingPath;
+
+typedef struct{
+   uint16          u16CntMaxRoutingPath;
+   TypeRoutingPath astGroup[];
+}TypeRoutingPathGroup;
+
 class CfgPduR_Type:
       public CfgModule_TypeAbstract
 {
+   piblic:
+      TypeId Id;
+      TypeClient           aptrClients[];
+      uint16               u16CntMaxRoutingPathGroup;
+      TypeRoutingPathGroup astGroups[];
 };
 
 /******************************************************************************/
