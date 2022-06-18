@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgEth_Type, CFGETH_CONFIG_DATA) PBcfgEth = {
-   {
-         CFGETH_AR_RELEASE_VERSION_MAJOR
-      ,  CFGETH_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      Eth_DevErrorDetect
+   ,  ETH_VERSION_INFO_API
+   ,  {
+            CFGETH_AR_RELEASE_VERSION_MAJOR
+         ,  CFGETH_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

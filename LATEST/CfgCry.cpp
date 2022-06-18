@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgCry_Type, CFGCRY_CONFIG_DATA) PBcfgCry = {
-   {
-         CFGCRY_AR_RELEASE_VERSION_MAJOR
-      ,  CFGCRY_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      Cry_DevErrorDetect
+   ,  CRY_VERSION_INFO_API
+   ,  {
+            CFGCRY_AR_RELEASE_VERSION_MAJOR
+         ,  CFGCRY_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

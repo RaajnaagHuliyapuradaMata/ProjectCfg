@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgFrNm_Type, CFGFRNM_CONFIG_DATA) PBcfgFrNm = {
-   {
-         CFGFRNM_AR_RELEASE_VERSION_MAJOR
-      ,  CFGFRNM_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      FrNm_DevErrorDetect
+   ,  FRNM_VERSION_INFO_API
+   ,  {
+            CFGFRNM_AR_RELEASE_VERSION_MAJOR
+         ,  CFGFRNM_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgOcu_Type, CFGOCU_CONFIG_DATA) PBcfgOcu = {
-   {
-         CFGOCU_AR_RELEASE_VERSION_MAJOR
-      ,  CFGOCU_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      Ocu_DevErrorDetect
+   ,  OCU_VERSION_INFO_API
+   ,  {
+            CFGOCU_AR_RELEASE_VERSION_MAJOR
+         ,  CFGOCU_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

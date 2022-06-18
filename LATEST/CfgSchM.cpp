@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgSchM_Type, CFGSCHM_CONFIG_DATA) PBcfgSchM = {
-   {
-         CFGSCHM_AR_RELEASE_VERSION_MAJOR
-      ,  CFGSCHM_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      SchM_DevErrorDetect
+   ,  SCHM_VERSION_INFO_API
+   ,  {
+            CFGSCHM_AR_RELEASE_VERSION_MAJOR
+         ,  CFGSCHM_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgLinIf_Type, CFGLINIF_CONFIG_DATA) PBcfgLinIf = {
-   {
-         CFGLINIF_AR_RELEASE_VERSION_MAJOR
-      ,  CFGLINIF_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      LinIf_DevErrorDetect
+   ,  LINIF_VERSION_INFO_API
+   ,  {
+            CFGLINIF_AR_RELEASE_VERSION_MAJOR
+         ,  CFGLINIF_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

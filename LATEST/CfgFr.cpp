@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgFr_Type, CFGFR_CONFIG_DATA) PBcfgFr = {
-   {
-         CFGFR_AR_RELEASE_VERSION_MAJOR
-      ,  CFGFR_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      Fr_DevErrorDetect
+   ,  FR_VERSION_INFO_API
+   ,  {
+            CFGFR_AR_RELEASE_VERSION_MAJOR
+         ,  CFGFR_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

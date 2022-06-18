@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgJ1939Tp_Type, CFGJ1939TP_CONFIG_DATA) PBcfgJ1939Tp = {
-   {
-         CFGJ1939TP_AR_RELEASE_VERSION_MAJOR
-      ,  CFGJ1939TP_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      J1939Tp_DevErrorDetect
+   ,  J1939TP_VERSION_INFO_API
+   ,  {
+            CFGJ1939TP_AR_RELEASE_VERSION_MAJOR
+         ,  CFGJ1939TP_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

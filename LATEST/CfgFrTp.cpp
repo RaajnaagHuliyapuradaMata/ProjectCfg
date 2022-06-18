@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgFrTp_Type, CFGFRTP_CONFIG_DATA) PBcfgFrTp = {
-   {
-         CFGFRTP_AR_RELEASE_VERSION_MAJOR
-      ,  CFGFRTP_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      FrTp_DevErrorDetect
+   ,  FRTP_VERSION_INFO_API
+   ,  {
+            CFGFRTP_AR_RELEASE_VERSION_MAJOR
+         ,  CFGFRTP_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

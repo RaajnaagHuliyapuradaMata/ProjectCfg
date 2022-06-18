@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgPwm_Type, CFGPWM_CONFIG_DATA) PBcfgPwm = {
-   {
-         CFGPWM_AR_RELEASE_VERSION_MAJOR
-      ,  CFGPWM_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      Pwm_DevErrorDetect
+   ,  PWM_VERSION_INFO_API
+   ,  {
+            CFGPWM_AR_RELEASE_VERSION_MAJOR
+         ,  CFGPWM_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

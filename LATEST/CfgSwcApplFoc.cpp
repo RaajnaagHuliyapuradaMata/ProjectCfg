@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgSwcApplFoc_Type, CFGSWCAPPLFOC_CONFIG_DATA) PBcfgSwcApplFoc = {
-   {
-         CFGSWCAPPLFOC_AR_RELEASE_VERSION_MAJOR
-      ,  CFGSWCAPPLFOC_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      SwcApplFoc_DevErrorDetect
+   ,  SWCAPPLFOC_VERSION_INFO_API
+   ,  {
+            CFGSWCAPPLFOC_AR_RELEASE_VERSION_MAJOR
+         ,  CFGSWCAPPLFOC_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

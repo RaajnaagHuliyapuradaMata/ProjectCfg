@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgEthIf_Type, CFGETHIF_CONFIG_DATA) PBcfgEthIf = {
-   {
-         CFGETHIF_AR_RELEASE_VERSION_MAJOR
-      ,  CFGETHIF_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      EthIf_DevErrorDetect
+   ,  ETHIF_VERSION_INFO_API
+   ,  {
+            CFGETHIF_AR_RELEASE_VERSION_MAJOR
+         ,  CFGETHIF_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

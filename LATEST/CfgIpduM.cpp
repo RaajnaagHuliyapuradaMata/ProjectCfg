@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgIpduM_Type, CFGIPDUM_CONFIG_DATA) PBcfgIpduM = {
-   {
-         CFGIPDUM_AR_RELEASE_VERSION_MAJOR
-      ,  CFGIPDUM_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      IpduM_DevErrorDetect
+   ,  IPDUM_VERSION_INFO_API
+   ,  {
+            CFGIPDUM_AR_RELEASE_VERSION_MAJOR
+         ,  CFGIPDUM_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgWdgIf_Type, CFGWDGIF_CONFIG_DATA) PBcfgWdgIf = {
-   {
-         CFGWDGIF_AR_RELEASE_VERSION_MAJOR
-      ,  CFGWDGIF_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      WdgIf_DevErrorDetect
+   ,  WDGIF_VERSION_INFO_API
+   ,  {
+            CFGWDGIF_AR_RELEASE_VERSION_MAJOR
+         ,  CFGWDGIF_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

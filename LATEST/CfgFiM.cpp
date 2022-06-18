@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgFiM_Type, CFGFIM_CONFIG_DATA) PBcfgFiM = {
-   {
-         CFGFIM_AR_RELEASE_VERSION_MAJOR
-      ,  CFGFIM_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      FiM_DevErrorDetect
+   ,  FIM_VERSION_INFO_API
+   ,  {
+            CFGFIM_AR_RELEASE_VERSION_MAJOR
+         ,  CFGFIM_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

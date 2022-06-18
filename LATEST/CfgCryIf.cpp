@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgCryIf_Type, CFGCRYIF_CONFIG_DATA) PBcfgCryIf = {
-   {
-         CFGCRYIF_AR_RELEASE_VERSION_MAJOR
-      ,  CFGCRYIF_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      CryIf_DevErrorDetect
+   ,  CRYIF_VERSION_INFO_API
+   ,  {
+            CFGCRYIF_AR_RELEASE_VERSION_MAJOR
+         ,  CFGCRYIF_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgNm_Type, CFGNM_CONFIG_DATA) PBcfgNm = {
-   {
-         CFGNM_AR_RELEASE_VERSION_MAJOR
-      ,  CFGNM_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      Nm_DevErrorDetect
+   ,  NM_VERSION_INFO_API
+   ,  {
+            CFGNM_AR_RELEASE_VERSION_MAJOR
+         ,  CFGNM_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

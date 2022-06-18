@@ -92,7 +92,9 @@ extern const CfgModule_TypeAbstract PBcfgWdgM;
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgNvM_Type, CFGNVM_CONFIG_DATA) PBcfgNvM = {
-      {
+      NvM_DevErrorDetect
+   ,  NVM_VERSION_INFO_API
+   ,  {
             CFGNVM_AR_RELEASE_VERSION_MAJOR
          ,  CFGNVM_AR_RELEASE_VERSION_MINOR
          ,  0x00

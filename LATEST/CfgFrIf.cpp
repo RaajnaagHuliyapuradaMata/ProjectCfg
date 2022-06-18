@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgFrIf_Type, CFGFRIF_CONFIG_DATA) PBcfgFrIf = {
-   {
-         CFGFRIF_AR_RELEASE_VERSION_MAJOR
-      ,  CFGFRIF_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      FrIf_DevErrorDetect
+   ,  FRIF_VERSION_INFO_API
+   ,  {
+            CFGFRIF_AR_RELEASE_VERSION_MAJOR
+         ,  CFGFRIF_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

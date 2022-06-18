@@ -54,6 +54,8 @@ typedef struct{
    uint32 bUseTag                 :1;
 }TypeClient;
 
+typedef void TypePdu; //TBD: Real implementation
+
 typedef struct{
    TypePdu *ptrSrc;
    TypePdu *ptrDst;
@@ -62,17 +64,17 @@ typedef struct{
 typedef struct{
    TypeIdRoutingPathGroup Id;
    uint16                 u16CntMaxRoutingPath;
-   TypeRoutingPath        astGroup[];
+   TypeRoutingPath        astGroup[1];
 }TypeRoutingPathGroup;
 
 class CfgPduR_Type:
       public CfgModule_TypeAbstract
 {
-   piblic:
+   public:
       TypeId Id;
-      TypeClient           aptrClients[];
-      uint16               u16CntMaxRoutingPathGroup;
-      TypeRoutingPathGroup astGroups[];
+      TypeClient*           aptrClients[1];
+      uint16                u16CntMaxRoutingPathGroup;
+      TypeRoutingPathGroup* aptrGroups[1];
 };
 
 /******************************************************************************/

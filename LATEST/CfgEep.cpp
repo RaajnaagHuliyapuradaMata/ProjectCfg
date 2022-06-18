@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgEep_Type, CFGEEP_CONFIG_DATA) PBcfgEep = {
-   {
-         CFGEEP_AR_RELEASE_VERSION_MAJOR
-      ,  CFGEEP_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      Eep_DevErrorDetect
+   ,  EEP_VERSION_INFO_API
+   ,  {
+            CFGEEP_AR_RELEASE_VERSION_MAJOR
+         ,  CFGEEP_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

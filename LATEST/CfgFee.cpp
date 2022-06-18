@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgFee_Type, CFGFEE_CONFIG_DATA) PBcfgFee = {
-   {
-         CFGFEE_AR_RELEASE_VERSION_MAJOR
-      ,  CFGFEE_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      Fee_DevErrorDetect
+   ,  FEE_VERSION_INFO_API
+   ,  {
+            CFGFEE_AR_RELEASE_VERSION_MAJOR
+         ,  CFGFEE_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

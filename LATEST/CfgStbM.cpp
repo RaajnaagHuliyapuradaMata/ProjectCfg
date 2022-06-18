@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgStbM_Type, CFGSTBM_CONFIG_DATA) PBcfgStbM = {
-   {
-         CFGSTBM_AR_RELEASE_VERSION_MAJOR
-      ,  CFGSTBM_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      StbM_DevErrorDetect
+   ,  STBM_VERSION_INFO_API
+   ,  {
+            CFGSTBM_AR_RELEASE_VERSION_MAJOR
+         ,  CFGSTBM_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

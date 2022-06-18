@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgFls_Type, CFGFLS_CONFIG_DATA) PBcfgFls = {
-   {
-         CFGFLS_AR_RELEASE_VERSION_MAJOR
-      ,  CFGFLS_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      Fls_DevErrorDetect
+   ,  FLS_VERSION_INFO_API
+   ,  {
+            CFGFLS_AR_RELEASE_VERSION_MAJOR
+         ,  CFGFLS_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

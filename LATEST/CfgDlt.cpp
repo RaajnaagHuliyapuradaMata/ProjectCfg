@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgDlt_Type, CFGDLT_CONFIG_DATA) PBcfgDlt = {
-   {
-         CFGDLT_AR_RELEASE_VERSION_MAJOR
-      ,  CFGDLT_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      Dlt_DevErrorDetect
+   ,  DLT_VERSION_INFO_API
+   ,  {
+            CFGDLT_AR_RELEASE_VERSION_MAJOR
+         ,  CFGDLT_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

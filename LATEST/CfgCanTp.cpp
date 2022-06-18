@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgCanTp_Type, CFGCANTP_CONFIG_DATA) PBcfgCanTp = {
-   {
-         CFGCANTP_AR_RELEASE_VERSION_MAJOR
-      ,  CFGCANTP_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      CanTp_DevErrorDetect
+   ,  CANTP_VERSION_INFO_API
+   ,  {
+            CFGCANTP_AR_RELEASE_VERSION_MAJOR
+         ,  CFGCANTP_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

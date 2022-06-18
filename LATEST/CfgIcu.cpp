@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgIcu_Type, CFGICU_CONFIG_DATA) PBcfgIcu = {
-   {
-         CFGICU_AR_RELEASE_VERSION_MAJOR
-      ,  CFGICU_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      Icu_DevErrorDetect
+   ,  ICU_VERSION_INFO_API
+   ,  {
+            CFGICU_AR_RELEASE_VERSION_MAJOR
+         ,  CFGICU_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

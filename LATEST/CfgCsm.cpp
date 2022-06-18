@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgCsm_Type, CFGCSM_CONFIG_DATA) PBcfgCsm = {
-   {
-         CFGCSM_AR_RELEASE_VERSION_MAJOR
-      ,  CFGCSM_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      Csm_DevErrorDetect
+   ,  CSM_VERSION_INFO_API
+   ,  {
+            CFGCSM_AR_RELEASE_VERSION_MAJOR
+         ,  CFGCSM_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

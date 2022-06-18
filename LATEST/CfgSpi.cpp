@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgSpi_Type, CFGSPI_CONFIG_DATA) PBcfgSpi = {
-   {
-         CFGSPI_AR_RELEASE_VERSION_MAJOR
-      ,  CFGSPI_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      Spi_DevErrorDetect
+   ,  SPI_VERSION_INFO_API
+   ,  {
+            CFGSPI_AR_RELEASE_VERSION_MAJOR
+         ,  CFGSPI_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

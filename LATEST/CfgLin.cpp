@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgLin_Type, CFGLIN_CONFIG_DATA) PBcfgLin = {
-   {
-         CFGLIN_AR_RELEASE_VERSION_MAJOR
-      ,  CFGLIN_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      Lin_DevErrorDetect
+   ,  LIN_VERSION_INFO_API
+   ,  {
+            CFGLIN_AR_RELEASE_VERSION_MAJOR
+         ,  CFGLIN_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgDem_Type, CFGDEM_CONFIG_DATA) PBcfgDem = {
-   {
-         CFGDEM_AR_RELEASE_VERSION_MAJOR
-      ,  CFGDEM_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      Dem_DevErrorDetect
+   ,  DEM_VERSION_INFO_API
+   ,  {
+            CFGDEM_AR_RELEASE_VERSION_MAJOR
+         ,  CFGDEM_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

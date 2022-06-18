@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgBswM_Type, CFGBSWM_CONFIG_DATA) PBcfgBswM = {
-   {
-         CFGBSWM_AR_RELEASE_VERSION_MAJOR
-      ,  CFGBSWM_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      BswM_DevErrorDetect
+   ,  BSWM_VERSION_INFO_API
+   ,  {
+            CFGBSWM_AR_RELEASE_VERSION_MAJOR
+         ,  CFGBSWM_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

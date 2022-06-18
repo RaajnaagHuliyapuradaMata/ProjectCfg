@@ -37,17 +37,30 @@
 /******************************************************************************/
 /* PARAMS                                                                     */
 /******************************************************************************/
+TypeClient PduRClient_Dcm; // = {0};
+
 CONST(CfgPduR_Type, CFGPDUR_CONFIG_DATA) PBcfgPduR = {
-   {
-         CFGPDUR_AR_RELEASE_VERSION_MAJOR
-      ,  CFGPDUR_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      PduR_DevErrorDetect
+   ,  PDUR_VERSION_INFO_API
+   ,  {
+            CFGPDUR_AR_RELEASE_VERSION_MAJOR
+         ,  CFGPDUR_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
+   ,  {
+            1
+         ,  {
+                  &PduRClient_Dcm 
+//             ,  &PduRClient_Com 
+            }
+         ,  0
+         ,  NULL_PTR
+      }
 };
 
 /******************************************************************************/

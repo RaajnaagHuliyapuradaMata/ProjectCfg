@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgRte_Type, CFGRTE_CONFIG_DATA) PBcfgRte = {
-   {
-         CFGRTE_AR_RELEASE_VERSION_MAJOR
-      ,  CFGRTE_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      Rte_DevErrorDetect
+   ,  RTE_VERSION_INFO_API
+   ,  {
+            CFGRTE_AR_RELEASE_VERSION_MAJOR
+         ,  CFGRTE_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

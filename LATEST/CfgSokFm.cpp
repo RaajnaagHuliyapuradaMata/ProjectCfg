@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgSokFm_Type, CFGSOKFM_CONFIG_DATA) PBcfgSokFm = {
-   {
-         CFGSOKFM_AR_RELEASE_VERSION_MAJOR
-      ,  CFGSOKFM_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      SokFm_DevErrorDetect
+   ,  SOKFM_VERSION_INFO_API
+   ,  {
+            CFGSOKFM_AR_RELEASE_VERSION_MAJOR
+         ,  CFGSOKFM_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

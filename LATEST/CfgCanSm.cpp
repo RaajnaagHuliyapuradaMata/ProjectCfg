@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgCanSm_Type, CFGCANSM_CONFIG_DATA) PBcfgCanSm = {
-   {
-         CFGCANSM_AR_RELEASE_VERSION_MAJOR
-      ,  CFGCANSM_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      CanSm_DevErrorDetect
+   ,  CANSM_VERSION_INFO_API
+   ,  {
+            CFGCANSM_AR_RELEASE_VERSION_MAJOR
+         ,  CFGCANSM_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

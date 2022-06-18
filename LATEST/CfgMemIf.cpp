@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgMemIf_Type, CFGMEMIF_CONFIG_DATA) PBcfgMemIf = {
-   {
-         CFGMEMIF_AR_RELEASE_VERSION_MAJOR
-      ,  CFGMEMIF_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      MemIf_DevErrorDetect
+   ,  MEMIF_VERSION_INFO_API
+   ,  {
+            CFGMEMIF_AR_RELEASE_VERSION_MAJOR
+         ,  CFGMEMIF_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

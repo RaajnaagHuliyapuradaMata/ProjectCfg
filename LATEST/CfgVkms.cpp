@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgVkms_Type, CFGVKMS_CONFIG_DATA) PBcfgVkms = {
-   {
-         CFGVKMS_AR_RELEASE_VERSION_MAJOR
-      ,  CFGVKMS_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      Vkms_DevErrorDetect
+   ,  VKMS_VERSION_INFO_API
+   ,  {
+            CFGVKMS_AR_RELEASE_VERSION_MAJOR
+         ,  CFGVKMS_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

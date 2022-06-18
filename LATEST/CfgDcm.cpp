@@ -98,7 +98,9 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgDcm_Type, CFGDCM_CONFIG_DATA) PBcfgDcm = {
-      {
+      Dcm_DevErrorDetect
+   ,  DCM_VERSION_INFO_API
+   ,  {
             CFGDCM_AR_RELEASE_VERSION_MAJOR
          ,  CFGDCM_AR_RELEASE_VERSION_MINOR
          ,  0x00

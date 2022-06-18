@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgCanIf_Type, CFGCANIF_CONFIG_DATA) PBcfgCanIf = {
-   {
-         CFGCANIF_AR_RELEASE_VERSION_MAJOR
-      ,  CFGCANIF_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      CanIf_DevErrorDetect
+   ,  CANIF_VERSION_INFO_API
+   ,  {
+            CFGCANIF_AR_RELEASE_VERSION_MAJOR
+         ,  CFGCANIF_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgDet_Type, CFGDET_CONFIG_DATA) PBcfgDet = {
-   {
-         CFGDET_AR_RELEASE_VERSION_MAJOR
-      ,  CFGDET_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      Det_DevErrorDetect
+   ,  DET_VERSION_INFO_API
+   ,  {
+            CFGDET_AR_RELEASE_VERSION_MAJOR
+         ,  CFGDET_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

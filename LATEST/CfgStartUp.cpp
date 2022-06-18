@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgStartUp_Type, CFGSTARTUP_CONFIG_DATA) PBcfgStartUp = {
-   {
-         CFGSTARTUP_AR_RELEASE_VERSION_MAJOR
-      ,  CFGSTARTUP_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      StartUp_DevErrorDetect
+   ,  STARTUP_VERSION_INFO_API
+   ,  {
+            CFGSTARTUP_AR_RELEASE_VERSION_MAJOR
+         ,  CFGSTARTUP_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgCom_Type, CFGCOM_CONFIG_DATA) PBcfgCom = {
-   {
-         CFGCOM_AR_RELEASE_VERSION_MAJOR
-      ,  CFGCOM_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      Com_DevErrorDetect
+   ,  COM_VERSION_INFO_API
+   ,  {
+            CFGCOM_AR_RELEASE_VERSION_MAJOR
+         ,  CFGCOM_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgWdgM_Type, CFGWDGM_CONFIG_DATA) PBcfgWdgM = {
-   {
-         CFGWDGM_AR_RELEASE_VERSION_MAJOR
-      ,  CFGWDGM_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      WdgM_DevErrorDetect
+   ,  WDGM_VERSION_INFO_API
+   ,  {
+            CFGWDGM_AR_RELEASE_VERSION_MAJOR
+         ,  CFGWDGM_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

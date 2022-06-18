@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgLinTp_Type, CFGLINTP_CONFIG_DATA) PBcfgLinTp = {
-   {
-         CFGLINTP_AR_RELEASE_VERSION_MAJOR
-      ,  CFGLINTP_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      LinTp_DevErrorDetect
+   ,  LINTP_VERSION_INFO_API
+   ,  {
+            CFGLINTP_AR_RELEASE_VERSION_MAJOR
+         ,  CFGLINTP_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

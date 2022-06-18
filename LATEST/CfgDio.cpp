@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgDio_Type, CFGDIO_CONFIG_DATA) PBcfgDio = {
-   {
-         CFGDIO_AR_RELEASE_VERSION_MAJOR
-      ,  CFGDIO_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      Dio_DevErrorDetect
+   ,  DIO_VERSION_INFO_API
+   ,  {
+            CFGDIO_AR_RELEASE_VERSION_MAJOR
+         ,  CFGDIO_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/

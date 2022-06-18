@@ -38,16 +38,18 @@
 /* PARAMS                                                                     */
 /******************************************************************************/
 CONST(CfgSecOC_Type, CFGSECOC_CONFIG_DATA) PBcfgSecOC = {
-   {
-         CFGSECOC_AR_RELEASE_VERSION_MAJOR
-      ,  CFGSECOC_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
+      SecOC_DevErrorDetect
+   ,  SECOC_VERSION_INFO_API
+   ,  {
+            CFGSECOC_AR_RELEASE_VERSION_MAJOR
+         ,  CFGSECOC_AR_RELEASE_VERSION_MINOR
+         ,  0x00
+         ,  0xFF
+         ,  0x01
+         ,  '0'
+         ,  '1'
+         ,  '0'
+      }
 };
 
 /******************************************************************************/
