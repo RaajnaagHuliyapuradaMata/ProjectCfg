@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define PduR_DevErrorDetect                                       DevErrorDetect
 #define PduR_InitCheck                                                    STD_ON
-#define PDUR_VERSION_INFO_API                                     VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -67,14 +66,19 @@ typedef struct{
    TypeRoutingPath        astGroup[1];
 }TypeRoutingPathGroup;
 
-class CfgPduR_Type:
-      public CfgModule_TypeAbstract
-{
+class Type_CfgPduRCore{
    public:
       TypeId Id;
       TypeClient*           aptrClients[1];
       uint16                u16CntMaxRoutingPathGroup;
       TypeRoutingPathGroup* aptrGroups[1];
+};
+
+class CfgPduR_Type:
+      public CfgModule_TypeAbstract
+{
+   public:
+      Type_CfgPduRCore Core;
 };
 
 /******************************************************************************/

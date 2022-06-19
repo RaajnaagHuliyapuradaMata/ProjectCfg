@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define Mcu_DevErrorDetect                                        DevErrorDetect
 #define Mcu_InitCheck                                                     STD_ON
-#define MCU_VERSION_INFO_API                                      VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

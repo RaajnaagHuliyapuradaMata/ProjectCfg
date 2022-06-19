@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define CanNm_DevErrorDetect                                      DevErrorDetect
 #define CanNm_InitCheck                                                   STD_ON
-#define CANNM_VERSION_INFO_API                                    VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

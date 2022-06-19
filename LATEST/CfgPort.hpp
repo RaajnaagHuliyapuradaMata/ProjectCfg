@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define Port_DevErrorDetect                                       DevErrorDetect
 #define Port_InitCheck                                                    STD_ON
-#define PORT_VERSION_INFO_API                                     VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

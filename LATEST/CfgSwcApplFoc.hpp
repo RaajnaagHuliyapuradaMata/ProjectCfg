@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define SwcApplFoc_DevErrorDetect                                 DevErrorDetect
 #define SwcApplFoc_InitCheck                                              STD_ON
-#define SWCAPPLFOC_VERSION_INFO_API                               VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

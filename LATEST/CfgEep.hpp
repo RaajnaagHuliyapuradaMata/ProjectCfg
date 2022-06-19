@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define Eep_DevErrorDetect                                        DevErrorDetect
 #define Eep_InitCheck                                                     STD_ON
-#define EEP_VERSION_INFO_API                                      VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

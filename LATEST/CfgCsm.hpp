@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define Csm_DevErrorDetect                                        DevErrorDetect
 #define Csm_InitCheck                                                     STD_ON
-#define CSM_VERSION_INFO_API                                      VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

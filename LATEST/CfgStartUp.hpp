@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define StartUp_DevErrorDetect                                    DevErrorDetect
 #define StartUp_InitCheck                                                 STD_ON
-#define STARTUP_VERSION_INFO_API                                  VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define J1939Tp_DevErrorDetect                                    DevErrorDetect
 #define J1939Tp_InitCheck                                                 STD_ON
-#define J1939TP_VERSION_INFO_API                                  VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

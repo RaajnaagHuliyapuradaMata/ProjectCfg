@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define SokFm_DevErrorDetect                                      DevErrorDetect
 #define SokFm_InitCheck                                                   STD_ON
-#define SOKFM_VERSION_INFO_API                                    VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

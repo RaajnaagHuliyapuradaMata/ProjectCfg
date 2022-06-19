@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define Pwm_DevErrorDetect                                        DevErrorDetect
 #define Pwm_InitCheck                                                     STD_ON
-#define PWM_VERSION_INFO_API                                      VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

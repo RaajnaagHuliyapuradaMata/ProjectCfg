@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define FrNm_DevErrorDetect                                       DevErrorDetect
 #define FrNm_InitCheck                                                    STD_ON
-#define FRNM_VERSION_INFO_API                                     VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

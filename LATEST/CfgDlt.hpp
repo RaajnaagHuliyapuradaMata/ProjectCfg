@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define Dlt_DevErrorDetect                                        DevErrorDetect
 #define Dlt_InitCheck                                                     STD_ON
-#define DLT_VERSION_INFO_API                                      VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define MemIf_DevErrorDetect                                      DevErrorDetect
 #define MemIf_InitCheck                                                   STD_ON
-#define MEMIF_VERSION_INFO_API                                    VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

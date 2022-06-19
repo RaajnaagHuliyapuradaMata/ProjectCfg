@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define CanTp_DevErrorDetect                                      DevErrorDetect
 #define CanTp_InitCheck                                                   STD_ON
-#define CANTP_VERSION_INFO_API                                    VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define WdgIf_DevErrorDetect                                      DevErrorDetect
 #define WdgIf_InitCheck                                                   STD_ON
-#define WDGIF_VERSION_INFO_API                                    VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

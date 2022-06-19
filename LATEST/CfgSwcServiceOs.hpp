@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define SwcServiceOs_DevErrorDetect                               DevErrorDetect
 #define SwcServiceOs_InitCheck                                            STD_ON
-#define SWCSERVICEOS_VERSION_INFO_API                             VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

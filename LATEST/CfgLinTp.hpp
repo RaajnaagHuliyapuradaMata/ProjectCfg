@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define LinTp_DevErrorDetect                                      DevErrorDetect
 #define LinTp_InitCheck                                                   STD_ON
-#define LINTP_VERSION_INFO_API                                    VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

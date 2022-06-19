@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define BswM_DevErrorDetect                                       DevErrorDetect
 #define BswM_InitCheck                                                    STD_ON
-#define BSWM_VERSION_INFO_API                                     VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

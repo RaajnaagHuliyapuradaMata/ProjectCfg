@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define FrTp_DevErrorDetect                                       DevErrorDetect
 #define FrTp_InitCheck                                                    STD_ON
-#define FRTP_VERSION_INFO_API                                     VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

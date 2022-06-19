@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define SwcServiceEcuM_DevErrorDetect                             DevErrorDetect
 #define SwcServiceEcuM_InitCheck                                          STD_ON
-#define SWCSERVICEECUM_VERSION_INFO_API                           VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

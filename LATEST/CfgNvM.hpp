@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define NvM_DevErrorDetect                                        DevErrorDetect
 #define NvM_InitCheck                                                     STD_ON
-#define NVM_VERSION_INFO_API                                      VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

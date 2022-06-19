@@ -22,7 +22,6 @@ using namespace std;
 /******************************************************************************/
 #define Dcm_DevErrorDetect                                        DevErrorDetect
 #define Dcm_InitCheck                                                     STD_ON
-#define DCM_VERSION_INFO_API                                      VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

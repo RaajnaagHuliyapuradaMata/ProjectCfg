@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define WdgM_DevErrorDetect                                       DevErrorDetect
 #define WdgM_InitCheck                                                    STD_ON
-#define WDGM_VERSION_INFO_API                                     VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define Dem_DevErrorDetect                                        DevErrorDetect
 #define Dem_InitCheck                                                     STD_ON
-#define DEM_VERSION_INFO_API                                      VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

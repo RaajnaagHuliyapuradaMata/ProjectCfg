@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define LinIf_DevErrorDetect                                      DevErrorDetect
 #define LinIf_InitCheck                                                   STD_ON
-#define LINIF_VERSION_INFO_API                                    VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

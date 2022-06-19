@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define Rte_DevErrorDetect                                        DevErrorDetect
 #define Rte_InitCheck                                                     STD_ON
-#define RTE_VERSION_INFO_API                                      VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

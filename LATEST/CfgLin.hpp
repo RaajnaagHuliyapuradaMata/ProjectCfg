@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define Lin_DevErrorDetect                                        DevErrorDetect
 #define Lin_InitCheck                                                     STD_ON
-#define LIN_VERSION_INFO_API                                      VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

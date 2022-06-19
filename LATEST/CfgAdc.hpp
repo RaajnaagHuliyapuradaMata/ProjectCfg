@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define Adc_DevErrorDetect                                        DevErrorDetect
 #define Adc_InitCheck                                                     STD_ON
-#define ADC_VERSION_INFO_API                                      VersionInfoApi
 #define LevelPriorityMin                                                       0
 #define LevelPriorityMax                                                     255
 #define Adc_EnableQueing                                                 STD_OFF

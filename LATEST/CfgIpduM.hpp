@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define IpduM_DevErrorDetect                                      DevErrorDetect
 #define IpduM_InitCheck                                                   STD_ON
-#define IPDUM_VERSION_INFO_API                                    VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

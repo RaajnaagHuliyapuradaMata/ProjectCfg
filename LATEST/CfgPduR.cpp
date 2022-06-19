@@ -59,7 +59,7 @@ CONST(CfgPduR_Type, CFGPDUR_CONFIG_DATA) PBcfgPduR = {
 //             ,  &PduRClient_Com 
             }
          ,  0
-         ,  NULL_PTR
+         ,  0
       }
 };
 

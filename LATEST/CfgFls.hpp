@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define Fls_DevErrorDetect                                        DevErrorDetect
 #define Fls_InitCheck                                                     STD_ON
-#define FLS_VERSION_INFO_API                                      VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

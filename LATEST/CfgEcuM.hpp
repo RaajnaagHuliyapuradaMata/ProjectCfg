@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define EcuM_DevErrorDetect                                       DevErrorDetect
 #define EcuM_InitCheck                                                    STD_ON
-#define ECUM_VERSION_INFO_API                                     VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */

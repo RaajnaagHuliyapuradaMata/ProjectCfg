@@ -15,7 +15,6 @@
 /******************************************************************************/
 #define Spi_DevErrorDetect                                        DevErrorDetect
 #define Spi_InitCheck                                                     STD_ON
-#define SPI_VERSION_INFO_API                                      VersionInfoApi
 
 /******************************************************************************/
 /* MACROS                                                                     */
