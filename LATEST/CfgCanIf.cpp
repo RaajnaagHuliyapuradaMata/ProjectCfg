@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgCanIf_Type, CFGCANIF_CONFIG_DATA) PBcfgCanIf = {
       CanIf_DevErrorDetect
-   ,  CANIF_VERSION_INFO_API
    ,  {
             CFGCANIF_AR_RELEASE_VERSION_MAJOR
          ,  CFGCANIF_AR_RELEASE_VERSION_MINOR

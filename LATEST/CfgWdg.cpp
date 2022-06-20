@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgWdg_Type, CFGWDG_CONFIG_DATA) PBcfgWdg = {
       Wdg_DevErrorDetect
-   ,  WDG_VERSION_INFO_API
    ,  {
             CFGWDG_AR_RELEASE_VERSION_MAJOR
          ,  CFGWDG_AR_RELEASE_VERSION_MINOR

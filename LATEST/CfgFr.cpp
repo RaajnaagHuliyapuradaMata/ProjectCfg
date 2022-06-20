@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgFr_Type, CFGFR_CONFIG_DATA) PBcfgFr = {
       Fr_DevErrorDetect
-   ,  FR_VERSION_INFO_API
    ,  {
             CFGFR_AR_RELEASE_VERSION_MAJOR
          ,  CFGFR_AR_RELEASE_VERSION_MINOR

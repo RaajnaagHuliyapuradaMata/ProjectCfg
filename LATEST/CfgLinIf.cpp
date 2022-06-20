@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgLinIf_Type, CFGLINIF_CONFIG_DATA) PBcfgLinIf = {
       LinIf_DevErrorDetect
-   ,  LINIF_VERSION_INFO_API
    ,  {
             CFGLINIF_AR_RELEASE_VERSION_MAJOR
          ,  CFGLINIF_AR_RELEASE_VERSION_MINOR

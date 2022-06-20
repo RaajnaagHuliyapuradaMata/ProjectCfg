@@ -41,7 +41,6 @@ TypeClient PduRClient_Dcm; // = {0};
 
 CONST(CfgPduR_Type, CFGPDUR_CONFIG_DATA) PBcfgPduR = {
       PduR_DevErrorDetect
-   ,  PDUR_VERSION_INFO_API
    ,  {
             CFGPDUR_AR_RELEASE_VERSION_MAJOR
          ,  CFGPDUR_AR_RELEASE_VERSION_MINOR

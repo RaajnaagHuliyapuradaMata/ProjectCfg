@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgFls_Type, CFGFLS_CONFIG_DATA) PBcfgFls = {
       Fls_DevErrorDetect
-   ,  FLS_VERSION_INFO_API
    ,  {
             CFGFLS_AR_RELEASE_VERSION_MAJOR
          ,  CFGFLS_AR_RELEASE_VERSION_MINOR

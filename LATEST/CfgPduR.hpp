@@ -31,6 +31,7 @@ typedef enum{
 
 typedef uint16 TypeId;
 typedef TypeId TypeIdRoutingPathGroup;
+typedef TypeId TypeIdPdu;
 
 typedef struct{
    uint32 bUpperModule            :1;
@@ -53,7 +54,8 @@ typedef struct{
    uint32 bUseTag                 :1;
 }TypeClient;
 
-typedef void TypePdu; //TBD: Real implementation
+typedef void TypePdu;     //TBD: Real implementation
+typedef void TypeInfoPdu; //TBD: Real implementation
 
 typedef struct{
    TypePdu *ptrSrc;

@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgVkms_Type, CFGVKMS_CONFIG_DATA) PBcfgVkms = {
       Vkms_DevErrorDetect
-   ,  VKMS_VERSION_INFO_API
    ,  {
             CFGVKMS_AR_RELEASE_VERSION_MAJOR
          ,  CFGVKMS_AR_RELEASE_VERSION_MINOR

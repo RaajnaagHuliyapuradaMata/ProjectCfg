@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgMemIf_Type, CFGMEMIF_CONFIG_DATA) PBcfgMemIf = {
       MemIf_DevErrorDetect
-   ,  MEMIF_VERSION_INFO_API
    ,  {
             CFGMEMIF_AR_RELEASE_VERSION_MAJOR
          ,  CFGMEMIF_AR_RELEASE_VERSION_MINOR

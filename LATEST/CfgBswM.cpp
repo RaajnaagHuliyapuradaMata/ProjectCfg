@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgBswM_Type, CFGBSWM_CONFIG_DATA) PBcfgBswM = {
       BswM_DevErrorDetect
-   ,  BSWM_VERSION_INFO_API
    ,  {
             CFGBSWM_AR_RELEASE_VERSION_MAJOR
          ,  CFGBSWM_AR_RELEASE_VERSION_MINOR

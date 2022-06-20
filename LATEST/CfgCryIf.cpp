@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgCryIf_Type, CFGCRYIF_CONFIG_DATA) PBcfgCryIf = {
       CryIf_DevErrorDetect
-   ,  CRYIF_VERSION_INFO_API
    ,  {
             CFGCRYIF_AR_RELEASE_VERSION_MAJOR
          ,  CFGCRYIF_AR_RELEASE_VERSION_MINOR

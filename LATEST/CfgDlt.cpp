@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgDlt_Type, CFGDLT_CONFIG_DATA) PBcfgDlt = {
       Dlt_DevErrorDetect
-   ,  DLT_VERSION_INFO_API
    ,  {
             CFGDLT_AR_RELEASE_VERSION_MAJOR
          ,  CFGDLT_AR_RELEASE_VERSION_MINOR

@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgCry_Type, CFGCRY_CONFIG_DATA) PBcfgCry = {
       Cry_DevErrorDetect
-   ,  CRY_VERSION_INFO_API
    ,  {
             CFGCRY_AR_RELEASE_VERSION_MAJOR
          ,  CFGCRY_AR_RELEASE_VERSION_MINOR

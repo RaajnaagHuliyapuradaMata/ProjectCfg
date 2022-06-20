@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgLin_Type, CFGLIN_CONFIG_DATA) PBcfgLin = {
       Lin_DevErrorDetect
-   ,  LIN_VERSION_INFO_API
    ,  {
             CFGLIN_AR_RELEASE_VERSION_MAJOR
          ,  CFGLIN_AR_RELEASE_VERSION_MINOR

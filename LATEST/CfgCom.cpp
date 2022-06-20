@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgCom_Type, CFGCOM_CONFIG_DATA) PBcfgCom = {
       Com_DevErrorDetect
-   ,  COM_VERSION_INFO_API
    ,  {
             CFGCOM_AR_RELEASE_VERSION_MAJOR
          ,  CFGCOM_AR_RELEASE_VERSION_MINOR

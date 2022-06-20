@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgOs_Type, CFGOS_CONFIG_DATA) PBcfgOs = {
       Os_DevErrorDetect
-   ,  OS_VERSION_INFO_API
    ,  {
             CFGOS_AR_RELEASE_VERSION_MAJOR
          ,  CFGOS_AR_RELEASE_VERSION_MINOR

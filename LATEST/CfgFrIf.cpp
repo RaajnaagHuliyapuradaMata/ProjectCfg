@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgFrIf_Type, CFGFRIF_CONFIG_DATA) PBcfgFrIf = {
       FrIf_DevErrorDetect
-   ,  FRIF_VERSION_INFO_API
    ,  {
             CFGFRIF_AR_RELEASE_VERSION_MAJOR
          ,  CFGFRIF_AR_RELEASE_VERSION_MINOR

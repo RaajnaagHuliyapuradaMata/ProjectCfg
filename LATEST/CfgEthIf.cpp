@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgEthIf_Type, CFGETHIF_CONFIG_DATA) PBcfgEthIf = {
       EthIf_DevErrorDetect
-   ,  ETHIF_VERSION_INFO_API
    ,  {
             CFGETHIF_AR_RELEASE_VERSION_MAJOR
          ,  CFGETHIF_AR_RELEASE_VERSION_MINOR

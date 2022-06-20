@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgIpduM_Type, CFGIPDUM_CONFIG_DATA) PBcfgIpduM = {
       IpduM_DevErrorDetect
-   ,  IPDUM_VERSION_INFO_API
    ,  {
             CFGIPDUM_AR_RELEASE_VERSION_MAJOR
          ,  CFGIPDUM_AR_RELEASE_VERSION_MINOR

@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgSecOC_Type, CFGSECOC_CONFIG_DATA) PBcfgSecOC = {
       SecOC_DevErrorDetect
-   ,  SECOC_VERSION_INFO_API
    ,  {
             CFGSECOC_AR_RELEASE_VERSION_MAJOR
          ,  CFGSECOC_AR_RELEASE_VERSION_MINOR

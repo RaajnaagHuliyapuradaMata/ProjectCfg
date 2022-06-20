@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgSwcApplFoc_Type, CFGSWCAPPLFOC_CONFIG_DATA) PBcfgSwcApplFoc = {
       SwcApplFoc_DevErrorDetect
-   ,  SWCAPPLFOC_VERSION_INFO_API
    ,  {
             CFGSWCAPPLFOC_AR_RELEASE_VERSION_MAJOR
          ,  CFGSWCAPPLFOC_AR_RELEASE_VERSION_MINOR

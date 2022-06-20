@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgIcu_Type, CFGICU_CONFIG_DATA) PBcfgIcu = {
       Icu_DevErrorDetect
-   ,  ICU_VERSION_INFO_API
    ,  {
             CFGICU_AR_RELEASE_VERSION_MAJOR
          ,  CFGICU_AR_RELEASE_VERSION_MINOR

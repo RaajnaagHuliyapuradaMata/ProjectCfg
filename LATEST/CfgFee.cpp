@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgFee_Type, CFGFEE_CONFIG_DATA) PBcfgFee = {
       Fee_DevErrorDetect
-   ,  FEE_VERSION_INFO_API
    ,  {
             CFGFEE_AR_RELEASE_VERSION_MAJOR
          ,  CFGFEE_AR_RELEASE_VERSION_MINOR

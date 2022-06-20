@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgOcu_Type, CFGOCU_CONFIG_DATA) PBcfgOcu = {
       Ocu_DevErrorDetect
-   ,  OCU_VERSION_INFO_API
    ,  {
             CFGOCU_AR_RELEASE_VERSION_MAJOR
          ,  CFGOCU_AR_RELEASE_VERSION_MINOR

@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgSwcServiceEcuM_Type, CFGSWCSERVICEECUM_CONFIG_DATA) PBcfgSwcServiceEcuM = {
       SwcServiceEcuM_DevErrorDetect
-   ,  SWCSERVICEECUM_VERSION_INFO_API
    ,  {
             CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MAJOR
          ,  CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MINOR

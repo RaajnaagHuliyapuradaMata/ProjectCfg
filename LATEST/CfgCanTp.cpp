@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgCanTp_Type, CFGCANTP_CONFIG_DATA) PBcfgCanTp = {
       CanTp_DevErrorDetect
-   ,  CANTP_VERSION_INFO_API
    ,  {
             CFGCANTP_AR_RELEASE_VERSION_MAJOR
          ,  CFGCANTP_AR_RELEASE_VERSION_MINOR

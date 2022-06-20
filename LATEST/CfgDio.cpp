@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgDio_Type, CFGDIO_CONFIG_DATA) PBcfgDio = {
       Dio_DevErrorDetect
-   ,  DIO_VERSION_INFO_API
    ,  {
             CFGDIO_AR_RELEASE_VERSION_MAJOR
          ,  CFGDIO_AR_RELEASE_VERSION_MINOR

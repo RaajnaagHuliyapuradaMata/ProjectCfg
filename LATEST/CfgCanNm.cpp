@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgCanNm_Type, CFGCANNM_CONFIG_DATA) PBcfgCanNm = {
       CanNm_DevErrorDetect
-   ,  CANNM_VERSION_INFO_API
    ,  {
             CFGCANNM_AR_RELEASE_VERSION_MAJOR
          ,  CFGCANNM_AR_RELEASE_VERSION_MINOR

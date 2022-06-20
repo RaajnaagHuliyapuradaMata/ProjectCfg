@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgCsm_Type, CFGCSM_CONFIG_DATA) PBcfgCsm = {
       Csm_DevErrorDetect
-   ,  CSM_VERSION_INFO_API
    ,  {
             CFGCSM_AR_RELEASE_VERSION_MAJOR
          ,  CFGCSM_AR_RELEASE_VERSION_MINOR

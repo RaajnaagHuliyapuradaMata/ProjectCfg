@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgJ1939Tp_Type, CFGJ1939TP_CONFIG_DATA) PBcfgJ1939Tp = {
       J1939Tp_DevErrorDetect
-   ,  J1939TP_VERSION_INFO_API
    ,  {
             CFGJ1939TP_AR_RELEASE_VERSION_MAJOR
          ,  CFGJ1939TP_AR_RELEASE_VERSION_MINOR

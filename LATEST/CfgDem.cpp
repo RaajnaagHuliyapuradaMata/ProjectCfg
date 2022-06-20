@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgDem_Type, CFGDEM_CONFIG_DATA) PBcfgDem = {
       Dem_DevErrorDetect
-   ,  DEM_VERSION_INFO_API
    ,  {
             CFGDEM_AR_RELEASE_VERSION_MAJOR
          ,  CFGDEM_AR_RELEASE_VERSION_MINOR

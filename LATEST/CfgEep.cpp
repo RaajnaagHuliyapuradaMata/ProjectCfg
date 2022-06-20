@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgEep_Type, CFGEEP_CONFIG_DATA) PBcfgEep = {
       Eep_DevErrorDetect
-   ,  EEP_VERSION_INFO_API
    ,  {
             CFGEEP_AR_RELEASE_VERSION_MAJOR
          ,  CFGEEP_AR_RELEASE_VERSION_MINOR

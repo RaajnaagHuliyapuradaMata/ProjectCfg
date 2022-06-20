@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgSwcServiceOs_Type, CFGSWCSERVICEOS_CONFIG_DATA) PBcfgSwcServiceOs = {
       SwcServiceOs_DevErrorDetect
-   ,  SWCSERVICEOS_VERSION_INFO_API
    ,  {
             CFGSWCSERVICEOS_AR_RELEASE_VERSION_MAJOR
          ,  CFGSWCSERVICEOS_AR_RELEASE_VERSION_MINOR

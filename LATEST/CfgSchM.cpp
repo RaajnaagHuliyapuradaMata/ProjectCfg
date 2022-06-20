@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgSchM_Type, CFGSCHM_CONFIG_DATA) PBcfgSchM = {
       SchM_DevErrorDetect
-   ,  SCHM_VERSION_INFO_API
    ,  {
             CFGSCHM_AR_RELEASE_VERSION_MAJOR
          ,  CFGSCHM_AR_RELEASE_VERSION_MINOR

@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgSokFm_Type, CFGSOKFM_CONFIG_DATA) PBcfgSokFm = {
       SokFm_DevErrorDetect
-   ,  SOKFM_VERSION_INFO_API
    ,  {
             CFGSOKFM_AR_RELEASE_VERSION_MAJOR
          ,  CFGSOKFM_AR_RELEASE_VERSION_MINOR

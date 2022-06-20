@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgCan_Type, CFGCAN_CONFIG_DATA) PBcfgCan = {
       Can_DevErrorDetect
-   ,  CAN_VERSION_INFO_API
    ,  {
             CFGCAN_AR_RELEASE_VERSION_MAJOR
          ,  CFGCAN_AR_RELEASE_VERSION_MINOR

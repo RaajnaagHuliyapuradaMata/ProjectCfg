@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgFrNm_Type, CFGFRNM_CONFIG_DATA) PBcfgFrNm = {
       FrNm_DevErrorDetect
-   ,  FRNM_VERSION_INFO_API
    ,  {
             CFGFRNM_AR_RELEASE_VERSION_MAJOR
          ,  CFGFRNM_AR_RELEASE_VERSION_MINOR

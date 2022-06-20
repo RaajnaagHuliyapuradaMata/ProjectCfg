@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgGpt_Type, CFGGPT_CONFIG_DATA) PBcfgGpt = {
       Gpt_DevErrorDetect
-   ,  GPT_VERSION_INFO_API
    ,  {
             CFGGPT_AR_RELEASE_VERSION_MAJOR
          ,  CFGGPT_AR_RELEASE_VERSION_MINOR

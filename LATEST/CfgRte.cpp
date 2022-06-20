@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgRte_Type, CFGRTE_CONFIG_DATA) PBcfgRte = {
       Rte_DevErrorDetect
-   ,  RTE_VERSION_INFO_API
    ,  {
             CFGRTE_AR_RELEASE_VERSION_MAJOR
          ,  CFGRTE_AR_RELEASE_VERSION_MINOR

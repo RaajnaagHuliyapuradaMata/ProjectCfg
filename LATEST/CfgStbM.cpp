@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgStbM_Type, CFGSTBM_CONFIG_DATA) PBcfgStbM = {
       StbM_DevErrorDetect
-   ,  STBM_VERSION_INFO_API
    ,  {
             CFGSTBM_AR_RELEASE_VERSION_MAJOR
          ,  CFGSTBM_AR_RELEASE_VERSION_MINOR

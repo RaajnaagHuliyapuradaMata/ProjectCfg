@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgPwm_Type, CFGPWM_CONFIG_DATA) PBcfgPwm = {
       Pwm_DevErrorDetect
-   ,  PWM_VERSION_INFO_API
    ,  {
             CFGPWM_AR_RELEASE_VERSION_MAJOR
          ,  CFGPWM_AR_RELEASE_VERSION_MINOR

@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgDet_Type, CFGDET_CONFIG_DATA) PBcfgDet = {
       Det_DevErrorDetect
-   ,  DET_VERSION_INFO_API
    ,  {
             CFGDET_AR_RELEASE_VERSION_MAJOR
          ,  CFGDET_AR_RELEASE_VERSION_MINOR

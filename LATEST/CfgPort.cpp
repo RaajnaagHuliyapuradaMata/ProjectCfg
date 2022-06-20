@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgPort_Type, CFGPORT_CONFIG_DATA) PBcfgPort = {
       Port_DevErrorDetect
-   ,  PORT_VERSION_INFO_API
    ,  {
             CFGPORT_AR_RELEASE_VERSION_MAJOR
          ,  CFGPORT_AR_RELEASE_VERSION_MINOR

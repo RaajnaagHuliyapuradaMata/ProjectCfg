@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgEcuM_Type, CFGECUM_CONFIG_DATA) PBcfgEcuM = {
       EcuM_DevErrorDetect
-   ,  ECUM_VERSION_INFO_API
    ,  {
             CFGECUM_AR_RELEASE_VERSION_MAJOR
          ,  CFGECUM_AR_RELEASE_VERSION_MINOR

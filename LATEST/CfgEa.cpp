@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgEa_Type, CFGEA_CONFIG_DATA) PBcfgEa = {
       Ea_DevErrorDetect
-   ,  EA_VERSION_INFO_API
    ,  {
             CFGEA_AR_RELEASE_VERSION_MAJOR
          ,  CFGEA_AR_RELEASE_VERSION_MINOR

@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgEth_Type, CFGETH_CONFIG_DATA) PBcfgEth = {
       Eth_DevErrorDetect
-   ,  ETH_VERSION_INFO_API
    ,  {
             CFGETH_AR_RELEASE_VERSION_MAJOR
          ,  CFGETH_AR_RELEASE_VERSION_MINOR

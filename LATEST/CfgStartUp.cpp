@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgStartUp_Type, CFGSTARTUP_CONFIG_DATA) PBcfgStartUp = {
       StartUp_DevErrorDetect
-   ,  STARTUP_VERSION_INFO_API
    ,  {
             CFGSTARTUP_AR_RELEASE_VERSION_MAJOR
          ,  CFGSTARTUP_AR_RELEASE_VERSION_MINOR

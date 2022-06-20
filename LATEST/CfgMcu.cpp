@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgMcu_Type, CFGMCU_CONFIG_DATA) PBcfgMcu = {
       Mcu_DevErrorDetect
-   ,  MCU_VERSION_INFO_API
    ,  {
             CFGMCU_AR_RELEASE_VERSION_MAJOR
          ,  CFGMCU_AR_RELEASE_VERSION_MINOR

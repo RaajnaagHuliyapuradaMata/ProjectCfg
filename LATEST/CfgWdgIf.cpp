@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgWdgIf_Type, CFGWDGIF_CONFIG_DATA) PBcfgWdgIf = {
       WdgIf_DevErrorDetect
-   ,  WDGIF_VERSION_INFO_API
    ,  {
             CFGWDGIF_AR_RELEASE_VERSION_MAJOR
          ,  CFGWDGIF_AR_RELEASE_VERSION_MINOR

@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgAdc_Type, CFGADC_CONFIG_DATA) PBcfgAdc = {
       Adc_DevErrorDetect
-   ,  ADC_VERSION_INFO_API
    ,  {
             CFGADC_AR_RELEASE_VERSION_MAJOR
          ,  CFGADC_AR_RELEASE_VERSION_MINOR

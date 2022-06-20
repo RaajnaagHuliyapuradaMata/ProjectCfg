@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgSpi_Type, CFGSPI_CONFIG_DATA) PBcfgSpi = {
       Spi_DevErrorDetect
-   ,  SPI_VERSION_INFO_API
    ,  {
             CFGSPI_AR_RELEASE_VERSION_MAJOR
          ,  CFGSPI_AR_RELEASE_VERSION_MINOR

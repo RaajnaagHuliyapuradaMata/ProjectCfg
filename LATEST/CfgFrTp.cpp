@@ -39,7 +39,6 @@
 /******************************************************************************/
 CONST(CfgFrTp_Type, CFGFRTP_CONFIG_DATA) PBcfgFrTp = {
       FrTp_DevErrorDetect
-   ,  FRTP_VERSION_INFO_API
    ,  {
             CFGFRTP_AR_RELEASE_VERSION_MAJOR
          ,  CFGFRTP_AR_RELEASE_VERSION_MINOR
