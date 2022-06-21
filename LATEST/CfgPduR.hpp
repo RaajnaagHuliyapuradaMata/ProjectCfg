@@ -9,6 +9,7 @@
 /******************************************************************************/
 #include "CfgModule.hpp"
 #include "CompilerCfg_CfgPduR.hpp"
+#include "ComStackTypes.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -29,9 +30,7 @@ typedef enum{
    ,  e_State_Online
 }TypeState;
 
-typedef uint16 TypeId;
-typedef TypeId TypeIdRoutingPathGroup;
-typedef TypeId TypeIdPdu;
+typedef uint16 TypeIdRoutingPathGroup;
 
 typedef struct{
    uint32 bUpperModule            :1;
@@ -55,7 +54,6 @@ typedef struct{
 }TypeClient;
 
 typedef void TypePdu;     //TBD: Real implementation
-typedef void TypeInfoPdu; //TBD: Real implementation
 
 typedef struct{
    TypePdu *ptrSrc;
@@ -70,7 +68,7 @@ typedef struct{
 
 class Type_CfgPduRCore{
    public:
-      TypeId Id;
+      uint16                Id;
       TypeClient*           aptrClients[1];
       uint16                u16CntMaxRoutingPathGroup;
       TypeRoutingPathGroup* aptrGroups[1];
