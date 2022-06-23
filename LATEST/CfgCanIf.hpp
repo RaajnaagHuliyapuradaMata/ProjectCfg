@@ -23,6 +23,18 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
+typedef enum{
+      eModePdu_Offline = 0
+   ,  eModePdu_TxOffline
+   ,  eModePdu_TxOfflineActive
+   ,  eModePdu_Online
+}TypeModePdu;
+
+typedef enum{
+      eStatusNotif_None = 0
+   ,  eStatusNotif_TxRx
+}TypeStatusNotif;
+
 class CfgCanIf_Type:
       public CfgModule_TypeAbstract
 {
