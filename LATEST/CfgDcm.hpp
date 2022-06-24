@@ -30,6 +30,77 @@ using namespace std;
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
+typedef enum{
+      eStatus_OK                    = 0
+   ,  eStatus_RoeNotAccepted        = 6
+   ,  eStatus_PeriodicIdNotAccepted = 7
+}TypeStatus;
+
+typedef enum{
+      eModeCommunication_NormEnaRxEnaTx = 0
+   ,  eModeCommunication_NormEnaRxDisTx
+   ,  eModeCommunication_NormDisRxEnaTx
+   ,  eModeCommunication_NormDisRxDisTx
+   ,  eModeCommunication_NmEnaRxEnaTx
+   ,  eModeCommunication_NmEnaRxDisTx
+   ,  eModeCommunication_NmDisRxEnaTx
+   ,  eModeCommunication_NmDisRxDisTx
+   ,  eModeCommunication_NormNmEnaRxEnaTx
+   ,  eModeCommunication_NormNmEnaRxDisTx
+   ,  eModeCommunication_NormNmDisRxEnaTx
+   ,  eModeCommunication_NormNmDisRxDisTx
+}TypeModeCommunication;
+
+typedef enum{
+      eReturnMemoryRead_OK = 0
+   ,  eReturnMemoryRead_Pending
+   ,  eReturnMemoryRead_Failed
+   ,  eReturnMemoryRead_ForceRcrrp
+}TypeReturnMemoryRead;
+
+typedef enum{
+      eReturnMemoryWrite_OK = 0
+   ,  eReturnMemoryWrite_Pending
+   ,  eReturnMemoryWrite_Failed
+   ,  eReturnMemoryWrite_ForceRcrrp
+}TypeReturnMemoryWrite;
+
+typedef enum{
+      eModeEcuStart_Cold = 0
+   ,  eModeEcuStart_Warm
+}TypeModeEcuStart;
+
+typedef struct{
+   uint16 IdConnection;
+   uint16 AddressTester;
+   uint8  IdService;
+   uint8  IdSubFunc;
+   bool   RequestReprograming;
+   bool   ApplUpdated;
+   bool   ResponseRequired;
+}TypeConditionsProg;
+
+typedef uint8        TypeItemMsg;
+typedef TypeItemMsg* TypeMsg;
+typedef uint32       TypeLenMsg;
+typedef uint8        TypeIdContext;
+
+typedef struct{
+   uint8 TypeReq             : 1;
+   uint8 suppressPosResponse : 1;
+}TypeInfoMsgAdd;
+
+typedef struct{
+   TypeMsg        reqData;
+   TypeLenMsg     reqDataLen;
+   TypeMsg        resData;
+   TypeLenMsg     resDataLen;
+   TypeInfoMsgAdd msgAddInfo;
+   TypeLenMsg     resDataLenMax;
+   TypeContextId  idContext;
+   TypeIdPdu      IdPduDcmRx;
+}TypeMsgContext;
+
 class CfgDcm_Type:
       public CfgModule_TypeAbstract
 {
