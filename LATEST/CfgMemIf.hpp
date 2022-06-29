@@ -23,6 +23,27 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
+typedef enum{
+      eStatus_UnInit = 0
+   ,  eStatus_Idle
+   ,  eStatus_Busy
+   ,  eStatus_BusyInternal
+}TypeStatus;
+
+typedef enum{
+      eResultJob_Ok = 0
+   ,  eResultJob_Failed
+   ,  eResultJob_Pemding
+   ,  eResultJob_Camceled
+   ,  eResultJob_BlockInconsistent
+   ,  eResultJob_BlockInvalid
+}TypeResultJob;
+
+typedef enum{
+      eMode_Slow = 0
+   ,  eMode_Fast
+}TypeMode;
+
 class CfgMemIf_Type:
       public CfgModule_TypeAbstract
 {

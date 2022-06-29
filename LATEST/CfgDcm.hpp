@@ -90,6 +90,8 @@ typedef struct{
    uint8 suppressPosResponse : 1;
 }TypeInfoMsgAdd;
 
+#include "ComStackTypes.hpp" //TBD: move as per architecture
+
 typedef struct{
    TypeMsg        reqData;
    TypeLenMsg     reqDataLen;
@@ -97,9 +99,20 @@ typedef struct{
    TypeLenMsg     resDataLen;
    TypeInfoMsgAdd msgAddInfo;
    TypeLenMsg     resDataLenMax;
-   TypeContextId  idContext;
+   TypeIdContext  idContext;
    TypeIdPdu      IdPduDcmRx;
 }TypeMsgContext;
+
+typedef enum{
+      eStatusExtendedOp_Initial = 0
+   ,  eStatusExtendedOp_Pending
+   ,  eStatusExtendedOp_Cancel
+   ,  eStatusExtendedOp_ForceRcrrpOk
+   ,  eStatusExtendedOp_PosResponseSent
+   ,  eStatusExtendedOp_PosResponseFailed
+   ,  eStatusExtendedOp_NegResponseSent
+   ,  eStatusExtendedOp_NegResponseFailed
+}TypeStatusExtendedOp;
 
 class CfgDcm_Type:
       public CfgModule_TypeAbstract

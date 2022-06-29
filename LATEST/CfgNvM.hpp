@@ -23,6 +23,20 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
+typedef enum{
+      eResultRequest_Ok = 0
+   ,  eResultRequest_NotOk
+   ,  eResultRequest_Pending
+   ,  eResultRequest_FailedIntegrity
+   ,  eResultRequest_BlockSkipped
+   ,  eResultRequest_InvalidatedNv
+   ,  eResultRequest_Cancled
+   ,  eResultRequest_FailedRedundancy
+   ,  eResultRequest_RestoredFromRom
+}TypeResultRequest;
+
+typedef uint16 TypeIdBlock;
+
 class CfgNvM_Type:
       public CfgModule_TypeAbstract
 {
