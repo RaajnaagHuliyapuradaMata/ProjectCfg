@@ -34,7 +34,7 @@ typedef enum{
       eStatus_OK                    = 0
    ,  eStatus_RoeNotAccepted        = 6
    ,  eStatus_PeriodicIdNotAccepted = 7
-}TypeStatus;
+}CfgDcm_TypeStatus;
 
 typedef enum{
       eModeCommunication_NormEnaRxEnaTx = 0
@@ -49,26 +49,26 @@ typedef enum{
    ,  eModeCommunication_NormNmEnaRxDisTx
    ,  eModeCommunication_NormNmDisRxEnaTx
    ,  eModeCommunication_NormNmDisRxDisTx
-}TypeModeCommunication;
+}CfgDcm_TypeModeCommunication;
 
 typedef enum{
       eReturnMemoryRead_OK = 0
    ,  eReturnMemoryRead_Pending
    ,  eReturnMemoryRead_Failed
    ,  eReturnMemoryRead_ForceRcrrp
-}TypeReturnMemoryRead;
+}CfgDcm_TypeReturnMemoryRead;
 
 typedef enum{
       eReturnMemoryWrite_OK = 0
    ,  eReturnMemoryWrite_Pending
    ,  eReturnMemoryWrite_Failed
    ,  eReturnMemoryWrite_ForceRcrrp
-}TypeReturnMemoryWrite;
+}CfgDcm_TypeReturnMemoryWrite;
 
 typedef enum{
       eModeEcuStart_Cold = 0
    ,  eModeEcuStart_Warm
-}TypeModeEcuStart;
+}CfgDcm_TypeModeEcuStart;
 
 typedef struct{
    uint16 IdConnection;
@@ -78,29 +78,29 @@ typedef struct{
    bool   RequestReprograming;
    bool   ApplUpdated;
    bool   ResponseRequired;
-}TypeConditionsProg;
+}CfgDcm_TypeConditionsProg;
 
-typedef uint8        TypeItemMsg;
-typedef TypeItemMsg* TypeMsg;
-typedef uint32       TypeLenMsg;
-typedef uint8        TypeIdContext;
+typedef uint8               CfgDcm_TypeItemMsg;
+typedef CfgDcm_TypeItemMsg* CfgDcm_TypeMsg;
+typedef uint32              CfgDcm_TypeLenMsg;
+typedef uint8               CfgDcm_TypeIdContext;
 
 typedef struct{
    uint8 TypeReq             : 1;
    uint8 suppressPosResponse : 1;
-}TypeInfoMsgAdd;
+}CfgDcm_TypeInfoMsgAdd;
 
 #include "ComStackTypes.hpp" //TBD: move as per architecture
 
 typedef struct{
-   TypeMsg        reqData;
-   TypeLenMsg     reqDataLen;
-   TypeMsg        resData;
-   TypeLenMsg     resDataLen;
-   TypeInfoMsgAdd msgAddInfo;
-   TypeLenMsg     resDataLenMax;
-   TypeIdContext  idContext;
-   TypeIdPdu      IdPduDcmRx;
+   CfgDcm_TypeMsg        reqData;
+   CfgDcm_TypeLenMsg     reqDataLen;
+   CfgDcm_TypeMsg        resData;
+   CfgDcm_TypeLenMsg     resDataLen;
+   CfgDcm_TypeInfoMsgAdd msgAddInfo;
+   CfgDcm_TypeLenMsg     resDataLenMax;
+   CfgDcm_TypeIdContext  idContext;
+   TypeIdPdu             IdPduDcmRx;
 }TypeMsgContext;
 
 typedef enum{
@@ -112,7 +112,7 @@ typedef enum{
    ,  eStatusExtendedOp_PosResponseFailed
    ,  eStatusExtendedOp_NegResponseSent
    ,  eStatusExtendedOp_NegResponseFailed
-}TypeStatusExtendedOp;
+}CfgDcm_TypeStatusExtendedOp;
 
 class CfgDcm_Type:
       public CfgModule_TypeAbstract

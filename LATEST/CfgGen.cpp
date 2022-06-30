@@ -1,20 +1,16 @@
-#pragma once
 /******************************************************************************/
-/* File   : CfgMemIf.hpp                                                      */
+/* File   : CfgGen.cpp                                                        */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "CfgModule.hpp"
-#include "CompilerCfg_CfgMemIf.hpp"
+#include "CfgGen.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define MemIf_DevErrorDetect                                      DevErrorDetect
-#define MemIf_InitCheck                                                   STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -23,40 +19,16 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-typedef enum{
-      eStatus_UnInit = 0
-   ,  eStatus_Idle
-   ,  eStatus_Busy
-   ,  eStatus_BusyInternal
-}CfgMemIf_TypeStatus;
-
-typedef enum{
-      eResultJob_Ok = 0
-   ,  eResultJob_Failed
-   ,  eResultJob_Pemding
-   ,  eResultJob_Camceled
-   ,  eResultJob_BlockInconsistent
-   ,  eResultJob_BlockInvalid
-}CfgMemIf_TypeResultJob;
-
-typedef enum{
-      eMode_Slow = 0
-   ,  eMode_Fast
-}CfgMemIf_TypeMode;
-
-class CfgMemIf_Type:
-      public CfgModule_TypeAbstract
-{
-};
 
 /******************************************************************************/
 /* CONSTS                                                                     */
 /******************************************************************************/
+/* const */ CfgGen_Type PBcfgGen; // = {0}; TBD: Initialize and make const
 
 /******************************************************************************/
 /* PARAMS                                                                     */
 /******************************************************************************/
-extern CONST(CfgMemIf_Type, CFGMEMIF_CONFIG_DATA) PBcfgMemIf;
+CfgGen_Type CfgGen;
 
 /******************************************************************************/
 /* OBJECTS                                                                    */

@@ -28,12 +28,12 @@ typedef enum{
    ,  eModePdu_TxOffline
    ,  eModePdu_TxOfflineActive
    ,  eModePdu_Online
-}TypeModePdu;
+}CfgCanIf_TypeModePdu;
 
 typedef enum{
       eStatusNotif_None = 0
    ,  eStatusNotif_TxRx
-}TypeStatusNotif;
+}CfgCanIf_TypeStatusNotif;
 
 class CfgCanIf_Type:
       public CfgModule_TypeAbstract
