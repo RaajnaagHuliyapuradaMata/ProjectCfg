@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGJ1939TP_AR_RELEASE_VERSION_MAJOR                                    4
+#define CFGJ1939TP_AR_RELEASE_VERSION_MINOR                                    3
 #define J1939Tp_DevErrorDetect                                    DevErrorDetect
 #define J1939Tp_InitCheck                                                 STD_ON
 

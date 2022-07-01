@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGECUM_AR_RELEASE_VERSION_MAJOR                                       4
+#define CFGECUM_AR_RELEASE_VERSION_MINOR                                       3
 #define EcuM_DevErrorDetect                                       DevErrorDetect
 #define EcuM_InitCheck                                                    STD_ON
 

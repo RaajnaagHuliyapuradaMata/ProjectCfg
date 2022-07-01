@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MAJOR                             4
+#define CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MINOR                             3
 #define SwcServiceEcuM_DevErrorDetect                             DevErrorDetect
 #define SwcServiceEcuM_InitCheck                                          STD_ON
 

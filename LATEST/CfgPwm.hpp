@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGPWM_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGPWM_AR_RELEASE_VERSION_MINOR                                        3
 #define Pwm_DevErrorDetect                                        DevErrorDetect
 #define Pwm_InitCheck                                                     STD_ON
 

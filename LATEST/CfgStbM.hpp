@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGSTBM_AR_RELEASE_VERSION_MAJOR                                       4
+#define CFGSTBM_AR_RELEASE_VERSION_MINOR                                       3
 #define StbM_DevErrorDetect                                       DevErrorDetect
 #define StbM_InitCheck                                                    STD_ON
 

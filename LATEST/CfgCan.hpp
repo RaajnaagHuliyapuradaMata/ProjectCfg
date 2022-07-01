@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGCAN_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGCAN_AR_RELEASE_VERSION_MINOR                                        3
 #define Can_DevErrorDetect                                        DevErrorDetect
 #define Can_InitCheck                                                     STD_ON
 

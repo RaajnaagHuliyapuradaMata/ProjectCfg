@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGWDGIF_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGWDGIF_AR_RELEASE_VERSION_MINOR                                      3
 #define WdgIf_DevErrorDetect                                      DevErrorDetect
 #define WdgIf_InitCheck                                                   STD_ON
 

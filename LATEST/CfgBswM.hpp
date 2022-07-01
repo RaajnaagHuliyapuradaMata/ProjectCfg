@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGBSWM_AR_RELEASE_VERSION_MAJOR                                       4
+#define CFGBSWM_AR_RELEASE_VERSION_MINOR                                       3
 #define BswM_DevErrorDetect                                       DevErrorDetect
 #define BswM_InitCheck                                                    STD_ON
 

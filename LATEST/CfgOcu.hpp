@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGOCU_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGOCU_AR_RELEASE_VERSION_MINOR                                        3
 #define Ocu_DevErrorDetect                                        DevErrorDetect
 #define Ocu_InitCheck                                                     STD_ON
 

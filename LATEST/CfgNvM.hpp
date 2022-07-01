@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGNVM_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGNVM_AR_RELEASE_VERSION_MINOR                                        3
 #define NvM_DevErrorDetect                                        DevErrorDetect
 #define NvM_InitCheck                                                     STD_ON
 

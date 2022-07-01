@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGCRYIF_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGCRYIF_AR_RELEASE_VERSION_MINOR                                      3
 #define CryIf_DevErrorDetect                                      DevErrorDetect
 #define CryIf_InitCheck                                                   STD_ON
 

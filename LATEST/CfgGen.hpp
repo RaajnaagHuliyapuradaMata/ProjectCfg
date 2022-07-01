@@ -19,7 +19,6 @@
 #include "CfgCry.hpp"
 #include "CfgCryIf.hpp"
 #include "CfgCsm.hpp"
-#include "CfgDcm.hpp"
 #include "CfgDem.hpp"
 #include "CfgDet.hpp"
 #include "CfgDio.hpp"
@@ -46,10 +45,8 @@
 #include "CfgMcu.hpp"
 #include "CfgMemIf.hpp"
 #include "CfgNm.hpp"
-#include "CfgNvM.hpp"
 #include "CfgOcu.hpp"
 #include "CfgOs.hpp"
-#include "CfgPduR.hpp"
 #include "CfgPort.hpp"
 #include "CfgPwm.hpp"
 #include "CfgRte.hpp"
@@ -66,6 +63,10 @@
 #include "CfgWdg.hpp"
 #include "CfgWdgIf.hpp"
 #include "CfgWdgM.hpp"
+
+#include "CfgDcm.hpp"
+#include "CfgNvM.hpp"
+#include "CfgPduR.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -92,7 +93,6 @@ class CfgGen_Type{
       CfgCry_Type            CfgCry;
       CfgCryIf_Type          CfgCryIf;
       CfgCsm_Type            CfgCsm;
-      CfgDcm_Type            CfgDcm;
       CfgDem_Type            CfgDem;
       CfgDet_Type            CfgDet;
       CfgDio_Type            CfgDio;
@@ -119,10 +119,8 @@ class CfgGen_Type{
       CfgMcu_Type            CfgMcu;
       CfgMemIf_Type          CfgMemIf;
       CfgNm_Type             CfgNm;
-      CfgNvM_Type            CfgNvM;
       CfgOcu_Type            CfgOcu;
       CfgOs_Type             CfgOs;
-      CfgPduR_Type           CfgPduR;
       CfgPort_Type           CfgPort;
       CfgPwm_Type            CfgPwm;
       CfgRte_Type            CfgRte;
@@ -139,6 +137,10 @@ class CfgGen_Type{
       CfgWdg_Type            CfgWdg;
       CfgWdgIf_Type          CfgWdgIf;
       CfgWdgM_Type           CfgWdgM;
+
+      CfgDcm_Type            CfgDcm;
+      CfgNvM_Type            CfgNvM;
+      CfgPduR_Type           CfgPduR;
 };
 
 /******************************************************************************/

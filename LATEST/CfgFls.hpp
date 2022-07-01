@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGFLS_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGFLS_AR_RELEASE_VERSION_MINOR                                        3
 #define Fls_DevErrorDetect                                        DevErrorDetect
 #define Fls_InitCheck                                                     STD_ON
 

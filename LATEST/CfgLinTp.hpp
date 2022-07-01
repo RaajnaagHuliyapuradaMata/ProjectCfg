@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGLINTP_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGLINTP_AR_RELEASE_VERSION_MINOR                                      3
 #define LinTp_DevErrorDetect                                      DevErrorDetect
 #define LinTp_InitCheck                                                   STD_ON
 

@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGMCU_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGMCU_AR_RELEASE_VERSION_MINOR                                        3
 #define Mcu_DevErrorDetect                                        DevErrorDetect
 #define Mcu_InitCheck                                                     STD_ON
 

@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGRTE_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGRTE_AR_RELEASE_VERSION_MINOR                                        3
 #define Rte_DevErrorDetect                                        DevErrorDetect
 #define Rte_InitCheck                                                     STD_ON
 

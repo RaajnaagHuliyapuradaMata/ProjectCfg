@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGDIO_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGDIO_AR_RELEASE_VERSION_MINOR                                        3
 #define Dio_DevErrorDetect                                        DevErrorDetect
 #define Dio_InitCheck                                                     STD_ON
 

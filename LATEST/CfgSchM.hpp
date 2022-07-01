@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGSCHM_AR_RELEASE_VERSION_MAJOR                                       4
+#define CFGSCHM_AR_RELEASE_VERSION_MINOR                                       3
 #define SchM_DevErrorDetect                                       DevErrorDetect
 #define SchM_InitCheck                                                    STD_ON
 

@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGDEM_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGDEM_AR_RELEASE_VERSION_MINOR                                        3
 #define Dem_DevErrorDetect                                        DevErrorDetect
 #define Dem_InitCheck                                                     STD_ON
 

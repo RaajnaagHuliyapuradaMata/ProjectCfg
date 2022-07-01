@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGCOM_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGCOM_AR_RELEASE_VERSION_MINOR                                        3
 #define Com_DevErrorDetect                                        DevErrorDetect
 #define Com_InitCheck                                                     STD_ON
 

@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGEA_AR_RELEASE_VERSION_MAJOR                                         4
+#define CFGEA_AR_RELEASE_VERSION_MINOR                                         3
 #define Ea_DevErrorDetect                                         DevErrorDetect
 #define Ea_InitCheck                                                      STD_ON
 

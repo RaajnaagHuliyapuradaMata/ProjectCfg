@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGIPDUM_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGIPDUM_AR_RELEASE_VERSION_MINOR                                      3
 #define IpduM_DevErrorDetect                                      DevErrorDetect
 #define IpduM_InitCheck                                                   STD_ON
 

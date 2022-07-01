@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGEEP_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGEEP_AR_RELEASE_VERSION_MINOR                                        3
 #define Eep_DevErrorDetect                                        DevErrorDetect
 #define Eep_InitCheck                                                     STD_ON
 

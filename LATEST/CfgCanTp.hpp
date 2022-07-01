@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGCANTP_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGCANTP_AR_RELEASE_VERSION_MINOR                                      3
 #define CanTp_DevErrorDetect                                      DevErrorDetect
 #define CanTp_InitCheck                                                   STD_ON
 

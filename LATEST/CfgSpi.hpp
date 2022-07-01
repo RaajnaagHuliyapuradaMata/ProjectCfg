@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGSPI_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGSPI_AR_RELEASE_VERSION_MINOR                                        3
 #define Spi_DevErrorDetect                                        DevErrorDetect
 #define Spi_InitCheck                                                     STD_ON
 

@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGCRY_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGCRY_AR_RELEASE_VERSION_MINOR                                        3
 #define Cry_DevErrorDetect                                        DevErrorDetect
 #define Cry_InitCheck                                                     STD_ON
 

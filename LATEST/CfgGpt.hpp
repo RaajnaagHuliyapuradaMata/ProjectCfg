@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGGPT_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGGPT_AR_RELEASE_VERSION_MINOR                                        3
 #define Gpt_DevErrorDetect                                        DevErrorDetect
 #define Gpt_InitCheck                                                     STD_ON
 

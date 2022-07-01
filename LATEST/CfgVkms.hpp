@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGVKMS_AR_RELEASE_VERSION_MAJOR                                       4
+#define CFGVKMS_AR_RELEASE_VERSION_MINOR                                       3
 #define Vkms_DevErrorDetect                                       DevErrorDetect
 #define Vkms_InitCheck                                                    STD_ON
 

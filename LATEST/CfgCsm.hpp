@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGCSM_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGCSM_AR_RELEASE_VERSION_MINOR                                        3
 #define Csm_DevErrorDetect                                        DevErrorDetect
 #define Csm_InitCheck                                                     STD_ON
 

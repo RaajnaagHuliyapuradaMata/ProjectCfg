@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGWDGM_AR_RELEASE_VERSION_MAJOR                                       4
+#define CFGWDGM_AR_RELEASE_VERSION_MINOR                                       3
 #define WdgM_DevErrorDetect                                       DevErrorDetect
 #define WdgM_InitCheck                                                    STD_ON
 

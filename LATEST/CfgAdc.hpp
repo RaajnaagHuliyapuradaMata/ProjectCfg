@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGADC_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGADC_AR_RELEASE_VERSION_MINOR                                        3
 #define Adc_DevErrorDetect                                        DevErrorDetect
 #define Adc_InitCheck                                                     STD_ON
 #define LevelPriorityMin                                                       0

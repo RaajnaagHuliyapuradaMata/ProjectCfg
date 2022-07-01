@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGSTARTUP_AR_RELEASE_VERSION_MAJOR                                    4
+#define CFGSTARTUP_AR_RELEASE_VERSION_MINOR                                    3
 #define StartUp_DevErrorDetect                                    DevErrorDetect
 #define StartUp_InitCheck                                                 STD_ON
 

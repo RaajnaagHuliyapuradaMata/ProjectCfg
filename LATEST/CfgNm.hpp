@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGNM_AR_RELEASE_VERSION_MAJOR                                         4
+#define CFGNM_AR_RELEASE_VERSION_MINOR                                         3
 #define Nm_DevErrorDetect                                         DevErrorDetect
 #define Nm_InitCheck                                                      STD_ON
 

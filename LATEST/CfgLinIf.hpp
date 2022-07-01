@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGLINIF_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGLINIF_AR_RELEASE_VERSION_MINOR                                      3
 #define LinIf_DevErrorDetect                                      DevErrorDetect
 #define LinIf_InitCheck                                                   STD_ON
 

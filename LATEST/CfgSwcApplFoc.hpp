@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGSWCAPPLFOC_AR_RELEASE_VERSION_MAJOR                                 4
+#define CFGSWCAPPLFOC_AR_RELEASE_VERSION_MINOR                                 3
 #define SwcApplFoc_DevErrorDetect                                 DevErrorDetect
 #define SwcApplFoc_InitCheck                                              STD_ON
 

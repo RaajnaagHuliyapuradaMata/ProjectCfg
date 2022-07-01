@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGPORT_AR_RELEASE_VERSION_MAJOR                                       4
+#define CFGPORT_AR_RELEASE_VERSION_MINOR                                       3
 #define Port_DevErrorDetect                                       DevErrorDetect
 #define Port_InitCheck                                                    STD_ON
 

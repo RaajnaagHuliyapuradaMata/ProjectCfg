@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGFEE_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGFEE_AR_RELEASE_VERSION_MINOR                                        3
 #define Fee_DevErrorDetect                                        DevErrorDetect
 #define Fee_InitCheck                                                     STD_ON
 

@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGLIN_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGLIN_AR_RELEASE_VERSION_MINOR                                        3
 #define Lin_DevErrorDetect                                        DevErrorDetect
 #define Lin_InitCheck                                                     STD_ON
 

@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGICU_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGICU_AR_RELEASE_VERSION_MINOR                                        3
 #define Icu_DevErrorDetect                                        DevErrorDetect
 #define Icu_InitCheck                                                     STD_ON
 

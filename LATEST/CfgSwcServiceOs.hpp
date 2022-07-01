@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGSWCSERVICEOS_AR_RELEASE_VERSION_MAJOR                               4
+#define CFGSWCSERVICEOS_AR_RELEASE_VERSION_MINOR                               3
 #define SwcServiceOs_DevErrorDetect                               DevErrorDetect
 #define SwcServiceOs_InitCheck                                            STD_ON
 

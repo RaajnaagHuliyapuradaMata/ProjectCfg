@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGFRNM_AR_RELEASE_VERSION_MAJOR                                       4
+#define CFGFRNM_AR_RELEASE_VERSION_MINOR                                       3
 #define FrNm_DevErrorDetect                                       DevErrorDetect
 #define FrNm_InitCheck                                                    STD_ON
 

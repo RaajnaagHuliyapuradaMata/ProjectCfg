@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGFRIF_AR_RELEASE_VERSION_MAJOR                                       4
+#define CFGFRIF_AR_RELEASE_VERSION_MINOR                                       3
 #define FrIf_DevErrorDetect                                       DevErrorDetect
 #define FrIf_InitCheck                                                    STD_ON
 

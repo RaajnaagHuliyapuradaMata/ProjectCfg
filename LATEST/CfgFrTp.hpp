@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGFRTP_AR_RELEASE_VERSION_MAJOR                                       4
+#define CFGFRTP_AR_RELEASE_VERSION_MINOR                                       3
 #define FrTp_DevErrorDetect                                       DevErrorDetect
 #define FrTp_InitCheck                                                    STD_ON
 

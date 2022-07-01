@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGFR_AR_RELEASE_VERSION_MAJOR                                         4
+#define CFGFR_AR_RELEASE_VERSION_MINOR                                         3
 #define Fr_DevErrorDetect                                         DevErrorDetect
 #define Fr_InitCheck                                                      STD_ON
 

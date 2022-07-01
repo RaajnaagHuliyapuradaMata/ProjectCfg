@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGETHIF_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGETHIF_AR_RELEASE_VERSION_MINOR                                      3
 #define EthIf_DevErrorDetect                                      DevErrorDetect
 #define EthIf_InitCheck                                                   STD_ON
 

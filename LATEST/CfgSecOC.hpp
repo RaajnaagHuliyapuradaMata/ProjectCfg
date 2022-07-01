@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGSECOC_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGSECOC_AR_RELEASE_VERSION_MINOR                                      3
 #define SecOC_DevErrorDetect                                      DevErrorDetect
 #define SecOC_InitCheck                                                   STD_ON
 

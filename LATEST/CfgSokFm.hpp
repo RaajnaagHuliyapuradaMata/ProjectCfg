@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGSOKFM_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGSOKFM_AR_RELEASE_VERSION_MINOR                                      3
 #define SokFm_DevErrorDetect                                      DevErrorDetect
 #define SokFm_InitCheck                                                   STD_ON
 

@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGCANSM_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGCANSM_AR_RELEASE_VERSION_MINOR                                      3
 #define CanSm_DevErrorDetect                                      DevErrorDetect
 #define CanSm_InitCheck                                                   STD_ON
 

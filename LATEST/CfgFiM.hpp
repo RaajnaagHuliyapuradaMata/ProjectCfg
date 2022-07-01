@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGFIM_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGFIM_AR_RELEASE_VERSION_MINOR                                        3
 #define FiM_DevErrorDetect                                        DevErrorDetect
 #define FiM_InitCheck                                                     STD_ON
 

@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGMEMIF_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGMEMIF_AR_RELEASE_VERSION_MINOR                                      3
 #define MemIf_DevErrorDetect                                      DevErrorDetect
 #define MemIf_InitCheck                                                   STD_ON
 

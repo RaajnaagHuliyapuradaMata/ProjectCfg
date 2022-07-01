@@ -13,6 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGOS_AR_RELEASE_VERSION_MAJOR                                         4
+#define CFGOS_AR_RELEASE_VERSION_MINOR                                         3
 #define Os_DevErrorDetect                                         DevErrorDetect
 #define Os_InitCheck                                                      STD_ON
 

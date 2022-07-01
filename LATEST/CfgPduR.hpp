@@ -14,6 +14,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CFGPDUR_AR_RELEASE_VERSION_MAJOR                                       4
+#define CFGPDUR_AR_RELEASE_VERSION_MINOR                                       3
 #define PduR_DevErrorDetect                                       DevErrorDetect
 #define PduR_InitCheck                                                    STD_ON
 
