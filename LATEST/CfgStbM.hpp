@@ -21,6 +21,13 @@
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
+#if(CFGSTBM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSTBM_AR_RELEASE_VERSION_MAJOR!"
+#endif
+
+#if(CFGSTBM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSTBM_AR_RELEASE_VERSION_MINOR!"
+#endif
 
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
@@ -37,7 +44,6 @@ class CfgStbM_Type:
 /******************************************************************************/
 /* PARAMS                                                                     */
 /******************************************************************************/
-extern CONST(CfgStbM_Type, CFGSTBM_CONFIG_DATA) PBcfgStbM;
 
 /******************************************************************************/
 /* OBJECTS                                                                    */

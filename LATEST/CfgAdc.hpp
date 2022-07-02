@@ -26,6 +26,13 @@
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
+#if(CFGADC_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGADC_AR_RELEASE_VERSION_MAJOR!"
+#endif
+
+#if(CFGADC_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGADC_AR_RELEASE_VERSION_MINOR!"
+#endif
 
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
@@ -94,7 +101,6 @@ class CfgAdc_Type:
 /******************************************************************************/
 /* PARAMS                                                                     */
 /******************************************************************************/
-extern CONST(CfgAdc_Type, CFGADC_CONFIG_DATA) PBcfgAdc;
 
 /******************************************************************************/
 /* OBJECTS                                                                    */

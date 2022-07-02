@@ -21,6 +21,13 @@
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
+#if(CFGSWCAPPLFOC_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSWCAPPLFOC_AR_RELEASE_VERSION_MAJOR!"
+#endif
+
+#if(CFGSWCAPPLFOC_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSWCAPPLFOC_AR_RELEASE_VERSION_MINOR!"
+#endif
 
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
@@ -37,7 +44,6 @@ class CfgSwcApplFoc_Type:
 /******************************************************************************/
 /* PARAMS                                                                     */
 /******************************************************************************/
-extern CONST(CfgSwcApplFoc_Type, CFGSWCAPPLFOC_CONFIG_DATA) PBcfgSwcApplFoc;
 
 /******************************************************************************/
 /* OBJECTS                                                                    */

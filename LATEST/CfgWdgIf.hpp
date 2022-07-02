@@ -21,6 +21,13 @@
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
+#if(CFGWDGIF_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGWDGIF_AR_RELEASE_VERSION_MAJOR!"
+#endif
+
+#if(CFGWDGIF_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGWDGIF_AR_RELEASE_VERSION_MINOR!"
+#endif
 
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
@@ -37,7 +44,6 @@ class CfgWdgIf_Type:
 /******************************************************************************/
 /* PARAMS                                                                     */
 /******************************************************************************/
-extern CONST(CfgWdgIf_Type, CFGWDGIF_CONFIG_DATA) PBcfgWdgIf;
 
 /******************************************************************************/
 /* OBJECTS                                                                    */

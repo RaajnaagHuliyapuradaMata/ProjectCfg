@@ -23,9 +23,9 @@
 /******************************************************************************/
 /* CONSTS                                                                     */
 /******************************************************************************/
-extern TypeClient PduRClient_Dcm;
+TypeClient PduRClient_Dcm; //TBD:  = {0}; actual realization
 
-/* const */ CfgGen_Type PBcfgGen = {
+const CfgGen_Type PBcfgGen = {
       {Adc_DevErrorDetect,           {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}}
    ,  {BswM_DevErrorDetect,          {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}}
    ,  {Can_DevErrorDetect,           {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}}
@@ -64,6 +64,7 @@ extern TypeClient PduRClient_Dcm;
    ,  {Mcu_DevErrorDetect,           {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}}
    ,  {MemIf_DevErrorDetect,         {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}}
    ,  {Nm_DevErrorDetect,            {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}}
+   ,  {NvM_DevErrorDetect,           {CFGNVM_AR_RELEASE_VERSION_MAJOR, CFGNVM_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} //TBD: Do this for other modules
    ,  {Ocu_DevErrorDetect,           {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}}
    ,  {Os_DevErrorDetect,            {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}}
    ,  {Port_DevErrorDetect,          {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}}
@@ -220,76 +221,6 @@ extern TypeClient PduRClient_Dcm;
             }
 #else
 #endif
-      }
-
-   ,  {
-            NvM_DevErrorDetect
-         ,  {
-                  CFGNVM_AR_RELEASE_VERSION_MAJOR
-               ,  CFGNVM_AR_RELEASE_VERSION_MINOR
-               ,  0x00
-               ,  0xFF
-               ,  0x01
-               ,  '0'
-               ,  '1'
-               ,  '0'
-            }
-         ,  {
-                  &PBcfgAdc
-               ,  &PBcfgBswM
-               ,  &PBcfgCan
-               ,  &PBcfgCanIf
-               ,  &PBcfgCanNm
-               ,  &PBcfgCanSm
-               ,  &PBcfgCanTp
-               ,  &PBcfgCom
-               ,  &PBcfgComM
-               ,  &PBcfgCry
-               ,  &PBcfgCryIf
-               ,  &PBcfgCsm
-               ,  &PBcfgDcm
-               ,  &PBcfgDem
-               ,  &PBcfgDet
-               ,  &PBcfgDio
-               ,  &PBcfgDlt
-               ,  &PBcfgEa
-               ,  &PBcfgEcuM
-               ,  &PBcfgEep
-               ,  &PBcfgEth
-               ,  &PBcfgEthIf
-               ,  &PBcfgFee
-               ,  &PBcfgFiM
-               ,  &PBcfgFls
-               ,  &PBcfgFr
-               ,  &PBcfgFrIf
-               ,  &PBcfgFrNm
-               ,  &PBcfgFrTp
-               ,  &PBcfgGpt
-               ,  &PBcfgIcu
-               ,  &PBcfgIpduM
-               ,  &PBcfgJ1939Tp
-               ,  &PBcfgLin
-               ,  &PBcfgLinIf
-               ,  &PBcfgLinTp
-               ,  &PBcfgMcu
-               ,  &PBcfgMemIf
-               ,  &PBcfgNm
-               ,  &PBcfgNvM
-               ,  &PBcfgOcu
-               ,  &PBcfgOs
-               ,  &PBcfgPduR
-               ,  &PBcfgPort
-               ,  &PBcfgPwm
-               ,  &PBcfgSchM
-               ,  &PBcfgSecOC
-               ,  &PBcfgSokFm
-               ,  &PBcfgSpi
-               ,  &PBcfgStbM
-               ,  &PBcfgVkms
-               ,  &PBcfgWdg
-               ,  &PBcfgWdgIf
-               ,  &PBcfgWdgM
-            }
       }
 
    ,  {

@@ -21,6 +21,13 @@
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
+#if(CFGDIO_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGDIO_AR_RELEASE_VERSION_MAJOR!"
+#endif
+
+#if(CFGDIO_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGDIO_AR_RELEASE_VERSION_MINOR!"
+#endif
 
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
@@ -37,7 +44,6 @@ class CfgDio_Type:
 /******************************************************************************/
 /* PARAMS                                                                     */
 /******************************************************************************/
-extern CONST(CfgDio_Type, CFGDIO_CONFIG_DATA) PBcfgDio;
 
 /******************************************************************************/
 /* OBJECTS                                                                    */

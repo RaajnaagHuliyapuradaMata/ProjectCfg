@@ -21,6 +21,13 @@
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
+#if(CFGGPT_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGGPT_AR_RELEASE_VERSION_MAJOR!"
+#endif
+
+#if(CFGGPT_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGGPT_AR_RELEASE_VERSION_MINOR!"
+#endif
 
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
@@ -37,7 +44,6 @@ class CfgGpt_Type:
 /******************************************************************************/
 /* PARAMS                                                                     */
 /******************************************************************************/
-extern CONST(CfgGpt_Type, CFGGPT_CONFIG_DATA) PBcfgGpt;
 
 /******************************************************************************/
 /* OBJECTS                                                                    */

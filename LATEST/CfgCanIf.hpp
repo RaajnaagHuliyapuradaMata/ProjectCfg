@@ -21,6 +21,13 @@
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
+#if(CFGCANIF_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGCANIF_AR_RELEASE_VERSION_MAJOR!"
+#endif
+
+#if(CFGCANIF_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGCANIF_AR_RELEASE_VERSION_MINOR!"
+#endif
 
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
@@ -49,7 +56,6 @@ class CfgCanIf_Type:
 /******************************************************************************/
 /* PARAMS                                                                     */
 /******************************************************************************/
-extern CONST(CfgCanIf_Type, CFGCANIF_CONFIG_DATA) PBcfgCanIf;
 
 /******************************************************************************/
 /* OBJECTS                                                                    */

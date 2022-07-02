@@ -119,6 +119,7 @@ class CfgGen_Type{
       CfgMcu_Type            CfgMcu;
       CfgMemIf_Type          CfgMemIf;
       CfgNm_Type             CfgNm;
+      CfgNvM_Type            CfgNvM;
       CfgOcu_Type            CfgOcu;
       CfgOs_Type             CfgOs;
       CfgPort_Type           CfgPort;
@@ -139,13 +140,14 @@ class CfgGen_Type{
       CfgWdgM_Type           CfgWdgM;
 
       CfgDcm_Type            CfgDcm;
-      CfgNvM_Type            CfgNvM;
       CfgPduR_Type           CfgPduR;
 };
 
 /******************************************************************************/
 /* CONSTS                                                                     */
 /******************************************************************************/
+extern const CfgGen_Type PBcfgGen;
+extern       CfgGen_Type CfgGen;
 
 /******************************************************************************/
 /* PARAMS                                                                     */

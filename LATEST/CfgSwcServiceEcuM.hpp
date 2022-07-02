@@ -21,6 +21,13 @@
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
+#if(CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MAJOR!"
+#endif
+
+#if(CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MINOR!"
+#endif
 
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
@@ -37,7 +44,6 @@ class CfgSwcServiceEcuM_Type:
 /******************************************************************************/
 /* PARAMS                                                                     */
 /******************************************************************************/
-extern CONST(CfgSwcServiceEcuM_Type, CFGSWCSERVICEECUM_CONFIG_DATA) PBcfgSwcServiceEcuM;
 
 /******************************************************************************/
 /* OBJECTS                                                                    */

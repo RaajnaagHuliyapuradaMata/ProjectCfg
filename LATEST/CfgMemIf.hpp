@@ -21,6 +21,13 @@
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
+#if(CFGMEMIF_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGMEMIF_AR_RELEASE_VERSION_MAJOR!"
+#endif
+
+#if(CFGMEMIF_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGMEMIF_AR_RELEASE_VERSION_MINOR!"
+#endif
 
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
@@ -58,7 +65,6 @@ class CfgMemIf_Type:
 /******************************************************************************/
 /* PARAMS                                                                     */
 /******************************************************************************/
-extern CONST(CfgMemIf_Type, CFGMEMIF_CONFIG_DATA) PBcfgMemIf;
 
 /******************************************************************************/
 /* OBJECTS                                                                    */

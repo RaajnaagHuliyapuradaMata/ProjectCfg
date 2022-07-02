@@ -22,6 +22,13 @@
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
+#if(CFGPDUR_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGPDUR_AR_RELEASE_VERSION_MAJOR!"
+#endif
+
+#if(CFGPDUR_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGPDUR_AR_RELEASE_VERSION_MINOR!"
+#endif
 
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
@@ -90,7 +97,6 @@ class CfgPduR_Type:
 /******************************************************************************/
 /* PARAMS                                                                     */
 /******************************************************************************/
-extern CONST(CfgPduR_Type, CFGPDUR_CONFIG_DATA) PBcfgPduR;
 
 /******************************************************************************/
 /* OBJECTS                                                                    */

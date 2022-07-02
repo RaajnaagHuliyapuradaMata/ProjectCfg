@@ -88,6 +88,13 @@ using namespace std;
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
+#if(CFGDCM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGDCM_AR_RELEASE_VERSION_MAJOR!"
+#endif
+
+#if(CFGDCM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGDCM_AR_RELEASE_VERSION_MINOR!"
+#endif
 
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
@@ -194,7 +201,6 @@ class CfgDcm_Type:
 /******************************************************************************/
 /* PARAMS                                                                     */
 /******************************************************************************/
-extern CONST(CfgDcm_Type, CFGDCM_CONFIG_DATA) PBcfgDcm;
 
 /******************************************************************************/
 /* OBJECTS                                                                    */

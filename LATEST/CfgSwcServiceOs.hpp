@@ -21,6 +21,13 @@
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
+#if(CFGSWCSERVICEOS_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSWCSERVICEOS_AR_RELEASE_VERSION_MAJOR!"
+#endif
+
+#if(CFGSWCSERVICEOS_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSWCSERVICEOS_AR_RELEASE_VERSION_MINOR!"
+#endif
 
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
@@ -37,7 +44,6 @@ class CfgSwcServiceOs_Type:
 /******************************************************************************/
 /* PARAMS                                                                     */
 /******************************************************************************/
-extern CONST(CfgSwcServiceOs_Type, CFGSWCSERVICEOS_CONFIG_DATA) PBcfgSwcServiceOs;
 
 /******************************************************************************/
 /* OBJECTS                                                                    */

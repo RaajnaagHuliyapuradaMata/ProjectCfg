@@ -21,6 +21,13 @@
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
+#if(CFGNVM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGNVM_AR_RELEASE_VERSION_MAJOR!"
+#endif
+
+#if(CFGNVM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGNVM_AR_RELEASE_VERSION_MINOR!"
+#endif
 
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
@@ -43,7 +50,6 @@ class CfgNvM_Type:
       public CfgModule_TypeAbstract
 {
    public:
-      const CfgModule_TypeAbstract* gaptrListCfg[54];
 };
 
 /******************************************************************************/
@@ -53,7 +59,6 @@ class CfgNvM_Type:
 /******************************************************************************/
 /* PARAMS                                                                     */
 /******************************************************************************/
-extern CONST(CfgNvM_Type, CFGNVM_CONFIG_DATA) PBcfgNvM;
 
 /******************************************************************************/
 /* OBJECTS                                                                    */
