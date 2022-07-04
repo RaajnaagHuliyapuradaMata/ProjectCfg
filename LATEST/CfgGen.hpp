@@ -146,8 +146,9 @@ class CfgGen_Type{
 /******************************************************************************/
 /* CONSTS                                                                     */
 /******************************************************************************/
-extern const CfgGen_Type PBcfgGen;
-extern       CfgGen_Type CfgGen;
+extern const CfgGen_Type PBcfgGen_ROM;
+extern const CfgGen_Type   CfgGen_Fls;
+extern       CfgGen_Type   CfgGen_NvM;
 
 /******************************************************************************/
 /* PARAMS                                                                     */
