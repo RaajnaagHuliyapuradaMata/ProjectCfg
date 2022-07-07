@@ -50,7 +50,6 @@
 #include "CfgPort.hpp"
 #include "CfgPwm.hpp"
 #include "CfgRte.hpp"
-#include "CfgSchM.hpp"
 #include "CfgSecOC.hpp"
 #include "CfgSokFm.hpp"
 #include "CfgSpi.hpp"
@@ -67,6 +66,7 @@
 #include "CfgDcm.hpp"
 #include "CfgNvM.hpp"
 #include "CfgPduR.hpp"
+#include "CfgSchM.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -125,7 +125,6 @@ class CfgGen_Type{
       CfgPort_Type           CfgPort;
       CfgPwm_Type            CfgPwm;
       CfgRte_Type            CfgRte;
-      CfgSchM_Type           CfgSchM;
       CfgSecOC_Type          CfgSecOC;
       CfgSokFm_Type          CfgSokFm;
       CfgSpi_Type            CfgSpi;
@@ -141,6 +140,7 @@ class CfgGen_Type{
 
       CfgDcm_Type            CfgDcm;
       CfgPduR_Type           CfgPduR;
+      CfgSchM_Type           CfgSchM;
 };
 
 /******************************************************************************/

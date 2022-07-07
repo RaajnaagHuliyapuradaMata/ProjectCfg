@@ -8,6 +8,67 @@
 /******************************************************************************/
 #include "CfgGen.hpp"
 
+#include "Module.hpp"
+#include "Adc.hpp"
+#include "BswM.hpp"
+#include "Can.hpp"
+#include "CanIf.hpp"
+#include "CanNm.hpp"
+#include "CanSm.hpp"
+#include "CanTp.hpp"
+#include "Com.hpp"
+#include "ComM.hpp"
+#include "Cry.hpp"
+#include "CryIf.hpp"
+#include "Csm.hpp"
+#include "Dcm.hpp"
+#include "Dem.hpp"
+#include "Det.hpp"
+#include "Dio.hpp"
+#include "Dlt.hpp"
+#include "Ea.hpp"
+#include "EcuM.hpp"
+#include "Eep.hpp"
+#include "Eth.hpp"
+#include "EthIf.hpp"
+#include "Fee.hpp"
+#include "FiM.hpp"
+#include "Fls.hpp"
+#include "Fr.hpp"
+#include "FrIf.hpp"
+#include "FrNm.hpp"
+#include "FrTp.hpp"
+#include "Gpt.hpp"
+#include "Icu.hpp"
+#include "IpduM.hpp"
+#include "J1939Tp.hpp"
+#include "Lin.hpp"
+#include "LinIf.hpp"
+#include "LinTp.hpp"
+#include "Mcu.hpp"
+#include "MemIf.hpp"
+#include "Nm.hpp"
+#include "NvM.hpp"
+#include "Ocu.hpp"
+#include "Os.hpp"
+#include "PduR.hpp"
+#include "Port.hpp"
+#include "Pwm.hpp"
+#include "Rte.hpp"
+#include "SchM.hpp"
+#include "SecOC.hpp"
+#include "SokFm.hpp"
+#include "Spi.hpp"
+#include "StartUp.hpp"
+#include "StbM.hpp"
+#include "SwcApplFoc.hpp"
+#include "SwcServiceEcuM.hpp"
+#include "SwcServiceOs.hpp"
+#include "Vkms.hpp"
+#include "Wdg.hpp"
+#include "WdgIf.hpp"
+#include "WdgM.hpp"
+
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
@@ -56,7 +117,6 @@
    ,  {Port_DevErrorDetect,          {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
    ,  {Pwm_DevErrorDetect,           {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
    ,  {Rte_DevErrorDetect,           {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {SchM_DevErrorDetect,          {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
    ,  {SecOC_DevErrorDetect,         {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
    ,  {SokFm_DevErrorDetect,         {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
    ,  {Spi_DevErrorDetect,           {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
@@ -83,127 +143,127 @@
                ,  '0'                                                                                                         \
             }                                                                                                                 \
          ,  {                                                                                                                 \
-                  gptrinfDcmClient_CanIf                                                                                      \
-               ,  gptrinfDcmClient_CanTp                                                                                      \
-               ,  gptrinfDcmClient_CryIf                                                                                      \
-               ,  gptrinfDcmClient_Ea                                                                                         \
-               ,  gptrinfDcmClient_EthIf                                                                                      \
-               ,  gptrinfDcmClient_Fee                                                                                        \
-               ,  gptrinfDcmClient_FrIf                                                                                       \
-               ,  gptrinfDcmClient_FrTp                                                                                       \
-               ,  gptrinfDcmClient_J1939Tp                                                                                    \
-               ,  gptrinfDcmClient_LinIf                                                                                      \
-               ,  gptrinfDcmClient_LinTp                                                                                      \
-               ,  gptrinfDcmClient_MemIf                                                                                      \
-               ,  gptrinfDcmClient_WdgIf                                                                                      \
-               ,  gptrinfDcmClient_Adc                                                                                        \
-               ,  gptrinfDcmClient_Can                                                                                        \
-               ,  gptrinfDcmClient_Cry                                                                                        \
-               ,  gptrinfDcmClient_Dio                                                                                        \
-               ,  gptrinfDcmClient_Eep                                                                                        \
-               ,  gptrinfDcmClient_Eth                                                                                        \
-               ,  gptrinfDcmClient_Fls                                                                                        \
-               ,  gptrinfDcmClient_Fr                                                                                         \
-               ,  gptrinfDcmClient_Gpt                                                                                        \
-               ,  gptrinfDcmClient_Icu                                                                                        \
-               ,  gptrinfDcmClient_Lin                                                                                        \
-               ,  gptrinfDcmClient_Mcu                                                                                        \
-               ,  gptrinfDcmClient_Ocu                                                                                        \
-               ,  gptrinfDcmClient_Port                                                                                       \
-               ,  gptrinfDcmClient_Pwm                                                                                        \
-               ,  gptrinfDcmClient_Spi                                                                                        \
-               ,  gptrinfDcmClient_Wdg                                                                                        \
-               ,  gptrinfDcmClient_BswM                                                                                       \
-               ,  gptrinfDcmClient_CanNm                                                                                      \
-               ,  gptrinfDcmClient_CanSm                                                                                      \
-               ,  gptrinfDcmClient_Com                                                                                        \
-               ,  gptrinfDcmClient_ComM                                                                                       \
-               ,  gptrinfDcmClient_Csm                                                                                        \
-               ,  gptrinfDcmClient_Dcm                                                                                        \
-               ,  gptrinfDcmClient_Dem                                                                                        \
-               ,  gptrinfDcmClient_Det                                                                                        \
-               ,  gptrinfDcmClient_Dlt                                                                                        \
-               ,  gptrinfDcmClient_EcuM                                                                                       \
-               ,  gptrinfDcmClient_FiM                                                                                        \
-               ,  gptrinfDcmClient_FrNm                                                                                       \
-               ,  gptrinfDcmClient_IpduM                                                                                      \
-               ,  gptrinfDcmClient_Nm                                                                                         \
-               ,  gptrinfDcmClient_NvM                                                                                        \
-               ,  gptrinfDcmClient_Os                                                                                         \
-               ,  gptrinfDcmClient_PduR                                                                                       \
-               ,  gptrinfDcmClient_SchM                                                                                       \
-               ,  gptrinfDcmClient_SecOC                                                                                      \
-               ,  gptrinfDcmClient_SokFm                                                                                      \
-               ,  gptrinfDcmClient_StartUp                                                                                    \
-               ,  gptrinfDcmClient_StbM                                                                                       \
-               ,  gptrinfDcmClient_Vkms                                                                                       \
-               ,  gptrinfDcmClient_WdgM                                                                                       \
-               ,  gptrinfDcmClient_Rte                                                                                        \
-               ,  gptrinfDcmClient_SwcApplFoc                                                                                 \
-               ,  gptrinfDcmClient_SwcServiceEcuM                                                                             \
-               ,  gptrinfDcmClient_SwcServiceOs                                                                               \
+                  &Adc                                                                                                        \
+               ,  &BswM                                                                                                       \
+               ,  &Can                                                                                                        \
+               ,  &CanIf                                                                                                      \
+               ,  &CanNm                                                                                                      \
+               ,  &CanSm                                                                                                      \
+               ,  &CanTp                                                                                                      \
+               ,  &Com                                                                                                        \
+               ,  &ComM                                                                                                       \
+               ,  &Cry                                                                                                        \
+               ,  &CryIf                                                                                                      \
+               ,  &Csm                                                                                                        \
+               ,  &Dcm                                                                                                        \
+               ,  &Dem                                                                                                        \
+               ,  &Det                                                                                                        \
+               ,  &Dio                                                                                                        \
+               ,  &Dlt                                                                                                        \
+               ,  &Ea                                                                                                         \
+               ,  &EcuM                                                                                                       \
+               ,  &Eep                                                                                                        \
+               ,  &Eth                                                                                                        \
+               ,  &EthIf                                                                                                      \
+               ,  &Fee                                                                                                        \
+               ,  &FiM                                                                                                        \
+               ,  &Fls                                                                                                        \
+               ,  &Fr                                                                                                         \
+               ,  &FrIf                                                                                                       \
+               ,  &FrNm                                                                                                       \
+               ,  &FrTp                                                                                                       \
+               ,  &Gpt                                                                                                        \
+               ,  &Icu                                                                                                        \
+               ,  &IpduM                                                                                                      \
+               ,  &J1939Tp                                                                                                    \
+               ,  &Lin                                                                                                        \
+               ,  &LinIf                                                                                                      \
+               ,  &LinTp                                                                                                      \
+               ,  &Mcu                                                                                                        \
+               ,  &MemIf                                                                                                      \
+               ,  &Nm                                                                                                         \
+               ,  &NvM                                                                                                        \
+               ,  &Ocu                                                                                                        \
+               ,  &Os                                                                                                         \
+               ,  &PduR                                                                                                       \
+               ,  &Port                                                                                                       \
+               ,  &Pwm                                                                                                        \
+               ,  &Rte                                                                                                        \
+               ,  &SchM                                                                                                       \
+               ,  &SecOC                                                                                                      \
+               ,  &SokFm                                                                                                      \
+               ,  &Spi                                                                                                        \
+               ,  &StartUp                                                                                                    \
+               ,  &StbM                                                                                                       \
+               ,  &SwcApplFoc                                                                                                 \
+               ,  &SwcServiceEcuM                                                                                             \
+               ,  &SwcServiceOs                                                                                               \
+               ,  &Vkms                                                                                                       \
+               ,  &Wdg                                                                                                        \
+               ,  &WdgIf                                                                                                      \
+               ,  &WdgM                                                                                                       \
             }                                                                                                                 \
 /*#if(STD_ON == _ReSIM)*/                                                                                                     \
          ,  {                                                                                                                 \
-                  "CanIf"                                                                                                     \
-               ,  "CanTp"                                                                                                     \
-               ,  "CryIf"                                                                                                     \
-               ,  "Ea"                                                                                                        \
-               ,  "EthIf"                                                                                                     \
-               ,  "Fee"                                                                                                       \
-               ,  "FrIf"                                                                                                      \
-               ,  "FrTp"                                                                                                      \
-               ,  "J1939Tp"                                                                                                   \
-               ,  "LinIf"                                                                                                     \
-               ,  "LinTp"                                                                                                     \
-               ,  "MemIf"                                                                                                     \
-               ,  "WdgIf"                                                                                                     \
-               ,  "Adc"                                                                                                       \
-               ,  "Can"                                                                                                       \
-               ,  "Cry"                                                                                                       \
-               ,  "Dio"                                                                                                       \
-               ,  "Eep"                                                                                                       \
-               ,  "Eth"                                                                                                       \
-               ,  "Fls"                                                                                                       \
-               ,  "Fr"                                                                                                        \
-               ,  "Gpt"                                                                                                       \
-               ,  "Icu"                                                                                                       \
-               ,  "Lin"                                                                                                       \
-               ,  "Mcu"                                                                                                       \
-               ,  "Ocu"                                                                                                       \
-               ,  "Port"                                                                                                      \
-               ,  "Pwm"                                                                                                       \
-               ,  "Spi"                                                                                                       \
-               ,  "Wdg"                                                                                                       \
+                  "Adc"                                                                                                       \
                ,  "BswM"                                                                                                      \
+               ,  "Can"                                                                                                       \
+               ,  "CanIf"                                                                                                     \
                ,  "CanNm"                                                                                                     \
                ,  "CanSm"                                                                                                     \
+               ,  "CanTp"                                                                                                     \
                ,  "Com"                                                                                                       \
                ,  "ComM"                                                                                                      \
+               ,  "Cry"                                                                                                       \
+               ,  "CryIf"                                                                                                     \
                ,  "Csm"                                                                                                       \
                ,  "Dcm"                                                                                                       \
                ,  "Dem"                                                                                                       \
                ,  "Det"                                                                                                       \
+               ,  "Dio"                                                                                                       \
                ,  "Dlt"                                                                                                       \
+               ,  "Ea"                                                                                                        \
                ,  "EcuM"                                                                                                      \
+               ,  "Eep"                                                                                                       \
+               ,  "Eth"                                                                                                       \
+               ,  "EthIf"                                                                                                     \
+               ,  "Fee"                                                                                                       \
                ,  "FiM"                                                                                                       \
+               ,  "Fls"                                                                                                       \
+               ,  "Fr"                                                                                                        \
+               ,  "FrIf"                                                                                                      \
                ,  "FrNm"                                                                                                      \
+               ,  "FrTp"                                                                                                      \
+               ,  "Gpt"                                                                                                       \
+               ,  "Icu"                                                                                                       \
                ,  "IpduM"                                                                                                     \
+               ,  "J1939Tp"                                                                                                   \
+               ,  "Lin"                                                                                                       \
+               ,  "LinIf"                                                                                                     \
+               ,  "LinTp"                                                                                                     \
+               ,  "Mcu"                                                                                                       \
+               ,  "MemIf"                                                                                                     \
                ,  "Nm"                                                                                                        \
                ,  "NvM"                                                                                                       \
+               ,  "Ocu"                                                                                                       \
                ,  "Os"                                                                                                        \
                ,  "PduR"                                                                                                      \
+               ,  "Port"                                                                                                      \
+               ,  "Pwm"                                                                                                       \
+               ,  "Rte"                                                                                                       \
                ,  "SchM"                                                                                                      \
                ,  "SecOC"                                                                                                     \
                ,  "SokFm"                                                                                                     \
+               ,  "Spi"                                                                                                       \
                ,  "StartUp"                                                                                                   \
                ,  "StbM"                                                                                                      \
-               ,  "Vkms"                                                                                                      \
-               ,  "WdgM"                                                                                                      \
-               ,  "Rte"                                                                                                       \
                ,  "SwcApplFoc"                                                                                                \
                ,  "SwcServiceEcuM"                                                                                            \
                ,  "SwcServiceOs"                                                                                              \
+               ,  "Vkms"                                                                                                      \
+               ,  "Wdg"                                                                                                       \
+               ,  "WdgIf"                                                                                                     \
+               ,  "WdgM"                                                                                                      \
             }                                                                                                                 \
 /*#else*/                                                                                                                     \
 /*#endif*/                                                                                                                    \
@@ -229,6 +289,27 @@
                   }                                                                                                           \
                ,  0                                                                                                           \
                ,  0                                                                                                           \
+            }                                                                                                                 \
+      }                                                                                                                       \
+                                                                                                                              \
+   ,  {                                                                                                                       \
+            SchM_DevErrorDetect                                                                                               \
+         ,  {                                                                                                                 \
+                  CFGSCHM_AR_RELEASE_VERSION_MAJOR                                                                            \
+               ,  CFGSCHM_AR_RELEASE_VERSION_MINOR                                                                            \
+               ,  0x00                                                                                                        \
+               ,  0xFF                                                                                                        \
+               ,  0x01                                                                                                        \
+               ,  '0'                                                                                                         \
+               ,  '1'                                                                                                         \
+               ,  '0'                                                                                                         \
+            }                                                                                                                 \
+         ,  {                                                                                                                 \
+                  &EcuM                                                                                                       \
+               ,  &NvM                                                                                                        \
+               ,  &CanIf                                                                                                      \
+               ,  &PduR                                                                                                       \
+               ,  &Dcm                                                                                                        \
             }                                                                                                                 \
       }                                                                                                                       \
 
@@ -261,11 +342,66 @@ const CfgGen_Type CfgGen_Fls = {
 /******************************************************************************/
 CfgGen_Type CfgGen_NvM;
 
-#include "Module.hpp"
-#include "Adc.hpp"
-
-abstract_module* aptrListModules[1] = {
+abstract_module* aptrListModules[] = {
       &Adc
+   ,  &BswM
+   ,  &Can
+   ,  &CanIf
+   ,  &CanNm
+   ,  &CanSm
+   ,  &CanTp
+   ,  &Com
+   ,  &ComM
+   ,  &Cry
+   ,  &CryIf
+   ,  &Csm
+   ,  &Dcm
+   ,  &Dem
+   ,  &Det
+   ,  &Dio
+   ,  &Dlt
+   ,  &Ea
+   ,  &EcuM
+   ,  &Eep
+   ,  &Eth
+   ,  &EthIf
+   ,  &Fee
+   ,  &FiM
+   ,  &Fls
+   ,  &Fr
+   ,  &FrIf
+   ,  &FrNm
+   ,  &FrTp
+   ,  &Gpt
+   ,  &Icu
+   ,  &IpduM
+   ,  &J1939Tp
+   ,  &Lin
+   ,  &LinIf
+   ,  &LinTp
+   ,  &Mcu
+   ,  &MemIf
+   ,  &Nm
+   ,  &NvM
+   ,  &Ocu
+   ,  &Os
+   ,  &PduR
+   ,  &Port
+   ,  &Pwm
+   ,  &Rte
+   ,  &SchM
+   ,  &SecOC
+   ,  &SokFm
+   ,  &Spi
+   ,  &StartUp
+   ,  &StbM
+   ,  &SwcApplFoc
+   ,  &SwcServiceEcuM
+   ,  &SwcServiceOs
+   ,  &Vkms
+   ,  &Wdg
+   ,  &WdgIf
+   ,  &WdgM
 };
 
 /******************************************************************************/

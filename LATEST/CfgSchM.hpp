@@ -9,6 +9,7 @@
 /******************************************************************************/
 #include "CfgModule.hpp"
 #include "CompilerCfg_CfgSchM.hpp"
+#include "infSchMClient.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -35,6 +36,8 @@
 class CfgSchM_Type:
       public CfgModule_TypeAbstract
 {
+   public:
+      infSchMClient* aptrSchMClients_1ms[5];
 };
 
 /******************************************************************************/
