@@ -56,7 +56,6 @@
 #include "CfgStartUp.hpp"
 #include "CfgStbM.hpp"
 #include "CfgSwcApplFoc.hpp"
-#include "CfgSwcServiceEcuM.hpp"
 #include "CfgSwcServiceOs.hpp"
 #include "CfgVkms.hpp"
 #include "CfgWdg.hpp"
@@ -67,6 +66,7 @@
 #include "CfgNvM.hpp"
 #include "CfgPduR.hpp"
 #include "CfgSchM.hpp"
+#include "CfgSwcServiceEcuM.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -131,7 +131,6 @@ class CfgGen_Type{
       CfgStartUp_Type        CfgStartUp;
       CfgStbM_Type           CfgStbM;
       CfgSwcApplFoc_Type     CfgSwcApplFoc;
-      CfgSwcServiceEcuM_Type CfgSwcServiceEcuM;
       CfgSwcServiceOs_Type   CfgSwcServiceOs;
       CfgVkms_Type           CfgVkms;
       CfgWdg_Type            CfgWdg;
@@ -141,6 +140,7 @@ class CfgGen_Type{
       CfgDcm_Type            CfgDcm;
       CfgPduR_Type           CfgPduR;
       CfgSchM_Type           CfgSchM;
+      CfgSwcServiceEcuM_Type CfgSwcServiceEcuM;
 };
 
 /******************************************************************************/

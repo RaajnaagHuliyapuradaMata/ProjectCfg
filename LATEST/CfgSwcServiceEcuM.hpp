@@ -9,6 +9,7 @@
 /******************************************************************************/
 #include "CfgModule.hpp"
 #include "CompilerCfg_CfgSwcServiceEcuM.hpp"
+#include "infEcuMClient.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -17,6 +18,8 @@
 #define CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MINOR                             3
 #define SwcServiceEcuM_DevErrorDetect                             DevErrorDetect
 #define SwcServiceEcuM_InitCheck                                          STD_ON
+#define IndexEcuMClient_BswM                                                   1
+#define IndexEcuMClient_SchM                                                  46
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -32,9 +35,17 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
+typedef struct{
+   infEcuMClient*          lptrinfEcuMClient_Module;
+   CfgModule_TypeAbstract* ptrPBcfgModule;
+}CfgEcuM_TypeDriverInitData;
+
 class CfgSwcServiceEcuM_Type:
       public CfgModule_TypeAbstract
 {
+   public:
+      CfgEcuM_TypeDriverInitData laDriverInitDataZero[6];
+      CfgEcuM_TypeDriverInitData laDriverInitDataOne[52];
 };
 
 /******************************************************************************/

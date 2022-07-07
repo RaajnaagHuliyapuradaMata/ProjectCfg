@@ -123,7 +123,6 @@
    ,  {StartUp_DevErrorDetect,       {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
    ,  {StbM_DevErrorDetect,          {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
    ,  {SwcApplFoc_DevErrorDetect,    {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {SwcServiceEcuM_DevErrorDetect,{STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
    ,  {SwcServiceOs_DevErrorDetect,  {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
    ,  {Vkms_DevErrorDetect,          {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
    ,  {Wdg_DevErrorDetect,           {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
@@ -312,6 +311,90 @@
                ,  &Dcm                                                                                                        \
             }                                                                                                                 \
       }                                                                                                                       \
+                                                                                                                              \
+   ,  {                                                                                                                       \
+            SchM_DevErrorDetect                                                                                               \
+         ,  {                                                                                                                 \
+                  CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MAJOR                                                                  \
+               ,  CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MINOR                                                                  \
+               ,  0x00                                                                                                        \
+               ,  0xFF                                                                                                        \
+               ,  0x01                                                                                                        \
+               ,  '0'                                                                                                         \
+               ,  '1'                                                                                                         \
+               ,  '0'                                                                                                         \
+            }                                                                                                                 \
+         ,  {                                                                                                                 \
+                  {&Det,            &(CfgGen_NvM.CfgDet)}                                                                     \
+               ,  {&Dem,            &(CfgGen_NvM.CfgDem)}                                                                     \
+               ,  {&Fls,            &(CfgGen_NvM.CfgFls)}                                                                     \
+               ,  {&Fee,            &(CfgGen_NvM.CfgFee)}                                                                     \
+               ,  {&MemIf,          &(CfgGen_NvM.CfgMemIf)}                                                                   \
+               ,  {&NvM,            &(CfgGen_NvM.CfgNvM)}                                                                     \
+/*             ,  {&EcuM,           &(CfgGen_NvM.CfgEcuM)}*/                                                                  \
+            }                                                                                                                 \
+         ,  {                                                                                                                 \
+                  {&Adc,            &(CfgGen_NvM.CfgAdc)}                                                                     \
+               ,  {&BswM,           &(CfgGen_NvM.CfgBswM)}                                                                    \
+               ,  {&Can,            &(CfgGen_NvM.CfgCan)}                                                                     \
+               ,  {&CanIf,          &(CfgGen_NvM.CfgCanIf)}                                                                   \
+               ,  {&CanNm,          &(CfgGen_NvM.CfgCanNm)}                                                                   \
+               ,  {&CanSm,          &(CfgGen_NvM.CfgCanSm)}                                                                   \
+               ,  {&CanTp,          &(CfgGen_NvM.CfgCanTp)}                                                                   \
+               ,  {&Com,            &(CfgGen_NvM.CfgCom)}                                                                     \
+               ,  {&ComM,           &(CfgGen_NvM.CfgComM)}                                                                    \
+               ,  {&Cry,            &(CfgGen_NvM.CfgCry)}                                                                     \
+               ,  {&CryIf,          &(CfgGen_NvM.CfgCryIf)}                                                                   \
+               ,  {&Csm,            &(CfgGen_NvM.CfgCsm)}                                                                     \
+               ,  {&Dcm,            &(CfgGen_NvM.CfgDcm)}                                                                     \
+/*             ,  {&Dem,            &(CfgGen_NvM.CfgDem)}*/                                                                   \
+/*             ,  {&Det,            &(CfgGen_NvM.CfgDet)}*/                                                                   \
+               ,  {&Dio,            &(CfgGen_NvM.CfgDio)}                                                                     \
+               ,  {&Dlt,            &(CfgGen_NvM.CfgDlt)}                                                                     \
+               ,  {&Ea,             &(CfgGen_NvM.CfgEa)}                                                                      \
+/*             ,  {&EcuM,           &(CfgGen_NvM.CfgEcuM)}*/                                                                  \
+               ,  {&Eep,            &(CfgGen_NvM.CfgEep)}                                                                     \
+               ,  {&Eth,            &(CfgGen_NvM.CfgEth)}                                                                     \
+               ,  {&EthIf,          &(CfgGen_NvM.CfgEthIf)}                                                                   \
+/*             ,  {&Fee,            &(CfgGen_NvM.CfgFee)}*/                                                                   \
+               ,  {&FiM,            &(CfgGen_NvM.CfgFiM)}                                                                     \
+/*             ,  {&Fls,            &(CfgGen_NvM.CfgFls)}*/                                                                   \
+               ,  {&Fr,             &(CfgGen_NvM.CfgFr)}                                                                      \
+               ,  {&FrIf,           &(CfgGen_NvM.CfgFrIf)}                                                                    \
+               ,  {&FrNm,           &(CfgGen_NvM.CfgFrNm)}                                                                    \
+               ,  {&FrTp,           &(CfgGen_NvM.CfgFrTp)}                                                                    \
+               ,  {&Gpt,            &(CfgGen_NvM.CfgGpt)}                                                                     \
+               ,  {&Icu,            &(CfgGen_NvM.CfgIcu)}                                                                     \
+               ,  {&IpduM,          &(CfgGen_NvM.CfgIpduM)}                                                                   \
+               ,  {&J1939Tp,        &(CfgGen_NvM.CfgJ1939Tp)}                                                                 \
+               ,  {&Lin,            &(CfgGen_NvM.CfgLin)}                                                                     \
+               ,  {&LinIf,          &(CfgGen_NvM.CfgLinIf)}                                                                   \
+               ,  {&LinTp,          &(CfgGen_NvM.CfgLinTp)}                                                                   \
+               ,  {&Mcu,            &(CfgGen_NvM.CfgMcu)}                                                                     \
+/*             ,  {&MemIf,          &(CfgGen_NvM.CfgMemIf)}*/                                                                 \
+               ,  {&Nm,             &(CfgGen_NvM.CfgNm)}                                                                      \
+/*             ,  {&NvM,            &(CfgGen_NvM.CfgNvM)}*/                                                                   \
+               ,  {&Ocu,            &(CfgGen_NvM.CfgOcu)}                                                                     \
+               ,  {&Os,             &(CfgGen_NvM.CfgOs)}                                                                      \
+               ,  {&PduR,           &(CfgGen_NvM.CfgPduR)}                                                                    \
+               ,  {&Port,           &(CfgGen_NvM.CfgPort)}                                                                    \
+               ,  {&Pwm,            &(CfgGen_NvM.CfgPwm)}                                                                     \
+               ,  {&Rte,            &(CfgGen_NvM.CfgRte)}                                                                     \
+               ,  {&SchM,           &(CfgGen_NvM.CfgSchM)}                                                                    \
+               ,  {&SecOC,          &(CfgGen_NvM.CfgSecOC)}                                                                   \
+               ,  {&SokFm,          &(CfgGen_NvM.CfgSokFm)}                                                                   \
+               ,  {&Spi,            &(CfgGen_NvM.CfgSpi)}                                                                     \
+               ,  {&StartUp,        &(CfgGen_NvM.CfgStartUp)}                                                                 \
+               ,  {&StbM,           &(CfgGen_NvM.CfgStbM)}                                                                    \
+               ,  {&SwcApplFoc,     &(CfgGen_NvM.CfgSwcApplFoc)}                                                              \
+               ,  {&SwcServiceEcuM, &(CfgGen_NvM.CfgSwcServiceEcuM)}                                                          \
+               ,  {&SwcServiceOs,   &(CfgGen_NvM.CfgSwcServiceOs)}                                                            \
+               ,  {&Vkms,           &(CfgGen_NvM.CfgVkms)}                                                                    \
+               ,  {&Wdg,            &(CfgGen_NvM.CfgWdg)}                                                                     \
+               ,  {&WdgIf,          &(CfgGen_NvM.CfgWdgIf)}                                                                   \
+               ,  {&WdgM,           &(CfgGen_NvM.CfgWdgM)}                                                                    \
+            }                                                                                                                 \
+      }                                                                                                                       \
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -341,68 +424,6 @@ const CfgGen_Type CfgGen_Fls = {
 /* OBJECTS                                                                    */
 /******************************************************************************/
 CfgGen_Type CfgGen_NvM;
-
-abstract_module* aptrListModules[] = {
-      &Adc
-   ,  &BswM
-   ,  &Can
-   ,  &CanIf
-   ,  &CanNm
-   ,  &CanSm
-   ,  &CanTp
-   ,  &Com
-   ,  &ComM
-   ,  &Cry
-   ,  &CryIf
-   ,  &Csm
-   ,  &Dcm
-   ,  &Dem
-   ,  &Det
-   ,  &Dio
-   ,  &Dlt
-   ,  &Ea
-   ,  &EcuM
-   ,  &Eep
-   ,  &Eth
-   ,  &EthIf
-   ,  &Fee
-   ,  &FiM
-   ,  &Fls
-   ,  &Fr
-   ,  &FrIf
-   ,  &FrNm
-   ,  &FrTp
-   ,  &Gpt
-   ,  &Icu
-   ,  &IpduM
-   ,  &J1939Tp
-   ,  &Lin
-   ,  &LinIf
-   ,  &LinTp
-   ,  &Mcu
-   ,  &MemIf
-   ,  &Nm
-   ,  &NvM
-   ,  &Ocu
-   ,  &Os
-   ,  &PduR
-   ,  &Port
-   ,  &Pwm
-   ,  &Rte
-   ,  &SchM
-   ,  &SecOC
-   ,  &SokFm
-   ,  &Spi
-   ,  &StartUp
-   ,  &StbM
-   ,  &SwcApplFoc
-   ,  &SwcServiceEcuM
-   ,  &SwcServiceOs
-   ,  &Vkms
-   ,  &Wdg
-   ,  &WdgIf
-   ,  &WdgM
-};
 
 /******************************************************************************/
 /* FUNCTIONS                                                                  */
