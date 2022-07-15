@@ -7,67 +7,7 @@
 /* #INCLUDES                                                                  */
 /******************************************************************************/
 #include "CfgGen.hpp"
-
-#include "Module.hpp"
-#include "Adc.hpp"
-#include "BswM.hpp"
-#include "Can.hpp"
-#include "CanIf.hpp"
-#include "CanNm.hpp"
-#include "CanSm.hpp"
-#include "CanTp.hpp"
-#include "Com.hpp"
-#include "ComM.hpp"
-#include "Cry.hpp"
-#include "CryIf.hpp"
-#include "Csm.hpp"
-#include "Dcm.hpp"
-#include "Dem.hpp"
-#include "Det.hpp"
-#include "Dio.hpp"
-#include "Dlt.hpp"
-#include "Ea.hpp"
-#include "EcuM.hpp"
-#include "Eep.hpp"
-#include "Eth.hpp"
-#include "EthIf.hpp"
-#include "Fee.hpp"
-#include "FiM.hpp"
-#include "Fls.hpp"
-#include "Fr.hpp"
-#include "FrIf.hpp"
-#include "FrNm.hpp"
-#include "FrTp.hpp"
-#include "Gpt.hpp"
-#include "Icu.hpp"
-#include "IpduM.hpp"
-#include "J1939Tp.hpp"
-#include "Lin.hpp"
-#include "LinIf.hpp"
-#include "LinTp.hpp"
-#include "Mcu.hpp"
-#include "MemIf.hpp"
-#include "Nm.hpp"
-#include "NvM.hpp"
-#include "Ocu.hpp"
-#include "Os.hpp"
-#include "PduR.hpp"
-#include "Port.hpp"
-#include "Pwm.hpp"
-#include "Rte.hpp"
-#include "SchM.hpp"
-#include "SecOC.hpp"
-#include "SokFm.hpp"
-#include "Spi.hpp"
-#include "StartUp.hpp"
-#include "StbM.hpp"
-#include "SwcApplFoc.hpp"
-#include "SwcServiceEcuM.hpp"
-#include "SwcServiceOs.hpp"
-#include "Vkms.hpp"
-#include "Wdg.hpp"
-#include "WdgIf.hpp"
-#include "WdgM.hpp"
+#include "infCfgGen_Imp.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -324,75 +264,149 @@
                ,  '1'                                                                                                         \
                ,  '0'                                                                                                         \
             }                                                                                                                 \
+         ,  SizeDriverInitData_One                                                                                            \
          ,  {                                                                                                                 \
-                  {&Det,            &(CfgGen_NvM.CfgDet)}                                                                     \
-               ,  {&Dem,            &(CfgGen_NvM.CfgDem)}                                                                     \
-               ,  {&Fls,            &(CfgGen_NvM.CfgFls)}                                                                     \
-               ,  {&Fee,            &(CfgGen_NvM.CfgFee)}                                                                     \
-               ,  {&MemIf,          &(CfgGen_NvM.CfgMemIf)}                                                                   \
-               ,  {&NvM,            &(CfgGen_NvM.CfgNvM)}                                                                     \
-/*             ,  {&EcuM,           &(CfgGen_NvM.CfgEcuM)}*/                                                                  \
+                  &Adc                                                                                                        \
+               ,  &BswM                                                                                                       \
+               ,  &Can                                                                                                        \
+               ,  &CanIf                                                                                                      \
+               ,  &CanNm                                                                                                      \
+               ,  &CanSm                                                                                                      \
+               ,  &CanTp                                                                                                      \
+               ,  &Com                                                                                                        \
+               ,  &ComM                                                                                                       \
+               ,  &Cry                                                                                                        \
+               ,  &CryIf                                                                                                      \
+               ,  &Csm                                                                                                        \
+               ,  &Dcm                                                                                                        \
+/*             ,  &Dem*/                                                                                                      \
+/*             ,  &Det*/                                                                                                      \
+               ,  &Dio                                                                                                        \
+               ,  &Dlt                                                                                                        \
+               ,  &Ea                                                                                                         \
+/*             ,  &EcuM*/                                                                                                     \
+               ,  &Eep                                                                                                        \
+               ,  &Eth                                                                                                        \
+               ,  &EthIf                                                                                                      \
+/*             ,  &Fee*/                                                                                                      \
+               ,  &FiM                                                                                                        \
+/*             ,  &Fls*/                                                                                                      \
+               ,  &Fr                                                                                                         \
+               ,  &FrIf                                                                                                       \
+               ,  &FrNm                                                                                                       \
+               ,  &FrTp                                                                                                       \
+               ,  &Gpt                                                                                                        \
+               ,  &Icu                                                                                                        \
+               ,  &IpduM                                                                                                      \
+               ,  &J1939Tp                                                                                                    \
+               ,  &Lin                                                                                                        \
+               ,  &LinIf                                                                                                      \
+               ,  &LinTp                                                                                                      \
+               ,  &Mcu                                                                                                        \
+/*             ,  &MemIf*/                                                                                                    \
+               ,  &Nm                                                                                                         \
+/*             ,  &NvM*/                                                                                                      \
+               ,  &Ocu                                                                                                        \
+               ,  &Os                                                                                                         \
+               ,  &PduR                                                                                                       \
+               ,  &Port                                                                                                       \
+               ,  &Pwm                                                                                                        \
+               ,  &Rte                                                                                                        \
+               ,  &SchM                                                                                                       \
+               ,  &SecOC                                                                                                      \
+               ,  &SokFm                                                                                                      \
+               ,  &Spi                                                                                                        \
+               ,  &StartUp                                                                                                    \
+               ,  &StbM                                                                                                       \
+               ,  &SwcApplFoc                                                                                                 \
+/*             ,  &SwcServiceEcuM*/                                                                                           \
+               ,  &SwcServiceOs                                                                                               \
+               ,  &Vkms                                                                                                       \
+               ,  &Wdg                                                                                                        \
+               ,  &WdgIf                                                                                                      \
+               ,  &WdgM                                                                                                       \
             }                                                                                                                 \
          ,  {                                                                                                                 \
-                  {&Adc,            &(CfgGen_NvM.CfgAdc)}                                                                     \
-               ,  {&BswM,           &(CfgGen_NvM.CfgBswM)}                                                                    \
-               ,  {&Can,            &(CfgGen_NvM.CfgCan)}                                                                     \
-               ,  {&CanIf,          &(CfgGen_NvM.CfgCanIf)}                                                                   \
-               ,  {&CanNm,          &(CfgGen_NvM.CfgCanNm)}                                                                   \
-               ,  {&CanSm,          &(CfgGen_NvM.CfgCanSm)}                                                                   \
-               ,  {&CanTp,          &(CfgGen_NvM.CfgCanTp)}                                                                   \
-               ,  {&Com,            &(CfgGen_NvM.CfgCom)}                                                                     \
-               ,  {&ComM,           &(CfgGen_NvM.CfgComM)}                                                                    \
-               ,  {&Cry,            &(CfgGen_NvM.CfgCry)}                                                                     \
-               ,  {&CryIf,          &(CfgGen_NvM.CfgCryIf)}                                                                   \
-               ,  {&Csm,            &(CfgGen_NvM.CfgCsm)}                                                                     \
-               ,  {&Dcm,            &(CfgGen_NvM.CfgDcm)}                                                                     \
-/*             ,  {&Dem,            &(CfgGen_NvM.CfgDem)}*/                                                                   \
-/*             ,  {&Det,            &(CfgGen_NvM.CfgDet)}*/                                                                   \
-               ,  {&Dio,            &(CfgGen_NvM.CfgDio)}                                                                     \
-               ,  {&Dlt,            &(CfgGen_NvM.CfgDlt)}                                                                     \
-               ,  {&Ea,             &(CfgGen_NvM.CfgEa)}                                                                      \
-/*             ,  {&EcuM,           &(CfgGen_NvM.CfgEcuM)}*/                                                                  \
-               ,  {&Eep,            &(CfgGen_NvM.CfgEep)}                                                                     \
-               ,  {&Eth,            &(CfgGen_NvM.CfgEth)}                                                                     \
-               ,  {&EthIf,          &(CfgGen_NvM.CfgEthIf)}                                                                   \
-/*             ,  {&Fee,            &(CfgGen_NvM.CfgFee)}*/                                                                   \
-               ,  {&FiM,            &(CfgGen_NvM.CfgFiM)}                                                                     \
-/*             ,  {&Fls,            &(CfgGen_NvM.CfgFls)}*/                                                                   \
-               ,  {&Fr,             &(CfgGen_NvM.CfgFr)}                                                                      \
-               ,  {&FrIf,           &(CfgGen_NvM.CfgFrIf)}                                                                    \
-               ,  {&FrNm,           &(CfgGen_NvM.CfgFrNm)}                                                                    \
-               ,  {&FrTp,           &(CfgGen_NvM.CfgFrTp)}                                                                    \
-               ,  {&Gpt,            &(CfgGen_NvM.CfgGpt)}                                                                     \
-               ,  {&Icu,            &(CfgGen_NvM.CfgIcu)}                                                                     \
-               ,  {&IpduM,          &(CfgGen_NvM.CfgIpduM)}                                                                   \
-               ,  {&J1939Tp,        &(CfgGen_NvM.CfgJ1939Tp)}                                                                 \
-               ,  {&Lin,            &(CfgGen_NvM.CfgLin)}                                                                     \
-               ,  {&LinIf,          &(CfgGen_NvM.CfgLinIf)}                                                                   \
-               ,  {&LinTp,          &(CfgGen_NvM.CfgLinTp)}                                                                   \
-               ,  {&Mcu,            &(CfgGen_NvM.CfgMcu)}                                                                     \
-/*             ,  {&MemIf,          &(CfgGen_NvM.CfgMemIf)}*/                                                                 \
-               ,  {&Nm,             &(CfgGen_NvM.CfgNm)}                                                                      \
-/*             ,  {&NvM,            &(CfgGen_NvM.CfgNvM)}*/                                                                   \
-               ,  {&Ocu,            &(CfgGen_NvM.CfgOcu)}                                                                     \
-               ,  {&Os,             &(CfgGen_NvM.CfgOs)}                                                                      \
-               ,  {&PduR,           &(CfgGen_NvM.CfgPduR)}                                                                    \
-               ,  {&Port,           &(CfgGen_NvM.CfgPort)}                                                                    \
-               ,  {&Pwm,            &(CfgGen_NvM.CfgPwm)}                                                                     \
-               ,  {&Rte,            &(CfgGen_NvM.CfgRte)}                                                                     \
-               ,  {&SchM,           &(CfgGen_NvM.CfgSchM)}                                                                    \
-               ,  {&SecOC,          &(CfgGen_NvM.CfgSecOC)}                                                                   \
-               ,  {&SokFm,          &(CfgGen_NvM.CfgSokFm)}                                                                   \
-               ,  {&Spi,            &(CfgGen_NvM.CfgSpi)}                                                                     \
-               ,  {&StartUp,        &(CfgGen_NvM.CfgStartUp)}                                                                 \
-               ,  {&StbM,           &(CfgGen_NvM.CfgStbM)}                                                                    \
-               ,  {&SwcApplFoc,     &(CfgGen_NvM.CfgSwcApplFoc)}                                                              \
-               ,  {&SwcServiceEcuM, &(CfgGen_NvM.CfgSwcServiceEcuM)}                                                          \
-               ,  {&SwcServiceOs,   &(CfgGen_NvM.CfgSwcServiceOs)}                                                            \
-               ,  {&Vkms,           &(CfgGen_NvM.CfgVkms)}                                                                    \
-               ,  {&Wdg,            &(CfgGen_NvM.CfgWdg)}                                                                     \
-               ,  {&WdgIf,          &(CfgGen_NvM.CfgWdgIf)}                                                                   \
-               ,  {&WdgM,           &(CfgGen_NvM.CfgWdgM)}                                                                    \
+                  &(CfgGen_NvM.CfgAdc)                                                                                        \
+               ,  &(CfgGen_NvM.CfgBswM)                                                                                       \
+               ,  &(CfgGen_NvM.CfgCan)                                                                                        \
+               ,  &(CfgGen_NvM.CfgCanIf)                                                                                      \
+               ,  &(CfgGen_NvM.CfgCanNm)                                                                                      \
+               ,  &(CfgGen_NvM.CfgCanSm)                                                                                      \
+               ,  &(CfgGen_NvM.CfgCanTp)                                                                                      \
+               ,  &(CfgGen_NvM.CfgCom)                                                                                        \
+               ,  &(CfgGen_NvM.CfgComM)                                                                                       \
+               ,  &(CfgGen_NvM.CfgCry)                                                                                        \
+               ,  &(CfgGen_NvM.CfgCryIf)                                                                                      \
+               ,  &(CfgGen_NvM.CfgCsm)                                                                                        \
+               ,  &(CfgGen_NvM.CfgDcm)                                                                                        \
+/*             ,  &(CfgGen_NvM.CfgDem)*/                                                                                      \
+/*             ,  &(CfgGen_NvM.CfgDet)*/                                                                                      \
+               ,  &(CfgGen_NvM.CfgDio)                                                                                        \
+               ,  &(CfgGen_NvM.CfgDlt)                                                                                        \
+               ,  &(CfgGen_NvM.CfgEa)                                                                                         \
+/*             ,  &(CfgGen_NvM.CfgEcuM)*/                                                                                     \
+               ,  &(CfgGen_NvM.CfgEep)                                                                                        \
+               ,  &(CfgGen_NvM.CfgEth)                                                                                        \
+               ,  &(CfgGen_NvM.CfgEthIf)                                                                                      \
+/*             ,  &(CfgGen_NvM.CfgFee)*/                                                                                      \
+               ,  &(CfgGen_NvM.CfgFiM)                                                                                        \
+/*             ,  &(CfgGen_NvM.CfgFls)*/                                                                                      \
+               ,  &(CfgGen_NvM.CfgFr)                                                                                         \
+               ,  &(CfgGen_NvM.CfgFrIf)                                                                                       \
+               ,  &(CfgGen_NvM.CfgFrNm)                                                                                       \
+               ,  &(CfgGen_NvM.CfgFrTp)                                                                                       \
+               ,  &(CfgGen_NvM.CfgGpt)                                                                                        \
+               ,  &(CfgGen_NvM.CfgIcu)                                                                                        \
+               ,  &(CfgGen_NvM.CfgIpduM)                                                                                      \
+               ,  &(CfgGen_NvM.CfgJ1939Tp)                                                                                    \
+               ,  &(CfgGen_NvM.CfgLin)                                                                                        \
+               ,  &(CfgGen_NvM.CfgLinIf)                                                                                      \
+               ,  &(CfgGen_NvM.CfgLinTp)                                                                                      \
+               ,  &(CfgGen_NvM.CfgMcu)                                                                                        \
+/*             ,  &(CfgGen_NvM.CfgMemIf)*/                                                                                    \
+               ,  &(CfgGen_NvM.CfgNm)                                                                                         \
+/*             ,  &(CfgGen_NvM.CfgNvM)*/                                                                                      \
+               ,  &(CfgGen_NvM.CfgOcu)                                                                                        \
+               ,  &(CfgGen_NvM.CfgOs)                                                                                         \
+               ,  &(CfgGen_NvM.CfgPduR)                                                                                       \
+               ,  &(CfgGen_NvM.CfgPort)                                                                                       \
+               ,  &(CfgGen_NvM.CfgPwm)                                                                                        \
+               ,  &(CfgGen_NvM.CfgRte)                                                                                        \
+               ,  &(CfgGen_NvM.CfgSchM)                                                                                       \
+               ,  &(CfgGen_NvM.CfgSecOC)                                                                                      \
+               ,  &(CfgGen_NvM.CfgSokFm)                                                                                      \
+               ,  &(CfgGen_NvM.CfgSpi)                                                                                        \
+               ,  &(CfgGen_NvM.CfgStartUp)                                                                                    \
+               ,  &(CfgGen_NvM.CfgStbM)                                                                                       \
+               ,  &(CfgGen_NvM.CfgSwcApplFoc)                                                                                 \
+/*             ,  &(CfgGen_NvM.CfgSwcServiceEcuM)*/                                                                           \
+               ,  &(CfgGen_NvM.CfgSwcServiceOs)                                                                               \
+               ,  &(CfgGen_NvM.CfgVkms)                                                                                       \
+               ,  &(CfgGen_NvM.CfgWdg)                                                                                        \
+               ,  &(CfgGen_NvM.CfgWdgIf)                                                                                      \
+               ,  &(CfgGen_NvM.CfgWdgM)                                                                                       \
+            }                                                                                                                 \
+         ,  SizeDriverInitData_Zero                                                                                           \
+         ,  {                                                                                                                 \
+                  &Det                                                                                                        \
+               ,  &Dem                                                                                                        \
+               ,  &Fls                                                                                                        \
+               ,  &Fee                                                                                                        \
+               ,  &MemIf                                                                                                      \
+               ,  &NvM                                                                                                        \
+               ,  &SwcServiceEcuM                                                                                             \
+/*             ,  &EcuM*/                                                                                                     \
+            }                                                                                                                 \
+         ,  {                                                                                                                 \
+                  &(CfgGen_NvM.CfgDet)                                                                                        \
+               ,  &(CfgGen_NvM.CfgDem)                                                                                        \
+               ,  &(CfgGen_NvM.CfgFls)                                                                                        \
+               ,  &(CfgGen_NvM.CfgFee)                                                                                        \
+               ,  &(CfgGen_NvM.CfgMemIf)                                                                                      \
+               ,  &(CfgGen_NvM.CfgNvM)                                                                                        \
+               ,  &(CfgGen_NvM.CfgSwcServiceEcuM)                                                                             \
+/*             ,  &(CfgGen_NvM.CfgEcuM)*/                                                                                     \
             }                                                                                                                 \
       }                                                                                                                       \
 

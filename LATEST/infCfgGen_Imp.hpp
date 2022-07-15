@@ -1,53 +1,84 @@
 #pragma once
 /******************************************************************************/
-/* File   : CfgSwcServiceEcuM.hpp                                             */
+/* File   : infCfgGen_Imp.hpp                                                 */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "CfgModule.hpp"
-#include "CompilerCfg_CfgSwcServiceEcuM.hpp"
-#include "infEcuMClient.hpp"
+#include "Module.hpp"
+#include "Adc.hpp"
+#include "BswM.hpp"
+#include "Can.hpp"
+#include "CanIf.hpp"
+#include "CanNm.hpp"
+#include "CanSm.hpp"
+#include "CanTp.hpp"
+#include "Com.hpp"
+#include "ComM.hpp"
+#include "Cry.hpp"
+#include "CryIf.hpp"
+#include "Csm.hpp"
+#include "Dcm.hpp"
+#include "Dem.hpp"
+#include "Det.hpp"
+#include "Dio.hpp"
+#include "Dlt.hpp"
+#include "Ea.hpp"
+#include "EcuM.hpp"
+#include "Eep.hpp"
+#include "Eth.hpp"
+#include "EthIf.hpp"
+#include "Fee.hpp"
+#include "FiM.hpp"
+#include "Fls.hpp"
+#include "Fr.hpp"
+#include "FrIf.hpp"
+#include "FrNm.hpp"
+#include "FrTp.hpp"
+#include "Gpt.hpp"
+#include "Icu.hpp"
+#include "IpduM.hpp"
+#include "J1939Tp.hpp"
+#include "Lin.hpp"
+#include "LinIf.hpp"
+#include "LinTp.hpp"
+#include "Mcu.hpp"
+#include "MemIf.hpp"
+#include "Nm.hpp"
+#include "NvM.hpp"
+#include "Ocu.hpp"
+#include "Os.hpp"
+#include "PduR.hpp"
+#include "Port.hpp"
+#include "Pwm.hpp"
+#include "Rte.hpp"
+#include "SchM.hpp"
+#include "SecOC.hpp"
+#include "SokFm.hpp"
+#include "Spi.hpp"
+#include "StartUp.hpp"
+#include "StbM.hpp"
+#include "SwcApplFoc.hpp"
+#include "SwcServiceEcuM.hpp"
+#include "SwcServiceOs.hpp"
+#include "Vkms.hpp"
+#include "Wdg.hpp"
+#include "WdgIf.hpp"
+#include "WdgM.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MAJOR                             4
-#define CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MINOR                             3
-#define SwcServiceEcuM_DevErrorDetect                             DevErrorDetect
-#define SwcServiceEcuM_InitCheck                                          STD_ON
-#define IndexEcuMClient_BswM                                                   1
-#define IndexEcuMClient_SchM                                                  46
-#define SizeDriverInitData_One                                                51
-#define SizeDriverInitData_Zero                                                7
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MAJOR!"
-#endif
-
-#if(CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MINOR!"
-#endif
 
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-class CfgSwcServiceEcuM_Type:
-      public CfgModule_TypeAbstract
-{
-   public:
-      uint8                   u8SizeDriverInitData_One;
-      infEcuMClient*          aptrinfEcuMClient_One  [SizeDriverInitData_One];
-      CfgModule_TypeAbstract* aptrCfgModule_One      [SizeDriverInitData_One];
-      uint8                   u8SizeDriverInitData_Zero;
-      infEcuMClient*          aptrinfEcuMClient_Zero [SizeDriverInitData_Zero];
-      CfgModule_TypeAbstract* aptrCfgModule_Zero     [SizeDriverInitData_Zero];
-};
 
 /******************************************************************************/
 /* CONSTS                                                                     */
