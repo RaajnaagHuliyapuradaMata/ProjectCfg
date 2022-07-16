@@ -18,8 +18,8 @@
 #define CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MINOR                             3
 #define SwcServiceEcuM_DevErrorDetect                             DevErrorDetect
 #define SwcServiceEcuM_InitCheck                                          STD_ON
-#define IndexEcuMClient_BswM                                                   1
-#define IndexEcuMClient_SchM                                                  46
+#define IndexEcuMClient_BswM                                                  49
+#define IndexEcuMClient_SchM                                                  50
 #define SizeDriverInitData_One                                                51
 #define SizeDriverInitData_Zero                                                7
 

@@ -267,7 +267,6 @@
          ,  SizeDriverInitData_One                                                                                            \
          ,  {                                                                                                                 \
                   &Adc                                                                                                        \
-               ,  &BswM                                                                                                       \
                ,  &Can                                                                                                        \
                ,  &CanIf                                                                                                      \
                ,  &CanNm                                                                                                      \
@@ -312,7 +311,6 @@
                ,  &Port                                                                                                       \
                ,  &Pwm                                                                                                        \
                ,  &Rte                                                                                                        \
-               ,  &SchM                                                                                                       \
                ,  &SecOC                                                                                                      \
                ,  &SokFm                                                                                                      \
                ,  &Spi                                                                                                        \
@@ -325,10 +323,12 @@
                ,  &Wdg                                                                                                        \
                ,  &WdgIf                                                                                                      \
                ,  &WdgM                                                                                                       \
+                                                                                                                              \
+               ,  &BswM                                                                                                       \
+               ,  &SchM                                                                                                       \
             }                                                                                                                 \
          ,  {                                                                                                                 \
                   &(CfgGen_NvM.CfgAdc)                                                                                        \
-               ,  &(CfgGen_NvM.CfgBswM)                                                                                       \
                ,  &(CfgGen_NvM.CfgCan)                                                                                        \
                ,  &(CfgGen_NvM.CfgCanIf)                                                                                      \
                ,  &(CfgGen_NvM.CfgCanNm)                                                                                      \
@@ -373,7 +373,6 @@
                ,  &(CfgGen_NvM.CfgPort)                                                                                       \
                ,  &(CfgGen_NvM.CfgPwm)                                                                                        \
                ,  &(CfgGen_NvM.CfgRte)                                                                                        \
-               ,  &(CfgGen_NvM.CfgSchM)                                                                                       \
                ,  &(CfgGen_NvM.CfgSecOC)                                                                                      \
                ,  &(CfgGen_NvM.CfgSokFm)                                                                                      \
                ,  &(CfgGen_NvM.CfgSpi)                                                                                        \
@@ -386,6 +385,9 @@
                ,  &(CfgGen_NvM.CfgWdg)                                                                                        \
                ,  &(CfgGen_NvM.CfgWdgIf)                                                                                      \
                ,  &(CfgGen_NvM.CfgWdgM)                                                                                       \
+                                                                                                                              \
+               ,  &(CfgGen_NvM.CfgBswM)                                                                                       \
+               ,  &(CfgGen_NvM.CfgSchM)                                                                                       \
             }                                                                                                                 \
          ,  SizeDriverInitData_Zero                                                                                           \
          ,  {                                                                                                                 \
