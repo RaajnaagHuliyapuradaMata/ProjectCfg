@@ -127,9 +127,9 @@ class CfgDcm_Type:
       public CfgModule_TypeAbstract
 {
    public:
-      const infDcmClient* gaptrDcmClients[59];
+      infDcmClient* aptrDcmClients[59];
 #if(STD_ON == _ReSIM)
-      const string        lstrDcmClientNames[59];
+      string        astrDcmClientNames[59];
 #else
 #endif
 };
