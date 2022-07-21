@@ -98,7 +98,6 @@ class CfgGen_Type{
       CfgDio_Type            CfgDio;
       CfgDlt_Type            CfgDlt;
       CfgEa_Type             CfgEa;
-      CfgEcuM_Type           CfgEcuM;
       CfgEep_Type            CfgEep;
       CfgEth_Type            CfgEth;
       CfgEthIf_Type          CfgEthIf;
@@ -141,6 +140,7 @@ class CfgGen_Type{
       CfgPduR_Type           CfgPduR;
       CfgSchM_Type           CfgSchM;
       CfgSwcServiceEcuM_Type CfgSwcServiceEcuM;
+      CfgEcuM_Type           CfgEcuM;
 };
 
 /******************************************************************************/

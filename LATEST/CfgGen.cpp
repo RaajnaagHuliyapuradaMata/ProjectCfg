@@ -30,7 +30,6 @@
    ,  {Dio_DevErrorDetect,           {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
    ,  {Dlt_DevErrorDetect,           {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
    ,  {Ea_DevErrorDetect,            {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {EcuM_DevErrorDetect,          {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
    ,  {Eep_DevErrorDetect,           {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
    ,  {Eth_DevErrorDetect,           {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
    ,  {EthIf_DevErrorDetect,         {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
@@ -409,6 +408,23 @@
                ,  &(CfgGen_NvM.CfgNvM)                                                                                        \
                ,  &(CfgGen_NvM.CfgSwcServiceEcuM)                                                                             \
 /*             ,  &(CfgGen_NvM.CfgEcuM)*/                                                                                     \
+            }                                                                                                                 \
+      }                                                                                                                       \
+                                                                                                                              \
+    ,  {                                                                                                                      \
+            EcuM_DevErrorDetect                                                                                               \
+         ,  {                                                                                                                 \
+                  CFGECUM_AR_RELEASE_VERSION_MAJOR                                                                            \
+               ,  CFGECUM_AR_RELEASE_VERSION_MINOR                                                                            \
+               ,  0x00                                                                                                        \
+               ,  0xFF                                                                                                        \
+               ,  0x01                                                                                                        \
+               ,  '0'                                                                                                         \
+               ,  '1'                                                                                                         \
+               ,  '0'                                                                                                         \
+            }                                                                                                                 \
+         ,  {                                                                                                                 \
+                  &SwcServiceEcuM                                                                                             \
             }                                                                                                                 \
       }                                                                                                                       \
 
