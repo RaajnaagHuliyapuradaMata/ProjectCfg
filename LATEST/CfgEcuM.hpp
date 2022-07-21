@@ -9,6 +9,9 @@
 /******************************************************************************/
 #include "CfgModule.hpp"
 #include "CompilerCfg_CfgEcuM.hpp"
+
+#include "infMcu_EcuM.hpp"
+#include "infOs_EcuM.hpp"
 #include "infSwcServiceEcuM_EcuM.hpp"
 
 /******************************************************************************/
@@ -37,6 +40,8 @@ class CfgEcuM_Type:
       public CfgModule_TypeAbstract
 {
    public:
+      infMcu_EcuM*            ptrinfMcu_EcuM;
+      infOs_EcuM*             ptrinfOs_EcuM;
       infSwcServiceEcuM_EcuM* ptrinfSwcServiceEcuM_EcuM;
 };
 

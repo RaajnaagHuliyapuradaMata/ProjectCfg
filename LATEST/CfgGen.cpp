@@ -50,9 +50,7 @@
    ,  {Mcu_DevErrorDetect,           {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
    ,  {MemIf_DevErrorDetect,         {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
    ,  {Nm_DevErrorDetect,            {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {NvM_DevErrorDetect,           {CFGNVM_AR_RELEASE_VERSION_MAJOR, CFGNVM_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} /*TBD: Do this for other modules */  \
    ,  {Ocu_DevErrorDetect,           {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {Os_DevErrorDetect,            {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
    ,  {Port_DevErrorDetect,          {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
    ,  {Pwm_DevErrorDetect,           {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
    ,  {Rte_DevErrorDetect,           {STD_AR_RELEASE_VERSION_MAJOR, STD_AR_RELEASE_VERSION_MINOR,0x00,0xFF,0x01,'0','1','0'}} \
@@ -411,7 +409,7 @@
             }                                                                                                                 \
       }                                                                                                                       \
                                                                                                                               \
-    ,  {                                                                                                                      \
+   ,  {                                                                                                                       \
             EcuM_DevErrorDetect                                                                                               \
          ,  {                                                                                                                 \
                   CFGECUM_AR_RELEASE_VERSION_MAJOR                                                                            \
@@ -424,7 +422,44 @@
                ,  '0'                                                                                                         \
             }                                                                                                                 \
          ,  {                                                                                                                 \
-                  &SwcServiceEcuM                                                                                             \
+                  &Mcu                                                                                                        \
+               ,  &Os                                                                                                         \
+               ,  &SwcServiceEcuM                                                                                             \
+            }                                                                                                                 \
+      }                                                                                                                       \
+                                                                                                                              \
+   ,  {                                                                                                                       \
+            NvM_DevErrorDetect                                                                                                \
+         ,  {                                                                                                                 \
+                  CFGNVM_AR_RELEASE_VERSION_MAJOR                                                                             \
+               ,  CFGNVM_AR_RELEASE_VERSION_MINOR                                                                             \
+               ,  0x00                                                                                                        \
+               ,  0xFF                                                                                                        \
+               ,  0x01                                                                                                        \
+               ,  '0'                                                                                                         \
+               ,  '1'                                                                                                         \
+               ,  '0'                                                                                                         \
+            }                                                                                                                 \
+         ,  {                                                                                                                 \
+                  &MemIf                                                                                                      \
+            }                                                                                                                 \
+      }                                                                                                                       \
+                                                                                                                              \
+   ,  {                                                                                                                       \
+            Os_DevErrorDetect                                                                                                 \
+         ,  {                                                                                                                 \
+                  CFGOS_AR_RELEASE_VERSION_MAJOR                                                                              \
+               ,  CFGOS_AR_RELEASE_VERSION_MINOR                                                                              \
+               ,  0x00                                                                                                        \
+               ,  0xFF                                                                                                        \
+               ,  0x01                                                                                                        \
+               ,  '0'                                                                                                         \
+               ,  '1'                                                                                                         \
+               ,  '0'                                                                                                         \
+            }                                                                                                                 \
+         ,  {                                                                                                                 \
+                  &EcuM                                                                                                       \
+               ,  &SwcServiceOs                                                                                               \
             }                                                                                                                 \
       }                                                                                                                       \
 

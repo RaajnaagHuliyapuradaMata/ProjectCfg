@@ -24,7 +24,6 @@
 #include "CfgDio.hpp"
 #include "CfgDlt.hpp"
 #include "CfgEa.hpp"
-#include "CfgEcuM.hpp"
 #include "CfgEep.hpp"
 #include "CfgEth.hpp"
 #include "CfgEthIf.hpp"
@@ -46,7 +45,6 @@
 #include "CfgMemIf.hpp"
 #include "CfgNm.hpp"
 #include "CfgOcu.hpp"
-#include "CfgOs.hpp"
 #include "CfgPort.hpp"
 #include "CfgPwm.hpp"
 #include "CfgRte.hpp"
@@ -63,10 +61,12 @@
 #include "CfgWdgM.hpp"
 
 #include "CfgDcm.hpp"
-#include "CfgNvM.hpp"
 #include "CfgPduR.hpp"
 #include "CfgSchM.hpp"
 #include "CfgSwcServiceEcuM.hpp"
+#include "CfgEcuM.hpp"
+#include "CfgNvM.hpp"
+#include "CfgOs.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -118,9 +118,7 @@ class CfgGen_Type{
       CfgMcu_Type            CfgMcu;
       CfgMemIf_Type          CfgMemIf;
       CfgNm_Type             CfgNm;
-      CfgNvM_Type            CfgNvM;
       CfgOcu_Type            CfgOcu;
-      CfgOs_Type             CfgOs;
       CfgPort_Type           CfgPort;
       CfgPwm_Type            CfgPwm;
       CfgRte_Type            CfgRte;
@@ -141,6 +139,8 @@ class CfgGen_Type{
       CfgSchM_Type           CfgSchM;
       CfgSwcServiceEcuM_Type CfgSwcServiceEcuM;
       CfgEcuM_Type           CfgEcuM;
+      CfgNvM_Type            CfgNvM;
+      CfgOs_Type             CfgOs;
 };
 
 /******************************************************************************/

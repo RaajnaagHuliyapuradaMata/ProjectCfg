@@ -10,6 +10,8 @@
 #include "CfgModule.hpp"
 #include "CompilerCfg_CfgNvM.hpp"
 
+#include "infMemIf_NvM.hpp"
+
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
@@ -50,6 +52,7 @@ class CfgNvM_Type:
       public CfgModule_TypeAbstract
 {
    public:
+      infMemIf_NvM*            ptrinfMemIf_NvM;
 };
 
 /******************************************************************************/
