@@ -10,9 +10,6 @@
 #include "CfgModule.hpp"
 #include "CompilerCfg_CfgOs.hpp"
 
-#include "infEcuM_Os.hpp"
-#include "infSwcServiceOs_Os.hpp"
-
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
@@ -38,9 +35,6 @@
 class CfgOs_Type:
       public CfgModule_TypeAbstract
 {
-   public:
-      infEcuM_Os*            ptrinfEcuM_Os;
-      infSwcServiceOs_Os*    ptrinfSwcServiceOs_Os;
 };
 
 /******************************************************************************/

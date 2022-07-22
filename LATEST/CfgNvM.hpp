@@ -10,8 +10,6 @@
 #include "CfgModule.hpp"
 #include "CompilerCfg_CfgNvM.hpp"
 
-#include "infMemIf_NvM.hpp"
-
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
@@ -51,8 +49,6 @@ typedef uint16 TypeIdBlock;
 class CfgNvM_Type:
       public CfgModule_TypeAbstract
 {
-   public:
-      infMemIf_NvM*            ptrinfMemIf_NvM;
 };
 
 /******************************************************************************/

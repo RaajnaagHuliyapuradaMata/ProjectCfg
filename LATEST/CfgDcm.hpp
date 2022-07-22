@@ -9,13 +9,6 @@
 /******************************************************************************/
 #include "CfgModule.hpp"
 #include "CompilerCfg_CfgDcm.hpp"
-#include "infDcmClient.hpp"
-
-#if(STD_ON == _ReSIM)
-#include <iostream>
-using namespace std;
-#else
-#endif
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -126,12 +119,6 @@ typedef enum{
 class CfgDcm_Type:
       public CfgModule_TypeAbstract
 {
-   public:
-      infDcmClient* aptrDcmClients[59];
-#if(STD_ON == _ReSIM)
-      string        astrDcmClientNames[59];
-#else
-#endif
 };
 
 /******************************************************************************/
