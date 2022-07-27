@@ -19,11 +19,13 @@
 #include "CfgCry.hpp"
 #include "CfgCryIf.hpp"
 #include "CfgCsm.hpp"
+#include "CfgDcm.hpp"
 #include "CfgDem.hpp"
 #include "CfgDet.hpp"
 #include "CfgDio.hpp"
 #include "CfgDlt.hpp"
 #include "CfgEa.hpp"
+#include "CfgEcuM.hpp"
 #include "CfgEep.hpp"
 #include "CfgEth.hpp"
 #include "CfgEthIf.hpp"
@@ -44,29 +46,27 @@
 #include "CfgMcu.hpp"
 #include "CfgMemIf.hpp"
 #include "CfgNm.hpp"
+#include "CfgNvM.hpp"
 #include "CfgOcu.hpp"
+#include "CfgOs.hpp"
 #include "CfgPort.hpp"
 #include "CfgPwm.hpp"
 #include "CfgRte.hpp"
+#include "CfgSchM.hpp"
 #include "CfgSecOC.hpp"
 #include "CfgSokFm.hpp"
 #include "CfgSpi.hpp"
 #include "CfgStartUp.hpp"
 #include "CfgStbM.hpp"
 #include "CfgSwcApplFoc.hpp"
+#include "CfgSwcServiceEcuM.hpp"
 #include "CfgSwcServiceOs.hpp"
 #include "CfgVkms.hpp"
 #include "CfgWdg.hpp"
 #include "CfgWdgIf.hpp"
 #include "CfgWdgM.hpp"
 
-#include "CfgDcm.hpp"
 #include "CfgPduR.hpp"
-#include "CfgSchM.hpp"
-#include "CfgSwcServiceEcuM.hpp"
-#include "CfgEcuM.hpp"
-#include "CfgNvM.hpp"
-#include "CfgOs.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -93,11 +93,13 @@ class CfgGen_Type{
       CfgCry_Type            CfgCry;
       CfgCryIf_Type          CfgCryIf;
       CfgCsm_Type            CfgCsm;
+      CfgDcm_Type            CfgDcm;
       CfgDem_Type            CfgDem;
       CfgDet_Type            CfgDet;
       CfgDio_Type            CfgDio;
       CfgDlt_Type            CfgDlt;
       CfgEa_Type             CfgEa;
+      CfgEcuM_Type           CfgEcuM;
       CfgEep_Type            CfgEep;
       CfgEth_Type            CfgEth;
       CfgEthIf_Type          CfgEthIf;
@@ -118,29 +120,27 @@ class CfgGen_Type{
       CfgMcu_Type            CfgMcu;
       CfgMemIf_Type          CfgMemIf;
       CfgNm_Type             CfgNm;
+      CfgNvM_Type            CfgNvM;
       CfgOcu_Type            CfgOcu;
+      CfgOs_Type             CfgOs;
       CfgPort_Type           CfgPort;
       CfgPwm_Type            CfgPwm;
       CfgRte_Type            CfgRte;
+      CfgSchM_Type           CfgSchM;
       CfgSecOC_Type          CfgSecOC;
       CfgSokFm_Type          CfgSokFm;
       CfgSpi_Type            CfgSpi;
       CfgStartUp_Type        CfgStartUp;
       CfgStbM_Type           CfgStbM;
       CfgSwcApplFoc_Type     CfgSwcApplFoc;
+      CfgSwcServiceEcuM_Type CfgSwcServiceEcuM;
       CfgSwcServiceOs_Type   CfgSwcServiceOs;
       CfgVkms_Type           CfgVkms;
       CfgWdg_Type            CfgWdg;
       CfgWdgIf_Type          CfgWdgIf;
       CfgWdgM_Type           CfgWdgM;
 
-      CfgDcm_Type            CfgDcm;
       CfgPduR_Type           CfgPduR;
-      CfgSchM_Type           CfgSchM;
-      CfgSwcServiceEcuM_Type CfgSwcServiceEcuM;
-      CfgEcuM_Type           CfgEcuM;
-      CfgNvM_Type            CfgNvM;
-      CfgOs_Type             CfgOs;
 };
 
 /******************************************************************************/
