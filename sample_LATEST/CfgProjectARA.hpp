@@ -1,6 +1,6 @@
 #pragma once
 /******************************************************************************/
-/* File   : CfgCommonARA.hpp                                                        */
+/* File   : CfgProjectARA.hpp                                                        */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
@@ -8,15 +8,15 @@
 /* #INCLUDES                                                                  */
 /******************************************************************************/
 #include "CfgModule.hpp"
-#include "CompilerCfg_CommonARA.hpp"
+#include "CompilerCfg_ProjectARA.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
 #define CFGRTE_AR_RELEASE_VERSION_MAJOR                                        4
 #define CFGRTE_AR_RELEASE_VERSION_MINOR                                        3
-#define CommonARA_DevErrorDetect                                        DevErrorDetect
-#define CommonARA_InitCheck                                                     STD_ON
+#define ProjectARA_DevErrorDetect                                        DevErrorDetect
+#define ProjectARA_InitCheck                                                     STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -32,7 +32,7 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-class CfgCommonARA_Type:
+class CfgProjectARA_Type:
       public CfgModule_TypeAbstract
 {
 };

@@ -8,7 +8,7 @@
 /* #INCLUDES                                                                  */
 /******************************************************************************/
 #include "CfgApplSwcFoc.hpp"
-#include "CfgCommonARA.hpp"
+#include "CfgProjectARA.hpp"
 #include "CfgEcuabCanIf.hpp"
 #include "CfgEcuabCanTp.hpp"
 #include "CfgEcuabCryIf.hpp"
@@ -124,7 +124,7 @@ class CfgGen_Type{
       CfgServiceOs_Type             CfgServiceOs;
       CfgMcalPort_Type           CfgMcalPort;
       CfgMcalPwm_Type            CfgMcalPwm;
-      CfgCommonARA_Type            CfgCommonARA;
+      CfgProjectARA_Type            CfgProjectARA;
       CfgServiceSchM_Type           CfgServiceSchM;
       CfgServiceSecOC_Type          CfgServiceSecOC;
       CfgServiceSokFm_Type          CfgServiceSokFm;

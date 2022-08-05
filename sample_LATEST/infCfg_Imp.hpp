@@ -10,7 +10,7 @@
 #include "Module.hpp"
 
 #include "ApplSwcFoc.hpp"
-#include "CommonARA.hpp"
+#include "ProjectARA.hpp"
 #include "EcuabCanIf.hpp"
 #include "EcuabCanTp.hpp"
 #include "EcuabCryIf.hpp"

@@ -57,7 +57,7 @@
    ,  {ServiceOs_DevErrorDetect,             {CFGOS_AR_RELEASE_VERSION_MAJOR,             CFGOS_AR_RELEASE_VERSION_MINOR,             0x00,0xFF,0x01,'0','1','0'}} \
    ,  {McalPort_DevErrorDetect,           {CFGPORT_AR_RELEASE_VERSION_MAJOR,           CFGPORT_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
    ,  {McalPwm_DevErrorDetect,            {CFGPWM_AR_RELEASE_VERSION_MAJOR,            CFGPWM_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {CommonARA_DevErrorDetect,            {CFGRTE_AR_RELEASE_VERSION_MAJOR,            CFGRTE_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ProjectARA_DevErrorDetect,            {CFGRTE_AR_RELEASE_VERSION_MAJOR,            CFGRTE_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
    ,  {ServiceSchM_DevErrorDetect,           {CFGSCHM_AR_RELEASE_VERSION_MAJOR,           CFGSCHM_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
    ,  {ServiceSecOC_DevErrorDetect,          {CFGSECOC_AR_RELEASE_VERSION_MAJOR,          CFGSECOC_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
    ,  {ServiceSokFm_DevErrorDetect,          {CFGSOKFM_AR_RELEASE_VERSION_MAJOR,          CFGSOKFM_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
