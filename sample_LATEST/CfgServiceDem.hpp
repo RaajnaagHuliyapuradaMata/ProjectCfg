@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGDEM_AR_RELEASE_VERSION_MAJOR                                        4
-#define CFGDEM_AR_RELEASE_VERSION_MINOR                                        3
+#define CFGSERVICEDEM_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGSERVICEDEM_AR_RELEASE_VERSION_MINOR                                        3
 #define ServiceDem_DevErrorDetect                                        DevErrorDetect
 #define ServiceDem_InitCheck                                                     STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGDEM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGDEM_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGSERVICEDEM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSERVICEDEM_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGDEM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGDEM_AR_RELEASE_VERSION_MINOR!"
+#if(CFGSERVICEDEM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSERVICEDEM_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

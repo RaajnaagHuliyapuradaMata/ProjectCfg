@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGLINTP_AR_RELEASE_VERSION_MAJOR                                      4
-#define CFGLINTP_AR_RELEASE_VERSION_MINOR                                      3
+#define CFGECUABLINTP_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGECUABLINTP_AR_RELEASE_VERSION_MINOR                                      3
 #define EcuabLinTp_DevErrorDetect                                      DevErrorDetect
 #define EcuabLinTp_InitCheck                                                   STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGLINTP_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGLINTP_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGECUABLINTP_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGECUABLINTP_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGLINTP_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGLINTP_AR_RELEASE_VERSION_MINOR!"
+#if(CFGECUABLINTP_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGECUABLINTP_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

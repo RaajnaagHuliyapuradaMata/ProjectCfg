@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGGPT_AR_RELEASE_VERSION_MAJOR                                        4
-#define CFGGPT_AR_RELEASE_VERSION_MINOR                                        3
+#define CFGMCALGPT_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGMCALGPT_AR_RELEASE_VERSION_MINOR                                        3
 #define McalGpt_DevErrorDetect                                        DevErrorDetect
 #define McalGpt_InitCheck                                                     STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGGPT_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGGPT_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGMCALGPT_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGMCALGPT_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGGPT_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGGPT_AR_RELEASE_VERSION_MINOR!"
+#if(CFGMCALGPT_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGMCALGPT_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

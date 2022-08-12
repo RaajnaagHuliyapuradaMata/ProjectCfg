@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGOS_AR_RELEASE_VERSION_MAJOR                                         4
-#define CFGOS_AR_RELEASE_VERSION_MINOR                                         3
+#define CFGSERVICEOS_AR_RELEASE_VERSION_MAJOR                                         4
+#define CFGSERVICEOS_AR_RELEASE_VERSION_MINOR                                         3
 #define ServiceOs_DevErrorDetect                                         DevErrorDetect
 #define ServiceOs_InitCheck                                                      STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGOS_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGOS_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGSERVICEOS_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSERVICEOS_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGOS_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGOS_AR_RELEASE_VERSION_MINOR!"
+#if(CFGSERVICEOS_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSERVICEOS_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

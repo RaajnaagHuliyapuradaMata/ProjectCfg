@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGCOMM_AR_RELEASE_VERSION_MAJOR                                       4
-#define CFGCOMM_AR_RELEASE_VERSION_MINOR                                       3
+#define CFGSERVICECOMM_AR_RELEASE_VERSION_MAJOR                                       4
+#define CFGSERVICECOMM_AR_RELEASE_VERSION_MINOR                                       3
 #define ServiceComM_DevErrorDetect                                       DevErrorDetect
 #define ServiceComM_InitCheck                                                    STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGCOMM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGCOMM_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGSERVICECOMM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSERVICECOMM_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGCOMM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGCOMM_AR_RELEASE_VERSION_MINOR!"
+#if(CFGSERVICECOMM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSERVICECOMM_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

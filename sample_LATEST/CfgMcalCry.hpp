@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGCRY_AR_RELEASE_VERSION_MAJOR                                        4
-#define CFGCRY_AR_RELEASE_VERSION_MINOR                                        3
+#define CFGMCALCRY_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGMCALCRY_AR_RELEASE_VERSION_MINOR                                        3
 #define McalCry_DevErrorDetect                                        DevErrorDetect
 #define McalCry_InitCheck                                                     STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGCRY_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGCRY_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGMCALCRY_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGMCALCRY_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGCRY_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGCRY_AR_RELEASE_VERSION_MINOR!"
+#if(CFGMCALCRY_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGMCALCRY_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

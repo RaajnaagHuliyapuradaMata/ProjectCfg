@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGDLT_AR_RELEASE_VERSION_MAJOR                                        4
-#define CFGDLT_AR_RELEASE_VERSION_MINOR                                        3
+#define CFGSERVICEDLT_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGSERVICEDLT_AR_RELEASE_VERSION_MINOR                                        3
 #define ServiceDlt_DevErrorDetect                                        DevErrorDetect
 #define ServiceDlt_InitCheck                                                     STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGDLT_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGDLT_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGSERVICEDLT_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSERVICEDLT_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGDLT_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGDLT_AR_RELEASE_VERSION_MINOR!"
+#if(CFGSERVICEDLT_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSERVICEDLT_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

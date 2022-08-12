@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGNVM_AR_RELEASE_VERSION_MAJOR                                        4
-#define CFGNVM_AR_RELEASE_VERSION_MINOR                                        3
+#define CFGSERVICENVM_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGSERVICENVM_AR_RELEASE_VERSION_MINOR                                        3
 #define ServiceNvM_DevErrorDetect                                        DevErrorDetect
 #define ServiceNvM_InitCheck                                                     STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGNVM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGNVM_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGSERVICENVM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSERVICENVM_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGNVM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGNVM_AR_RELEASE_VERSION_MINOR!"
+#if(CFGSERVICENVM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSERVICENVM_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

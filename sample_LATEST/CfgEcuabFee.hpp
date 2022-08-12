@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGFEE_AR_RELEASE_VERSION_MAJOR                                        4
-#define CFGFEE_AR_RELEASE_VERSION_MINOR                                        3
+#define CFGECUABFEE_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGECUABFEE_AR_RELEASE_VERSION_MINOR                                        3
 #define EcuabFee_DevErrorDetect                                        DevErrorDetect
 #define EcuabFee_InitCheck                                                     STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGFEE_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGFEE_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGECUABFEE_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGECUABFEE_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGFEE_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGFEE_AR_RELEASE_VERSION_MINOR!"
+#if(CFGECUABFEE_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGECUABFEE_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

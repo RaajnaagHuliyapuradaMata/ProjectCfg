@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGSTARTUP_AR_RELEASE_VERSION_MAJOR                                    4
-#define CFGSTARTUP_AR_RELEASE_VERSION_MINOR                                    3
+#define CFGSERVICESTARTUP_AR_RELEASE_VERSION_MAJOR                                    4
+#define CFGSERVICESTARTUP_AR_RELEASE_VERSION_MINOR                                    3
 #define ServiceStartUp_DevErrorDetect                                    DevErrorDetect
 #define ServiceStartUp_InitCheck                                                 STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGSTARTUP_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGSTARTUP_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGSERVICESTARTUP_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSERVICESTARTUP_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGSTARTUP_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGSTARTUP_AR_RELEASE_VERSION_MINOR!"
+#if(CFGSERVICESTARTUP_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSERVICESTARTUP_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

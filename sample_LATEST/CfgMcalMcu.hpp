@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGMCU_AR_RELEASE_VERSION_MAJOR                                        4
-#define CFGMCU_AR_RELEASE_VERSION_MINOR                                        3
+#define CFGMCALMCU_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGMCALMCU_AR_RELEASE_VERSION_MINOR                                        3
 #define McalMcu_DevErrorDetect                                        DevErrorDetect
 #define McalMcu_InitCheck                                                     STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGMCU_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGMCU_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGMCALMCU_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGMCALMCU_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGMCU_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGMCU_AR_RELEASE_VERSION_MINOR!"
+#if(CFGMCALMCU_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGMCALMCU_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

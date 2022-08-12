@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGPORT_AR_RELEASE_VERSION_MAJOR                                       4
-#define CFGPORT_AR_RELEASE_VERSION_MINOR                                       3
+#define CFGMCALPORT_AR_RELEASE_VERSION_MAJOR                                       4
+#define CFGMCALPORT_AR_RELEASE_VERSION_MINOR                                       3
 #define McalPort_DevErrorDetect                                       DevErrorDetect
 #define McalPort_InitCheck                                                    STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGPORT_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGPORT_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGMCALPORT_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGMCALPORT_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGPORT_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGPORT_AR_RELEASE_VERSION_MINOR!"
+#if(CFGMCALPORT_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGMCALPORT_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

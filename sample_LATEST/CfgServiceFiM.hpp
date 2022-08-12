@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGFIM_AR_RELEASE_VERSION_MAJOR                                        4
-#define CFGFIM_AR_RELEASE_VERSION_MINOR                                        3
+#define CFGSERVICEFIM_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGSERVICEFIM_AR_RELEASE_VERSION_MINOR                                        3
 #define ServiceFiM_DevErrorDetect                                        DevErrorDetect
 #define ServiceFiM_InitCheck                                                     STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGFIM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGFIM_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGSERVICEFIM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSERVICEFIM_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGFIM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGFIM_AR_RELEASE_VERSION_MINOR!"
+#if(CFGSERVICEFIM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSERVICEFIM_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

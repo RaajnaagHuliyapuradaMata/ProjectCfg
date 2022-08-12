@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGBSWM_AR_RELEASE_VERSION_MAJOR                                       4
-#define CFGBSWM_AR_RELEASE_VERSION_MINOR                                       3
+#define CFGSERVICEBSWM_AR_RELEASE_VERSION_MAJOR                                       4
+#define CFGSERVICEBSWM_AR_RELEASE_VERSION_MINOR                                       3
 #define ServiceBswM_DevErrorDetect                                       DevErrorDetect
 #define ServiceBswM_InitCheck                                                    STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGBSWM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGBSWM_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGSERVICEBSWM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSERVICEBSWM_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGBSWM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGBSWM_AR_RELEASE_VERSION_MINOR!"
+#if(CFGSERVICEBSWM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSERVICEBSWM_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

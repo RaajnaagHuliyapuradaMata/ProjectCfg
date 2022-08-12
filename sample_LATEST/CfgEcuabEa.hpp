@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGEA_AR_RELEASE_VERSION_MAJOR                                         4
-#define CFGEA_AR_RELEASE_VERSION_MINOR                                         3
+#define CFGECUABEA_AR_RELEASE_VERSION_MAJOR                                         4
+#define CFGECUABEA_AR_RELEASE_VERSION_MINOR                                         3
 #define EcuabEa_DevErrorDetect                                         DevErrorDetect
 #define EcuabEa_InitCheck                                                      STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGEA_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGEA_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGECUABEA_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGECUABEA_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGEA_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGEA_AR_RELEASE_VERSION_MINOR!"
+#if(CFGECUABEA_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGECUABEA_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

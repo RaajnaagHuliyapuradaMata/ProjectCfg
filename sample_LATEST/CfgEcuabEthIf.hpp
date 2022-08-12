@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGETHIF_AR_RELEASE_VERSION_MAJOR                                      4
-#define CFGETHIF_AR_RELEASE_VERSION_MINOR                                      3
+#define CFGECUABETHIF_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGECUABETHIF_AR_RELEASE_VERSION_MINOR                                      3
 #define EcuabEthIf_DevErrorDetect                                      DevErrorDetect
 #define EcuabEthIf_InitCheck                                                   STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGETHIF_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGETHIF_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGECUABETHIF_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGECUABETHIF_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGETHIF_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGETHIF_AR_RELEASE_VERSION_MINOR!"
+#if(CFGECUABETHIF_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGECUABETHIF_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

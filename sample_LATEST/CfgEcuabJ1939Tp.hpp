@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGJ1939TP_AR_RELEASE_VERSION_MAJOR                                    4
-#define CFGJ1939TP_AR_RELEASE_VERSION_MINOR                                    3
+#define CFGECUABJ1939TP_AR_RELEASE_VERSION_MAJOR                                    4
+#define CFGECUABJ1939TP_AR_RELEASE_VERSION_MINOR                                    3
 #define EcuabJ1939Tp_DevErrorDetect                                    DevErrorDetect
 #define EcuabJ1939Tp_InitCheck                                                 STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGJ1939TP_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGJ1939TP_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGECUABJ1939TP_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGECUABJ1939TP_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGJ1939TP_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGJ1939TP_AR_RELEASE_VERSION_MINOR!"
+#if(CFGECUABJ1939TP_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGECUABJ1939TP_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

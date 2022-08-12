@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGWDGIF_AR_RELEASE_VERSION_MAJOR                                      4
-#define CFGWDGIF_AR_RELEASE_VERSION_MINOR                                      3
+#define CFGECUABWDGIF_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGECUABWDGIF_AR_RELEASE_VERSION_MINOR                                      3
 #define EcuabWdgIf_DevErrorDetect                                      DevErrorDetect
 #define EcuabWdgIf_InitCheck                                                   STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGWDGIF_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGWDGIF_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGECUABWDGIF_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGECUABWDGIF_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGWDGIF_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGWDGIF_AR_RELEASE_VERSION_MINOR!"
+#if(CFGECUABWDGIF_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGECUABWDGIF_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

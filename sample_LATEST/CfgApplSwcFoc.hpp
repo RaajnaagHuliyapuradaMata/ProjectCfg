@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGSWCAPPLFOC_AR_RELEASE_VERSION_MAJOR                                 4
-#define CFGSWCAPPLFOC_AR_RELEASE_VERSION_MINOR                                 3
+#define CFGAPPLSWCFOC_AR_RELEASE_VERSION_MAJOR                                 4
+#define CFGAPPLSWCFOC_AR_RELEASE_VERSION_MINOR                                 3
 #define ApplSwcFoc_DevErrorDetect                                 DevErrorDetect
 #define ApplSwcFoc_InitCheck                                              STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGSWCAPPLFOC_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGSWCAPPLFOC_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGAPPLSWCFOC_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGAPPLSWCFOC_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGSWCAPPLFOC_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGSWCAPPLFOC_AR_RELEASE_VERSION_MINOR!"
+#if(CFGAPPLSWCFOC_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGAPPLSWCFOC_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

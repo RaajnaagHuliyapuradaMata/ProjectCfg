@@ -14,20 +14,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGPDUR_AR_RELEASE_VERSION_MAJOR                                       4
-#define CFGPDUR_AR_RELEASE_VERSION_MINOR                                       3
+#define CFGSERVICEPDUR_AR_RELEASE_VERSION_MAJOR                                       4
+#define CFGSERVICEPDUR_AR_RELEASE_VERSION_MINOR                                       3
 #define ServicePduR_DevErrorDetect                                       DevErrorDetect
 #define ServicePduR_InitCheck                                                    STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGPDUR_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGPDUR_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGSERVICEPDUR_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSERVICEPDUR_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGPDUR_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGPDUR_AR_RELEASE_VERSION_MINOR!"
+#if(CFGSERVICEPDUR_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSERVICEPDUR_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -44,7 +44,7 @@ typedef uint16 TypeIdRoutingPathGroup;
 typedef struct{
    uint32 bUpperModule            :1;
    uint32 bLowerModule            :1;
-   uint32 bServiceCommunicationInterface :1;
+   uint32 bCommunicationInterface :1;
    uint32 bTransportProtocol      :1;
    uint32 bTransmit               :1;
    uint32 bTransmitTp             :1;
@@ -52,8 +52,8 @@ typedef struct{
    uint32 bTxConfirmationTp       :1;
    uint32 bRxIndication           :1;
    uint32 bRxIndicationTp         :1;
-   uint32 bMcalCancelTransmit         :1;
-   uint32 bMcalCancelReceive          :1;
+   uint32 bCancelTransmit         :1;
+   uint32 bCancelReceive          :1;
    uint32 bCopyTxData             :1;
    uint32 bCopyRxData             :1;
    uint32 bTriggerTransmit        :1;

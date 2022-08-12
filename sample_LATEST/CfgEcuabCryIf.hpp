@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGCRYIF_AR_RELEASE_VERSION_MAJOR                                      4
-#define CFGCRYIF_AR_RELEASE_VERSION_MINOR                                      3
+#define CFGECUABCRYIF_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGECUABCRYIF_AR_RELEASE_VERSION_MINOR                                      3
 #define EcuabCryIf_DevErrorDetect                                      DevErrorDetect
 #define EcuabCryIf_InitCheck                                                   STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGCRYIF_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGCRYIF_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGECUABCRYIF_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGECUABCRYIF_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGCRYIF_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGCRYIF_AR_RELEASE_VERSION_MINOR!"
+#if(CFGECUABCRYIF_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGECUABCRYIF_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

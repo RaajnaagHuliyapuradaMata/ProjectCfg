@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGDIO_AR_RELEASE_VERSION_MAJOR                                        4
-#define CFGDIO_AR_RELEASE_VERSION_MINOR                                        3
+#define CFGMCALDIO_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGMCALDIO_AR_RELEASE_VERSION_MINOR                                        3
 #define McalDio_DevErrorDetect                                        DevErrorDetect
 #define McalDio_InitCheck                                                     STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGDIO_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGDIO_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGMCALDIO_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGMCALDIO_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGDIO_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGDIO_AR_RELEASE_VERSION_MINOR!"
+#if(CFGMCALDIO_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGMCALDIO_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

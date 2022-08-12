@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGWDG_AR_RELEASE_VERSION_MAJOR                                        4
-#define CFGWDG_AR_RELEASE_VERSION_MINOR                                        3
+#define CFGMCALWDG_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGMCALWDG_AR_RELEASE_VERSION_MINOR                                        3
 #define McalWdg_DevErrorDetect                                        DevErrorDetect
 #define McalWdg_InitCheck                                                     STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGWDG_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGWDG_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGMCALWDG_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGMCALWDG_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGWDG_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGWDG_AR_RELEASE_VERSION_MINOR!"
+#if(CFGMCALWDG_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGMCALWDG_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

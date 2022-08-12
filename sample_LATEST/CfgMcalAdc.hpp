@@ -13,8 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGADC_AR_RELEASE_VERSION_MAJOR                                        4
-#define CFGADC_AR_RELEASE_VERSION_MINOR                                        3
+#define CFGMCALADC_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGMCALADC_AR_RELEASE_VERSION_MINOR                                        3
 #define McalAdc_DevErrorDetect                                        DevErrorDetect
 #define McalAdc_InitCheck                                                     STD_ON
 #define LevelPriorityMin                                                       0
@@ -26,12 +26,12 @@
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGADC_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGADC_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGMCALADC_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGMCALADC_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGADC_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGADC_AR_RELEASE_VERSION_MINOR!"
+#if(CFGMCALADC_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGMCALADC_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

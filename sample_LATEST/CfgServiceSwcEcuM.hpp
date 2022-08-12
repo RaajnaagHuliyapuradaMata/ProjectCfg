@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MAJOR                             4
-#define CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MINOR                             3
+#define CFGSERVICESWCECUM_AR_RELEASE_VERSION_MAJOR                             4
+#define CFGSERVICESWCECUM_AR_RELEASE_VERSION_MINOR                             3
 #define ServiceSwcEcuM_DevErrorDetect                             DevErrorDetect
 #define ServiceSwcEcuM_InitCheck                                          STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGSERVICESWCECUM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSERVICESWCECUM_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MINOR!"
+#if(CFGSERVICESWCECUM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSERVICESWCECUM_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

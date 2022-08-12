@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGSECOC_AR_RELEASE_VERSION_MAJOR                                      4
-#define CFGSECOC_AR_RELEASE_VERSION_MINOR                                      3
+#define CFGSERVICESECOC_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGSERVICESECOC_AR_RELEASE_VERSION_MINOR                                      3
 #define ServiceSecOC_DevErrorDetect                                      DevErrorDetect
 #define ServiceSecOC_InitCheck                                                   STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGSECOC_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGSECOC_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGSERVICESECOC_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSERVICESECOC_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGSECOC_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGSECOC_AR_RELEASE_VERSION_MINOR!"
+#if(CFGSERVICESECOC_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSERVICESECOC_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

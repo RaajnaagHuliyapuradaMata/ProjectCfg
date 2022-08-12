@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGSOKFM_AR_RELEASE_VERSION_MAJOR                                      4
-#define CFGSOKFM_AR_RELEASE_VERSION_MINOR                                      3
+#define CFGSERVICESOKFM_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGSERVICESOKFM_AR_RELEASE_VERSION_MINOR                                      3
 #define ServiceSokFm_DevErrorDetect                                      DevErrorDetect
 #define ServiceSokFm_InitCheck                                                   STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGSOKFM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGSOKFM_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGSERVICESOKFM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSERVICESOKFM_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGSOKFM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGSOKFM_AR_RELEASE_VERSION_MINOR!"
+#if(CFGSERVICESOKFM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSERVICESOKFM_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

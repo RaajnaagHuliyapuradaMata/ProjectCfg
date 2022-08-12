@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGOCU_AR_RELEASE_VERSION_MAJOR                                        4
-#define CFGOCU_AR_RELEASE_VERSION_MINOR                                        3
+#define CFGMCALOCU_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGMCALOCU_AR_RELEASE_VERSION_MINOR                                        3
 #define McalOcu_DevErrorDetect                                        DevErrorDetect
 #define McalOcu_InitCheck                                                     STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGOCU_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGOCU_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGMCALOCU_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGMCALOCU_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGOCU_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGOCU_AR_RELEASE_VERSION_MINOR!"
+#if(CFGMCALOCU_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGMCALOCU_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

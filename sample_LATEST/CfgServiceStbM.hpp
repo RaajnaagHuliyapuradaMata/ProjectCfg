@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGSTBM_AR_RELEASE_VERSION_MAJOR                                       4
-#define CFGSTBM_AR_RELEASE_VERSION_MINOR                                       3
+#define CFGSERVICESTBM_AR_RELEASE_VERSION_MAJOR                                       4
+#define CFGSERVICESTBM_AR_RELEASE_VERSION_MINOR                                       3
 #define ServiceStbM_DevErrorDetect                                       DevErrorDetect
 #define ServiceStbM_InitCheck                                                    STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGSTBM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGSTBM_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGSERVICESTBM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSERVICESTBM_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGSTBM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGSTBM_AR_RELEASE_VERSION_MINOR!"
+#if(CFGSERVICESTBM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSERVICESTBM_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

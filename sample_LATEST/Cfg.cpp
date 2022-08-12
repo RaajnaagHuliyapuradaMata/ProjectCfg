@@ -13,70 +13,70 @@
 /* #DEFINES                                                                   */
 /******************************************************************************/
 #define PBcfgGen_DefaultInit                                                   \
-      {McalAdc_DevErrorDetect,            {CFGADC_AR_RELEASE_VERSION_MAJOR,            CFGADC_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceBswM_DevErrorDetect,           {CFGBSWM_AR_RELEASE_VERSION_MAJOR,           CFGBSWM_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {McalCan_DevErrorDetect,            {CFGCAN_AR_RELEASE_VERSION_MAJOR,            CFGCAN_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {EcuabCanIf_DevErrorDetect,          {CFGCANIF_AR_RELEASE_VERSION_MAJOR,          CFGCANIF_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceCanNm_DevErrorDetect,          {CFGCANNM_AR_RELEASE_VERSION_MAJOR,          CFGCANNM_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceCanSm_DevErrorDetect,          {CFGCANSM_AR_RELEASE_VERSION_MAJOR,          CFGCANSM_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {EcuabCanTp_DevErrorDetect,          {CFGCANTP_AR_RELEASE_VERSION_MAJOR,          CFGCANTP_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceCom_DevErrorDetect,            {CFGCOM_AR_RELEASE_VERSION_MAJOR,            CFGCOM_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceComM_DevErrorDetect,           {CFGCOMM_AR_RELEASE_VERSION_MAJOR,           CFGCOMM_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {McalCry_DevErrorDetect,            {CFGCRY_AR_RELEASE_VERSION_MAJOR,            CFGCRY_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {EcuabCryIf_DevErrorDetect,          {CFGCRYIF_AR_RELEASE_VERSION_MAJOR,          CFGCRYIF_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceCsm_DevErrorDetect,            {CFGCSM_AR_RELEASE_VERSION_MAJOR,            CFGCSM_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceDcm_DevErrorDetect,            {CFGDCM_AR_RELEASE_VERSION_MAJOR,            CFGDCM_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceDem_DevErrorDetect,            {CFGDEM_AR_RELEASE_VERSION_MAJOR,            CFGDEM_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceDet_DevErrorDetect,            {CFGDET_AR_RELEASE_VERSION_MAJOR,            CFGDET_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {McalDio_DevErrorDetect,            {CFGDIO_AR_RELEASE_VERSION_MAJOR,            CFGDIO_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceDlt_DevErrorDetect,            {CFGDLT_AR_RELEASE_VERSION_MAJOR,            CFGDLT_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {EcuabEa_DevErrorDetect,             {CFGEA_AR_RELEASE_VERSION_MAJOR,             CFGEA_AR_RELEASE_VERSION_MINOR,             0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceEcuM_DevErrorDetect,           {CFGECUM_AR_RELEASE_VERSION_MAJOR,           CFGECUM_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {McalEep_DevErrorDetect,            {CFGEEP_AR_RELEASE_VERSION_MAJOR,            CFGEEP_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {McalEth_DevErrorDetect,            {CFGETH_AR_RELEASE_VERSION_MAJOR,            CFGETH_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {EcuabEthIf_DevErrorDetect,          {CFGETHIF_AR_RELEASE_VERSION_MAJOR,          CFGETHIF_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {EcuabFee_DevErrorDetect,            {CFGFEE_AR_RELEASE_VERSION_MAJOR,            CFGFEE_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceFiM_DevErrorDetect,            {CFGFIM_AR_RELEASE_VERSION_MAJOR,            CFGFIM_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {McalFls_DevErrorDetect,            {CFGFLS_AR_RELEASE_VERSION_MAJOR,            CFGFLS_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {McalFr_DevErrorDetect,             {CFGFR_AR_RELEASE_VERSION_MAJOR,             CFGFR_AR_RELEASE_VERSION_MINOR,             0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {EcuabFrIf_DevErrorDetect,           {CFGFRIF_AR_RELEASE_VERSION_MAJOR,           CFGFRIF_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceFrNm_DevErrorDetect,           {CFGFRNM_AR_RELEASE_VERSION_MAJOR,           CFGFRNM_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {EcuabFrTp_DevErrorDetect,           {CFGFRTP_AR_RELEASE_VERSION_MAJOR,           CFGFRTP_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {McalGpt_DevErrorDetect,            {CFGGPT_AR_RELEASE_VERSION_MAJOR,            CFGGPT_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {McalIcu_DevErrorDetect,            {CFGICU_AR_RELEASE_VERSION_MAJOR,            CFGICU_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceIpduM_DevErrorDetect,          {CFGIPDUM_AR_RELEASE_VERSION_MAJOR,          CFGIPDUM_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {EcuabJ1939Tp_DevErrorDetect,        {CFGJ1939TP_AR_RELEASE_VERSION_MAJOR,        CFGJ1939TP_AR_RELEASE_VERSION_MINOR,        0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {McalLin_DevErrorDetect,            {CFGLIN_AR_RELEASE_VERSION_MAJOR,            CFGLIN_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {EcuabLinIf_DevErrorDetect,          {CFGLINIF_AR_RELEASE_VERSION_MAJOR,          CFGLINIF_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {EcuabLinTp_DevErrorDetect,          {CFGLINTP_AR_RELEASE_VERSION_MAJOR,          CFGLINTP_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {McalMcu_DevErrorDetect,            {CFGMCU_AR_RELEASE_VERSION_MAJOR,            CFGMCU_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {EcuabMemIf_DevErrorDetect,          {CFGMEMIF_AR_RELEASE_VERSION_MAJOR,          CFGMEMIF_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceNm_DevErrorDetect,             {CFGNM_AR_RELEASE_VERSION_MAJOR,             CFGNM_AR_RELEASE_VERSION_MINOR,             0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceNvM_DevErrorDetect,            {CFGNVM_AR_RELEASE_VERSION_MAJOR,            CFGNVM_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {McalOcu_DevErrorDetect,            {CFGOCU_AR_RELEASE_VERSION_MAJOR,            CFGOCU_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceOs_DevErrorDetect,             {CFGOS_AR_RELEASE_VERSION_MAJOR,             CFGOS_AR_RELEASE_VERSION_MINOR,             0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {McalPort_DevErrorDetect,           {CFGPORT_AR_RELEASE_VERSION_MAJOR,           CFGPORT_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {McalPwm_DevErrorDetect,            {CFGPWM_AR_RELEASE_VERSION_MAJOR,            CFGPWM_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+      {McalAdc_DevErrorDetect,            {CFGMCALADC_AR_RELEASE_VERSION_MAJOR,            CFGMCALADC_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceBswM_DevErrorDetect,           {CFGSERVICEBSWM_AR_RELEASE_VERSION_MAJOR,           CFGSERVICEBSWM_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {McalCan_DevErrorDetect,            {CFGMCALCAN_AR_RELEASE_VERSION_MAJOR,            CFGMCALCAN_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {EcuabCanIf_DevErrorDetect,          {CFGECUABCANIF_AR_RELEASE_VERSION_MAJOR,          CFGECUABCANIF_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceCanNm_DevErrorDetect,          {CFGSERVICECANNM_AR_RELEASE_VERSION_MAJOR,          CFGSERVICECANNM_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceCanSm_DevErrorDetect,          {CFGSERVICECANSM_AR_RELEASE_VERSION_MAJOR,          CFGSERVICECANSM_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {EcuabCanTp_DevErrorDetect,          {CFGECUABCANTP_AR_RELEASE_VERSION_MAJOR,          CFGECUABCANTP_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceCom_DevErrorDetect,            {CFGSERVICECOM_AR_RELEASE_VERSION_MAJOR,            CFGSERVICECOM_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceComM_DevErrorDetect,           {CFGSERVICECOMM_AR_RELEASE_VERSION_MAJOR,           CFGSERVICECOMM_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {McalCry_DevErrorDetect,            {CFGMCALCRY_AR_RELEASE_VERSION_MAJOR,            CFGMCALCRY_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {EcuabCryIf_DevErrorDetect,          {CFGECUABCRYIF_AR_RELEASE_VERSION_MAJOR,          CFGECUABCRYIF_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceCsm_DevErrorDetect,            {CFGSERVICECSM_AR_RELEASE_VERSION_MAJOR,            CFGSERVICECSM_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceDcm_DevErrorDetect,            {CFGSERVICEDCM_AR_RELEASE_VERSION_MAJOR,            CFGSERVICEDCM_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceDem_DevErrorDetect,            {CFGSERVICEDEM_AR_RELEASE_VERSION_MAJOR,            CFGSERVICEDEM_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceDet_DevErrorDetect,            {CFGSERVICEDET_AR_RELEASE_VERSION_MAJOR,            CFGSERVICEDET_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {McalDio_DevErrorDetect,            {CFGMCALDIO_AR_RELEASE_VERSION_MAJOR,            CFGMCALDIO_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceDlt_DevErrorDetect,            {CFGSERVICEDLT_AR_RELEASE_VERSION_MAJOR,            CFGSERVICEDLT_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {EcuabEa_DevErrorDetect,             {CFGECUABEA_AR_RELEASE_VERSION_MAJOR,             CFGECUABEA_AR_RELEASE_VERSION_MINOR,             0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceEcuM_DevErrorDetect,           {CFGSERVICEECUM_AR_RELEASE_VERSION_MAJOR,           CFGSERVICEECUM_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {McalEep_DevErrorDetect,            {CFGMCALEEP_AR_RELEASE_VERSION_MAJOR,            CFGMCALEEP_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {McalEth_DevErrorDetect,            {CFGMCALETH_AR_RELEASE_VERSION_MAJOR,            CFGMCALETH_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {EcuabEthIf_DevErrorDetect,          {CFGECUABETHIF_AR_RELEASE_VERSION_MAJOR,          CFGECUABETHIF_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {EcuabFee_DevErrorDetect,            {CFGECUABFEE_AR_RELEASE_VERSION_MAJOR,            CFGECUABFEE_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceFiM_DevErrorDetect,            {CFGSERVICEFIM_AR_RELEASE_VERSION_MAJOR,            CFGSERVICEFIM_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {McalFls_DevErrorDetect,            {CFGMCALFLS_AR_RELEASE_VERSION_MAJOR,            CFGMCALFLS_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {McalFr_DevErrorDetect,             {CFGMCALFR_AR_RELEASE_VERSION_MAJOR,             CFGMCALFR_AR_RELEASE_VERSION_MINOR,             0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {EcuabFrIf_DevErrorDetect,           {CFGECUABFRIF_AR_RELEASE_VERSION_MAJOR,           CFGECUABFRIF_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceFrNm_DevErrorDetect,           {CFGSERVICEFRNM_AR_RELEASE_VERSION_MAJOR,           CFGSERVICEFRNM_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {EcuabFrTp_DevErrorDetect,           {CFGECUABFRTP_AR_RELEASE_VERSION_MAJOR,           CFGECUABFRTP_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {McalGpt_DevErrorDetect,            {CFGMCALGPT_AR_RELEASE_VERSION_MAJOR,            CFGMCALGPT_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {McalIcu_DevErrorDetect,            {CFGMCALICU_AR_RELEASE_VERSION_MAJOR,            CFGMCALICU_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceIpduM_DevErrorDetect,          {CFGSERVICEIPDUM_AR_RELEASE_VERSION_MAJOR,          CFGSERVICEIPDUM_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {EcuabJ1939Tp_DevErrorDetect,        {CFGECUABJ1939TP_AR_RELEASE_VERSION_MAJOR,        CFGECUABJ1939TP_AR_RELEASE_VERSION_MINOR,        0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {McalLin_DevErrorDetect,            {CFGMCALLIN_AR_RELEASE_VERSION_MAJOR,            CFGMCALLIN_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {EcuabLinIf_DevErrorDetect,          {CFGECUABLINIF_AR_RELEASE_VERSION_MAJOR,          CFGECUABLINIF_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {EcuabLinTp_DevErrorDetect,          {CFGECUABLINTP_AR_RELEASE_VERSION_MAJOR,          CFGECUABLINTP_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {McalMcu_DevErrorDetect,            {CFGMCALMCU_AR_RELEASE_VERSION_MAJOR,            CFGMCALMCU_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {EcuabMemIf_DevErrorDetect,          {CFGECUABMEMIF_AR_RELEASE_VERSION_MAJOR,          CFGECUABMEMIF_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceNm_DevErrorDetect,             {CFGSERVICENM_AR_RELEASE_VERSION_MAJOR,             CFGSERVICENM_AR_RELEASE_VERSION_MINOR,             0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceNvM_DevErrorDetect,            {CFGSERVICENVM_AR_RELEASE_VERSION_MAJOR,            CFGSERVICENVM_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {McalOcu_DevErrorDetect,            {CFGMCALOCU_AR_RELEASE_VERSION_MAJOR,            CFGMCALOCU_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceOs_DevErrorDetect,             {CFGSERVICEOS_AR_RELEASE_VERSION_MAJOR,             CFGSERVICEOS_AR_RELEASE_VERSION_MINOR,             0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {McalPort_DevErrorDetect,           {CFGMCALPORT_AR_RELEASE_VERSION_MAJOR,           CFGMCALPORT_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {McalPwm_DevErrorDetect,            {CFGMCALPWM_AR_RELEASE_VERSION_MAJOR,            CFGMCALPWM_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
    ,  {ProjectARA_DevErrorDetect,            {CFGRTE_AR_RELEASE_VERSION_MAJOR,            CFGRTE_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceSchM_DevErrorDetect,           {CFGSCHM_AR_RELEASE_VERSION_MAJOR,           CFGSCHM_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceSecOC_DevErrorDetect,          {CFGSECOC_AR_RELEASE_VERSION_MAJOR,          CFGSECOC_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceSokFm_DevErrorDetect,          {CFGSOKFM_AR_RELEASE_VERSION_MAJOR,          CFGSOKFM_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {McalSpi_DevErrorDetect,            {CFGSPI_AR_RELEASE_VERSION_MAJOR,            CFGSPI_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceStartUp_DevErrorDetect,        {CFGSTARTUP_AR_RELEASE_VERSION_MAJOR,        CFGSTARTUP_AR_RELEASE_VERSION_MINOR,        0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceStbM_DevErrorDetect,           {CFGSTBM_AR_RELEASE_VERSION_MAJOR,           CFGSTBM_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ApplSwcFoc_DevErrorDetect,     {CFGSWCAPPLFOC_AR_RELEASE_VERSION_MAJOR,     CFGSWCAPPLFOC_AR_RELEASE_VERSION_MINOR,     0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceSwcEcuM_DevErrorDetect, {CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MAJOR, CFGSWCSERVICEECUM_AR_RELEASE_VERSION_MINOR, 0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceSwcOs_DevErrorDetect,   {CFGSWCSERVICEOS_AR_RELEASE_VERSION_MAJOR,   CFGSWCSERVICEOS_AR_RELEASE_VERSION_MINOR,   0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceVkms_DevErrorDetect,           {CFGVKMS_AR_RELEASE_VERSION_MAJOR,           CFGVKMS_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {McalWdg_DevErrorDetect,            {CFGWDG_AR_RELEASE_VERSION_MAJOR,            CFGWDG_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {EcuabWdgIf_DevErrorDetect,          {CFGWDGIF_AR_RELEASE_VERSION_MAJOR,          CFGWDGIF_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
-   ,  {ServiceWdgM_DevErrorDetect,           {CFGWDGM_AR_RELEASE_VERSION_MAJOR,           CFGWDGM_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceSchM_DevErrorDetect,           {CFGSERVICESCHM_AR_RELEASE_VERSION_MAJOR,           CFGSERVICESCHM_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceSecOC_DevErrorDetect,          {CFGSERVICESECOC_AR_RELEASE_VERSION_MAJOR,          CFGSERVICESECOC_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceSokFm_DevErrorDetect,          {CFGSERVICESOKFM_AR_RELEASE_VERSION_MAJOR,          CFGSERVICESOKFM_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {McalSpi_DevErrorDetect,            {CFGMCALSPI_AR_RELEASE_VERSION_MAJOR,            CFGMCALSPI_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceStartUp_DevErrorDetect,        {CFGSERVICESTARTUP_AR_RELEASE_VERSION_MAJOR,        CFGSERVICESTARTUP_AR_RELEASE_VERSION_MINOR,        0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceStbM_DevErrorDetect,           {CFGSERVICESTBM_AR_RELEASE_VERSION_MAJOR,           CFGSERVICESTBM_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ApplSwcFoc_DevErrorDetect,     {CFGAPPLSWCFOC_AR_RELEASE_VERSION_MAJOR,     CFGAPPLSWCFOC_AR_RELEASE_VERSION_MINOR,     0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceSwcEcuM_DevErrorDetect, {CFGSERVICESWCECUM_AR_RELEASE_VERSION_MAJOR, CFGSERVICESWCECUM_AR_RELEASE_VERSION_MINOR, 0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceSwcOs_DevErrorDetect,   {CFGSERVICESWCOS_AR_RELEASE_VERSION_MAJOR,   CFGSERVICESWCOS_AR_RELEASE_VERSION_MINOR,   0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceVkms_DevErrorDetect,           {CFGSERVICEVKMS_AR_RELEASE_VERSION_MAJOR,           CFGSERVICEVKMS_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {McalWdg_DevErrorDetect,            {CFGMCALWDG_AR_RELEASE_VERSION_MAJOR,            CFGMCALWDG_AR_RELEASE_VERSION_MINOR,            0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {EcuabWdgIf_DevErrorDetect,          {CFGECUABWDGIF_AR_RELEASE_VERSION_MAJOR,          CFGECUABWDGIF_AR_RELEASE_VERSION_MINOR,          0x00,0xFF,0x01,'0','1','0'}} \
+   ,  {ServiceWdgM_DevErrorDetect,           {CFGSERVICEWDGM_AR_RELEASE_VERSION_MAJOR,           CFGSERVICEWDGM_AR_RELEASE_VERSION_MINOR,           0x00,0xFF,0x01,'0','1','0'}} \
                                                                                \
    ,  {                                                                        \
             ServicePduR_DevErrorDetect                                                \
          ,  {                                                                  \
-                  CFGPDUR_AR_RELEASE_VERSION_MAJOR                             \
-               ,  CFGPDUR_AR_RELEASE_VERSION_MINOR                             \
+                  CFGSERVICEPDUR_AR_RELEASE_VERSION_MAJOR                             \
+               ,  CFGSERVICEPDUR_AR_RELEASE_VERSION_MINOR                             \
                ,  0x00                                                         \
                ,  0xFF                                                         \
                ,  0x01                                                         \

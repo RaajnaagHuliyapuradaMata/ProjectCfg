@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGCAN_AR_RELEASE_VERSION_MAJOR                                        4
-#define CFGCAN_AR_RELEASE_VERSION_MINOR                                        3
+#define CFGMCALCAN_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGMCALCAN_AR_RELEASE_VERSION_MINOR                                        3
 #define McalCan_DevErrorDetect                                        DevErrorDetect
 #define McalCan_InitCheck                                                     STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGCAN_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGCAN_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGMCALCAN_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGMCALCAN_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGCAN_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGCAN_AR_RELEASE_VERSION_MINOR!"
+#if(CFGMCALCAN_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGMCALCAN_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGICU_AR_RELEASE_VERSION_MAJOR                                        4
-#define CFGICU_AR_RELEASE_VERSION_MINOR                                        3
+#define CFGMCALICU_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGMCALICU_AR_RELEASE_VERSION_MINOR                                        3
 #define McalIcu_DevErrorDetect                                        DevErrorDetect
 #define McalIcu_InitCheck                                                     STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGICU_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGICU_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGMCALICU_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGMCALICU_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGICU_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGICU_AR_RELEASE_VERSION_MINOR!"
+#if(CFGMCALICU_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGMCALICU_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

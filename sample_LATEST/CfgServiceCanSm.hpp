@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGCANSM_AR_RELEASE_VERSION_MAJOR                                      4
-#define CFGCANSM_AR_RELEASE_VERSION_MINOR                                      3
+#define CFGSERVICECANSM_AR_RELEASE_VERSION_MAJOR                                      4
+#define CFGSERVICECANSM_AR_RELEASE_VERSION_MINOR                                      3
 #define ServiceCanSm_DevErrorDetect                                      DevErrorDetect
 #define ServiceCanSm_InitCheck                                                   STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGCANSM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGCANSM_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGSERVICECANSM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSERVICECANSM_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGCANSM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGCANSM_AR_RELEASE_VERSION_MINOR!"
+#if(CFGSERVICECANSM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSERVICECANSM_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

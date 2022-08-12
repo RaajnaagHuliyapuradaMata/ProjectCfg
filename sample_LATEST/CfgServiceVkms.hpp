@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGVKMS_AR_RELEASE_VERSION_MAJOR                                       4
-#define CFGVKMS_AR_RELEASE_VERSION_MINOR                                       3
+#define CFGSERVICEVKMS_AR_RELEASE_VERSION_MAJOR                                       4
+#define CFGSERVICEVKMS_AR_RELEASE_VERSION_MINOR                                       3
 #define ServiceVkms_DevErrorDetect                                       DevErrorDetect
 #define ServiceVkms_InitCheck                                                    STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGVKMS_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGVKMS_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGSERVICEVKMS_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSERVICEVKMS_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGVKMS_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGVKMS_AR_RELEASE_VERSION_MINOR!"
+#if(CFGSERVICEVKMS_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSERVICEVKMS_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

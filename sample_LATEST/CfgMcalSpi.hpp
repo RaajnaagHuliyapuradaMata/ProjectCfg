@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGSPI_AR_RELEASE_VERSION_MAJOR                                        4
-#define CFGSPI_AR_RELEASE_VERSION_MINOR                                        3
+#define CFGMCALSPI_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGMCALSPI_AR_RELEASE_VERSION_MINOR                                        3
 #define McalSpi_DevErrorDetect                                        DevErrorDetect
 #define McalSpi_InitCheck                                                     STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGSPI_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGSPI_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGMCALSPI_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGMCALSPI_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGSPI_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGSPI_AR_RELEASE_VERSION_MINOR!"
+#if(CFGMCALSPI_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGMCALSPI_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

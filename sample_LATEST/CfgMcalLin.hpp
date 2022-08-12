@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGLIN_AR_RELEASE_VERSION_MAJOR                                        4
-#define CFGLIN_AR_RELEASE_VERSION_MINOR                                        3
+#define CFGMCALLIN_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGMCALLIN_AR_RELEASE_VERSION_MINOR                                        3
 #define McalLin_DevErrorDetect                                        DevErrorDetect
 #define McalLin_InitCheck                                                     STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGLIN_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGLIN_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGMCALLIN_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGMCALLIN_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGLIN_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGLIN_AR_RELEASE_VERSION_MINOR!"
+#if(CFGMCALLIN_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGMCALLIN_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/

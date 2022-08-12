@@ -13,20 +13,20 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGFLS_AR_RELEASE_VERSION_MAJOR                                        4
-#define CFGFLS_AR_RELEASE_VERSION_MINOR                                        3
+#define CFGMCALFLS_AR_RELEASE_VERSION_MAJOR                                        4
+#define CFGMCALFLS_AR_RELEASE_VERSION_MINOR                                        3
 #define McalFls_DevErrorDetect                                        DevErrorDetect
 #define McalFls_InitCheck                                                     STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGFLS_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGFLS_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGMCALFLS_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGMCALFLS_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGFLS_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGFLS_AR_RELEASE_VERSION_MINOR!"
+#if(CFGMCALFLS_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGMCALFLS_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
