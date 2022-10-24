@@ -1,6 +1,6 @@
 #pragma once
 /******************************************************************************/
-/* File   : CfgEcuabCanTp.hpp                                                 */
+/* File   : CfgServiceSwcOs.hpp                                               */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
@@ -8,31 +8,31 @@
 /* #INCLUDES                                                                  */
 /******************************************************************************/
 #include "CfgModule.hpp"
-#include "CompilerCfg_EcuabCanTp.hpp"
+#include "CompilerCfg_ServiceSwcOs.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGECUABCANTP_AR_RELEASE_VERSION_MAJOR                                 4
-#define CFGECUABCANTP_AR_RELEASE_VERSION_MINOR                                 3
-#define EcuabCanTp_DevErrorDetect                                 DevErrorDetect
-#define EcuabCanTp_InitCheck                                              STD_ON
+#define CFGSERVICESWCOS_AR_RELEASE_VERSION_MAJOR                               4
+#define CFGSERVICESWCOS_AR_RELEASE_VERSION_MINOR                               3
+#define ServiceSwcOs_DevErrorDetect                               DevErrorDetect
+#define ServiceSwcOs_InitCheck                                            STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGECUABCANTP_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGECUABCANTP_AR_RELEASE_VERSION_MAJOR!"
+#if(CFGSERVICESWCOS_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible CFGSERVICESWCOS_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CFGECUABCANTP_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGECUABCANTP_AR_RELEASE_VERSION_MINOR!"
+#if(CFGSERVICESWCOS_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible CFGSERVICESWCOS_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-class CfgEcuabCanTp_Type:
+class CfgServiceSwcOs_Type:
       public CfgModule_TypeAbstract
 {
 };
