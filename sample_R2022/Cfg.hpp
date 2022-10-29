@@ -7,9 +7,35 @@
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-/*
 #include "CfgApplSwcFoc.hpp"
 #include "CfgProjectARA.hpp"
+#include "CfgServiceBswM.hpp"
+#include "CfgServiceCanNm.hpp"
+#include "CfgServiceCanSm.hpp"
+#include "CfgServiceCom.hpp"
+#include "CfgServiceComM.hpp"
+#include "CfgServiceCsm.hpp"
+#include "CfgServiceDcm.hpp"
+#include "CfgServiceDem.hpp"
+#include "CfgServiceDet.hpp"
+#include "CfgServiceDlt.hpp"
+#include "CfgServiceEcuM.hpp"
+#include "CfgServiceFiM.hpp"
+#include "CfgServiceFrNm.hpp"
+#include "CfgServiceIpduM.hpp"
+#include "CfgServiceNm.hpp"
+#include "CfgServiceNvM.hpp"
+#include "CfgServiceOs.hpp"
+#include "CfgServicePduR.hpp"
+#include "CfgServiceSchM.hpp"
+#include "CfgServiceSecOC.hpp"
+#include "CfgServiceSokFm.hpp"
+#include "CfgServiceStartUp.hpp"
+#include "CfgServiceStbM.hpp"
+#include "CfgServiceSwcEcuM.hpp"
+#include "CfgServiceSwcOs.hpp"
+#include "CfgServiceVkms.hpp"
+#include "CfgServiceWdgM.hpp"
 #include "CfgEcuabCanIf.hpp"
 #include "CfgEcuabCanTp.hpp"
 #include "CfgEcuabCryIf.hpp"
@@ -40,34 +66,7 @@
 #include "CfgMcalPwm.hpp"
 #include "CfgMcalSpi.hpp"
 #include "CfgMcalWdg.hpp"
-#include "CfgServiceBswM.hpp"
-#include "CfgServiceCanNm.hpp"
-#include "CfgServiceCanSm.hpp"
-#include "CfgServiceCom.hpp"
-#include "CfgServiceComM.hpp"
-#include "CfgServiceCsm.hpp"
-#include "CfgServiceDcm.hpp"
-#include "CfgServiceDem.hpp"
-#include "CfgServiceDet.hpp"
-#include "CfgServiceDlt.hpp"
-#include "CfgServiceEcuM.hpp"
-#include "CfgServiceFiM.hpp"
-#include "CfgServiceFrNm.hpp"
-#include "CfgServiceIpduM.hpp"
-#include "CfgServiceNm.hpp"
-#include "CfgServiceNvM.hpp"
-#include "CfgServiceOs.hpp"
-#include "CfgServicePduR.hpp"
-#include "CfgServiceSchM.hpp"
-#include "CfgServiceSecOC.hpp"
-#include "CfgServiceSokFm.hpp"
-#include "CfgServiceStartUp.hpp"
-#include "CfgServiceStbM.hpp"
-#include "CfgServiceSwcEcuM.hpp"
-#include "CfgServiceSwcOs.hpp"
-#include "CfgServiceVkms.hpp"
-#include "CfgServiceWdgM.hpp"
-*/
+
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
@@ -81,68 +80,65 @@
 /******************************************************************************/
 class CfgGen_Type{
    public:
-/*
-      CfgMcalAdc_Type            CfgMcalAdc;
+      CfgApplSwcFoc_Type         CfgApplSwcFoc;
+      CfgProjectARA_Type         CfgProjectARA;
       CfgServiceBswM_Type        CfgServiceBswM;
-      CfgMcalCan_Type            CfgMcalCan;
-      CfgEcuabCanIf_Type         CfgEcuabCanIf;
       CfgServiceCanNm_Type       CfgServiceCanNm;
       CfgServiceCanSm_Type       CfgServiceCanSm;
-      CfgEcuabCanTp_Type         CfgEcuabCanTp;
       CfgServiceCom_Type         CfgServiceCom;
       CfgServiceComM_Type        CfgServiceComM;
-      CfgMcalCry_Type            CfgMcalCry;
-      CfgEcuabCryIf_Type         CfgEcuabCryIf;
       CfgServiceCsm_Type         CfgServiceCsm;
       CfgServiceDcm_Type         CfgServiceDcm;
       CfgServiceDem_Type         CfgServiceDem;
       CfgServiceDet_Type         CfgServiceDet;
-      CfgMcalDio_Type            CfgMcalDio;
       CfgServiceDlt_Type         CfgServiceDlt;
-      CfgEcuabEa_Type            CfgEcuabEa;
       CfgServiceEcuM_Type        CfgServiceEcuM;
-      CfgMcalEep_Type            CfgMcalEep;
-      CfgMcalEth_Type            CfgMcalEth;
-      CfgEcuabEthIf_Type         CfgEcuabEthIf;
-      CfgEcuabFee_Type           CfgEcuabFee;
       CfgServiceFiM_Type         CfgServiceFiM;
-      CfgMcalFls_Type            CfgMcalFls;
-      CfgMcalFr_Type             CfgMcalFr;
-      CfgEcuabFrIf_Type          CfgEcuabFrIf;
       CfgServiceFrNm_Type        CfgServiceFrNm;
-      CfgEcuabFrTp_Type          CfgEcuabFrTp;
-      CfgMcalGpt_Type            CfgMcalGpt;
-      CfgMcalIcu_Type            CfgMcalIcu;
       CfgServiceIpduM_Type       CfgServiceIpduM;
-      CfgEcuabJ1939Tp_Type       CfgEcuabJ1939Tp;
-      CfgMcalLin_Type            CfgMcalLin;
-      CfgEcuabLinIf_Type         CfgEcuabLinIf;
-      CfgEcuabLinTp_Type         CfgEcuabLinTp;
-      CfgMcalMcu_Type            CfgMcalMcu;
-      CfgEcuabMemIf_Type         CfgEcuabMemIf;
       CfgServiceNm_Type          CfgServiceNm;
       CfgServiceNvM_Type         CfgServiceNvM;
-      CfgMcalOcu_Type            CfgMcalOcu;
       CfgServiceOs_Type          CfgServiceOs;
-      CfgMcalPort_Type           CfgMcalPort;
-      CfgMcalPwm_Type            CfgMcalPwm;
-      CfgProjectARA_Type         CfgProjectARA;
+      CfgServicePduR_Type        CfgServicePduR;
       CfgServiceSchM_Type        CfgServiceSchM;
       CfgServiceSecOC_Type       CfgServiceSecOC;
       CfgServiceSokFm_Type       CfgServiceSokFm;
-      CfgMcalSpi_Type            CfgMcalSpi;
       CfgServiceStartUp_Type     CfgServiceStartUp;
       CfgServiceStbM_Type        CfgServiceStbM;
-      CfgApplSwcFoc_Type         CfgApplSwcFoc;
       CfgServiceSwcEcuM_Type     CfgServiceSwcEcuM;
       CfgServiceSwcOs_Type       CfgServiceSwcOs;
       CfgServiceVkms_Type        CfgServiceVkms;
-      CfgMcalWdg_Type            CfgMcalWdg;
-      CfgEcuabWdgIf_Type         CfgEcuabWdgIf;
       CfgServiceWdgM_Type        CfgServiceWdgM;
-
-      CfgServicePduR_Type        CfgServicePduR;
-*/
+      CfgEcuabCanIf_Type         CfgEcuabCanIf;
+      CfgEcuabCanTp_Type         CfgEcuabCanTp;
+      CfgEcuabCryIf_Type         CfgEcuabCryIf;
+      CfgEcuabEa_Type            CfgEcuabEa;
+      CfgEcuabEthIf_Type         CfgEcuabEthIf;
+      CfgEcuabFee_Type           CfgEcuabFee;
+      CfgEcuabFrIf_Type          CfgEcuabFrIf;
+      CfgEcuabFrTp_Type          CfgEcuabFrTp;
+      CfgEcuabJ1939Tp_Type       CfgEcuabJ1939Tp;
+      CfgEcuabLinIf_Type         CfgEcuabLinIf;
+      CfgEcuabLinTp_Type         CfgEcuabLinTp;
+      CfgEcuabMemIf_Type         CfgEcuabMemIf;
+      CfgEcuabWdgIf_Type         CfgEcuabWdgIf;
+      CfgMcalAdc_Type            CfgMcalAdc;
+      CfgMcalCan_Type            CfgMcalCan;
+      CfgMcalCry_Type            CfgMcalCry;
+      CfgMcalDio_Type            CfgMcalDio;
+      CfgMcalEep_Type            CfgMcalEep;
+      CfgMcalEth_Type            CfgMcalEth;
+      CfgMcalFls_Type            CfgMcalFls;
+      CfgMcalFr_Type             CfgMcalFr;
+      CfgMcalGpt_Type            CfgMcalGpt;
+      CfgMcalIcu_Type            CfgMcalIcu;
+      CfgMcalLin_Type            CfgMcalLin;
+      CfgMcalMcu_Type            CfgMcalMcu;
+      CfgMcalOcu_Type            CfgMcalOcu;
+      CfgMcalPort_Type           CfgMcalPort;
+      CfgMcalPwm_Type            CfgMcalPwm;
+      CfgMcalSpi_Type            CfgMcalSpi;
+      CfgMcalWdg_Type            CfgMcalWdg;
 };
 
 /******************************************************************************/
