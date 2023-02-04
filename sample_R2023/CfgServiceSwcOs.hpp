@@ -1,41 +1,27 @@
 #pragma once
 /******************************************************************************/
-/* File   : CfgServiceSwcOs.hpp                                               */
+/* File   : NvM_BlocksNv_ServiceSwcOs.hpp                                     */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "CfgModule.hpp"
 #include "CompilerCfg_ServiceSwcOs.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGSERVICESWCOS_AR_RELEASE_VERSION_MAJOR                               4
-#define CFGSERVICESWCOS_AR_RELEASE_VERSION_MINOR                               3
 #define ServiceSwcOs_DevErrorDetect                               DevErrorDetect
 #define ServiceSwcOs_InitCheck                                            STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGSERVICESWCOS_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGSERVICESWCOS_AR_RELEASE_VERSION_MAJOR!"
-#endif
-
-#if(CFGSERVICESWCOS_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGSERVICESWCOS_AR_RELEASE_VERSION_MINOR!"
-#endif
 
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-class CfgServiceSwcOs_Type:
-      public CfgModule_TypeAbstract
-{
-};
 
 /******************************************************************************/
 /* CONSTS                                                                     */

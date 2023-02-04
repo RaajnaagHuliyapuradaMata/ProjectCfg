@@ -1,41 +1,27 @@
 #pragma once
 /******************************************************************************/
-/* File   : CfgMcalFr.hpp                                                     */
+/* File   : NvM_BlocksNv_McalFr.hpp                                           */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "CfgModule.hpp"
 #include "CompilerCfg_McalFr.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGMCALFR_AR_RELEASE_VERSION_MAJOR                                     4
-#define CFGMCALFR_AR_RELEASE_VERSION_MINOR                                     3
 #define McalFr_DevErrorDetect                                     DevErrorDetect
 #define McalFr_InitCheck                                                  STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGMCALFR_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGMCALFR_AR_RELEASE_VERSION_MAJOR!"
-#endif
-
-#if(CFGMCALFR_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGMCALFR_AR_RELEASE_VERSION_MINOR!"
-#endif
 
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-class CfgMcalFr_Type:
-      public CfgModule_TypeAbstract
-{
-};
 
 /******************************************************************************/
 /* CONSTS                                                                     */

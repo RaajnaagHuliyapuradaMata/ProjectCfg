@@ -1,41 +1,27 @@
 #pragma once
 /******************************************************************************/
-/* File   : CfgServiceFrNm.hpp                                                */
+/* File   : NvM_BlocksNv_ServiceFrNm.hpp                                      */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "CfgModule.hpp"
 #include "CompilerCfg_ServiceFrNm.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGSERVICEFRNM_AR_RELEASE_VERSION_MAJOR                                4
-#define CFGSERVICEFRNM_AR_RELEASE_VERSION_MINOR                                3
 #define ServiceFrNm_DevErrorDetect                                DevErrorDetect
 #define ServiceFrNm_InitCheck                                             STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGSERVICEFRNM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGSERVICEFRNM_AR_RELEASE_VERSION_MAJOR!"
-#endif
-
-#if(CFGSERVICEFRNM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGSERVICEFRNM_AR_RELEASE_VERSION_MINOR!"
-#endif
 
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-class CfgServiceFrNm_Type:
-      public CfgModule_TypeAbstract
-{
-};
 
 /******************************************************************************/
 /* CONSTS                                                                     */

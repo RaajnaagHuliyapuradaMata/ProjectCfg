@@ -1,20 +1,17 @@
 #pragma once
 /******************************************************************************/
-/* File   : CfgMcalAdc.hpp                                                    */
+/* File   : NvM_BlocksNv_McalAdc.hpp                                          */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "CfgModule.hpp"
 #include "CompilerCfg_McalAdc.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGMCALADC_AR_RELEASE_VERSION_MAJOR                                    4
-#define CFGMCALADC_AR_RELEASE_VERSION_MINOR                                    3
 #define McalAdc_DevErrorDetect                                    DevErrorDetect
 #define McalAdc_InitCheck                                                 STD_ON
 #define LevelPriorityMin                                                       0
@@ -26,13 +23,6 @@
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGMCALADC_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGMCALADC_AR_RELEASE_VERSION_MAJOR!"
-#endif
-
-#if(CFGMCALADC_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGMCALADC_AR_RELEASE_VERSION_MINOR!"
-#endif
 
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
@@ -88,11 +78,6 @@ typedef struct{
    McalAdc_TypeStateGroup        StateGroup;
    McalAdc_TypeBufferResults     BufferResults;
 }McalAdc_TypeChannelGroup;
-
-class CfgMcalAdc_Type:
-      public CfgModule_TypeAbstract
-{
-};
 
 /******************************************************************************/
 /* CONSTS                                                                     */

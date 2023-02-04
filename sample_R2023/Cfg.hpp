@@ -78,75 +78,10 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-class CfgGen_Type{
-   public:
-      CfgApplSwcFoc_Type         CfgApplSwcFoc;
-      CfgProjectARA_Type         CfgProjectARA;
-      CfgServiceBswM_Type        CfgServiceBswM;
-      CfgServiceCanNm_Type       CfgServiceCanNm;
-      CfgServiceCanSm_Type       CfgServiceCanSm;
-      CfgServiceCom_Type         CfgServiceCom;
-      CfgServiceComM_Type        CfgServiceComM;
-      CfgServiceCsm_Type         CfgServiceCsm;
-      CfgServiceDcm_Type         CfgServiceDcm;
-      CfgServiceDem_Type         CfgServiceDem;
-      CfgServiceDet_Type         CfgServiceDet;
-      CfgServiceDlt_Type         CfgServiceDlt;
-      CfgServiceEcuM_Type        CfgServiceEcuM;
-      CfgServiceFiM_Type         CfgServiceFiM;
-      CfgServiceFrNm_Type        CfgServiceFrNm;
-      CfgServiceIpduM_Type       CfgServiceIpduM;
-      CfgServiceNm_Type          CfgServiceNm;
-      CfgServiceNvM_Type         CfgServiceNvM;
-      CfgServiceOs_Type          CfgServiceOs;
-      CfgServicePduR_Type        CfgServicePduR;
-      CfgServiceSchM_Type        CfgServiceSchM;
-      CfgServiceSecOC_Type       CfgServiceSecOC;
-      CfgServiceSokFm_Type       CfgServiceSokFm;
-      CfgServiceStartUp_Type     CfgServiceStartUp;
-      CfgServiceStbM_Type        CfgServiceStbM;
-      CfgServiceSwcEcuM_Type     CfgServiceSwcEcuM;
-      CfgServiceSwcOs_Type       CfgServiceSwcOs;
-      CfgServiceVkms_Type        CfgServiceVkms;
-      CfgServiceWdgM_Type        CfgServiceWdgM;
-      CfgEcuabCanIf_Type         CfgEcuabCanIf;
-      CfgEcuabCanTp_Type         CfgEcuabCanTp;
-      CfgEcuabCryIf_Type         CfgEcuabCryIf;
-      CfgEcuabEa_Type            CfgEcuabEa;
-      CfgEcuabEthIf_Type         CfgEcuabEthIf;
-      CfgEcuabFee_Type           CfgEcuabFee;
-      CfgEcuabFrIf_Type          CfgEcuabFrIf;
-      CfgEcuabFrTp_Type          CfgEcuabFrTp;
-      CfgEcuabJ1939Tp_Type       CfgEcuabJ1939Tp;
-      CfgEcuabLinIf_Type         CfgEcuabLinIf;
-      CfgEcuabLinTp_Type         CfgEcuabLinTp;
-      CfgEcuabMemIf_Type         CfgEcuabMemIf;
-      CfgEcuabWdgIf_Type         CfgEcuabWdgIf;
-      CfgMcalAdc_Type            CfgMcalAdc;
-      CfgMcalCan_Type            CfgMcalCan;
-      CfgMcalCry_Type            CfgMcalCry;
-      CfgMcalDio_Type            CfgMcalDio;
-      CfgMcalEep_Type            CfgMcalEep;
-      CfgMcalEth_Type            CfgMcalEth;
-      CfgMcalFls_Type            CfgMcalFls;
-      CfgMcalFr_Type             CfgMcalFr;
-      CfgMcalGpt_Type            CfgMcalGpt;
-      CfgMcalIcu_Type            CfgMcalIcu;
-      CfgMcalLin_Type            CfgMcalLin;
-      CfgMcalMcu_Type            CfgMcalMcu;
-      CfgMcalOcu_Type            CfgMcalOcu;
-      CfgMcalPort_Type           CfgMcalPort;
-      CfgMcalPwm_Type            CfgMcalPwm;
-      CfgMcalSpi_Type            CfgMcalSpi;
-      CfgMcalWdg_Type            CfgMcalWdg;
-};
 
 /******************************************************************************/
 /* CONSTS                                                                     */
 /******************************************************************************/
-extern const CfgGen_Type PBcfgGen_ROM;
-extern const CfgGen_Type   CfgGen_McalFls;
-extern       CfgGen_Type   CfgGen_ServiceNvM;
 
 /******************************************************************************/
 /* PARAMS                                                                     */

@@ -1,41 +1,27 @@
 #pragma once
 /******************************************************************************/
-/* File   : CfgServiceSecOC.hpp                                               */
+/* File   : NvM_BlocksNv_ServiceSecOC.hpp                                     */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "CfgModule.hpp"
 #include "CompilerCfg_ServiceSecOC.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGSERVICESECOC_AR_RELEASE_VERSION_MAJOR                               4
-#define CFGSERVICESECOC_AR_RELEASE_VERSION_MINOR                               3
 #define ServiceSecOC_DevErrorDetect                               DevErrorDetect
 #define ServiceSecOC_InitCheck                                            STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGSERVICESECOC_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGSERVICESECOC_AR_RELEASE_VERSION_MAJOR!"
-#endif
-
-#if(CFGSERVICESECOC_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGSERVICESECOC_AR_RELEASE_VERSION_MINOR!"
-#endif
 
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-class CfgServiceSecOC_Type:
-      public CfgModule_TypeAbstract
-{
-};
 
 /******************************************************************************/
 /* CONSTS                                                                     */

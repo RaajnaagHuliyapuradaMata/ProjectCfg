@@ -1,33 +1,23 @@
 #pragma once
 /******************************************************************************/
-/* File   : CfgServiceDcm.hpp                                                 */
+/* File   : NvM_BlocksNv_ServiceDcm.hpp                                       */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "CfgModule.hpp"
 #include "CompilerCfg_ServiceDcm.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CFGSERVICEDCM_AR_RELEASE_VERSION_MAJOR                                 4
-#define CFGSERVICEDCM_AR_RELEASE_VERSION_MINOR                                 3
 #define ServiceDcm_DevErrorDetect                                 DevErrorDetect
 #define ServiceDcm_InitCheck                                              STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CFGSERVICEDCM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CFGSERVICEDCM_AR_RELEASE_VERSION_MAJOR!"
-#endif
-
-#if(CFGSERVICEDCM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CFGSERVICEDCM_AR_RELEASE_VERSION_MINOR!"
-#endif
 
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
@@ -36,7 +26,7 @@ typedef enum{
       eStatus_OK                    = 0
    ,  eStatus_RoeNotAccepted        = 6
    ,  eStatus_PeriodicIdNotAccepted = 7
-}CfgServiceDcm_TypeStatus;
+}NvM_BlocksNv_ServiceDcm_TypeStatus;
 
 typedef enum{
       eModeServiceCommunication_NormEnaRxEnaTx = 0
@@ -51,26 +41,26 @@ typedef enum{
    ,  eModeServiceCommunication_NormServiceNmEnaRxDisTx
    ,  eModeServiceCommunication_NormServiceNmDisRxEnaTx
    ,  eModeServiceCommunication_NormServiceNmDisRxDisTx
-}CfgServiceDcm_TypeModeServiceCommunication;
+}NvM_BlocksNv_ServiceDcm_TypeModeServiceCommunication;
 
 typedef enum{
       eReturnMemoryRead_OK = 0
    ,  eReturnMemoryRead_Pending
    ,  eReturnMemoryRead_Failed
    ,  eReturnMemoryRead_ForceRcrrp
-}CfgServiceDcm_TypeReturnMemoryRead;
+}NvM_BlocksNv_ServiceDcm_TypeReturnMemoryRead;
 
 typedef enum{
       eReturnMemoryWrite_OK = 0
    ,  eReturnMemoryWrite_Pending
    ,  eReturnMemoryWrite_Failed
    ,  eReturnMemoryWrite_ForceRcrrp
-}CfgServiceDcm_TypeReturnMemoryWrite;
+}NvM_BlocksNv_ServiceDcm_TypeReturnMemoryWrite;
 
 typedef enum{
       eModeEcuStart_Cold = 0
    ,  eModeEcuStart_Warm
-}CfgServiceDcm_TypeModeEcuStart;
+}NvM_BlocksNv_ServiceDcm_TypeModeEcuStart;
 
 typedef struct{
    uint16 IdConnection;
@@ -80,28 +70,28 @@ typedef struct{
    bool   RequestReprograming;
    bool   ApplUpdated;
    bool   ResponseRequired;
-}CfgServiceDcm_TypeConditionsProg;
+}NvM_BlocksNv_ServiceDcm_TypeConditionsProg;
 
-typedef uint8               CfgServiceDcm_TypeItemMsg;
-typedef CfgServiceDcm_TypeItemMsg* CfgServiceDcm_TypeMsg;
-typedef uint32              CfgServiceDcm_TypeLenMsg;
-typedef uint8               CfgServiceDcm_TypeIdContext;
+typedef uint8               NvM_BlocksNv_ServiceDcm_TypeItemMsg;
+typedef NvM_BlocksNv_ServiceDcm_TypeItemMsg* NvM_BlocksNv_ServiceDcm_TypeMsg;
+typedef uint32              NvM_BlocksNv_ServiceDcm_TypeLenMsg;
+typedef uint8               NvM_BlocksNv_ServiceDcm_TypeIdContext;
 
 typedef struct{
    uint8 TypeReq             : 1;
    uint8 suppressPosResponse : 1;
-}CfgServiceDcm_TypeInfoMsgAdd;
+}NvM_BlocksNv_ServiceDcm_TypeInfoMsgAdd;
 
 #include "ComStackTypes.hpp" //TBD: move as per architecture
 
 typedef struct{
-   CfgServiceDcm_TypeMsg        reqData;
-   CfgServiceDcm_TypeLenMsg     reqDataLen;
-   CfgServiceDcm_TypeMsg        resData;
-   CfgServiceDcm_TypeLenMsg     resDataLen;
-   CfgServiceDcm_TypeInfoMsgAdd msgAddInfo;
-   CfgServiceDcm_TypeLenMsg     resDataLenMax;
-   CfgServiceDcm_TypeIdContext  idContext;
+   NvM_BlocksNv_ServiceDcm_TypeMsg        reqData;
+   NvM_BlocksNv_ServiceDcm_TypeLenMsg     reqDataLen;
+   NvM_BlocksNv_ServiceDcm_TypeMsg        resData;
+   NvM_BlocksNv_ServiceDcm_TypeLenMsg     resDataLen;
+   NvM_BlocksNv_ServiceDcm_TypeInfoMsgAdd msgAddInfo;
+   NvM_BlocksNv_ServiceDcm_TypeLenMsg     resDataLenMax;
+   NvM_BlocksNv_ServiceDcm_TypeIdContext  idContext;
    TypeIdPdu             IdPduServiceDcmRx;
 }TypeMsgContext;
 
@@ -114,12 +104,7 @@ typedef enum{
    ,  eStatusExtendedOp_PosResponseFailed
    ,  eStatusExtendedOp_NegResponseSent
    ,  eStatusExtendedOp_NegResponseFailed
-}CfgServiceDcm_TypeStatusExtendedOp;
-
-class CfgServiceDcm_Type:
-      public CfgModule_TypeAbstract
-{
-};
+}NvM_BlocksNv_ServiceDcm_TypeStatusExtendedOp;
 
 /******************************************************************************/
 /* CONSTS                                                                     */
