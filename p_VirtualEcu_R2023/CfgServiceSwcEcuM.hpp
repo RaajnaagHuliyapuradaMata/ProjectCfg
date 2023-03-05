@@ -7,6 +7,14 @@
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
+#include "CompilerCfg_ServiceSwcEcuM.hpp"
+
+#include "CfgServiceCanSm.hpp"
+#include "CfgServiceCom.hpp"
+#include "CfgServiceComM.hpp"
+#include "CfgServicePduR.hpp"
+#include "CfgEcuabCanIf.hpp"
+#include "CfgEcuabCanTp.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -37,21 +45,14 @@ typedef struct{
    ServiceSwcEcuM_TypeValidatedWakeupEvents ValidatedWakeupEvents;
 }ServiceSwcEcuM_TypeShutdownTarget; //TBD: Move to correct header
 
-typedef uint8 CfgEcuAbCanIf_Type;
-typedef uint8 CfgEcuAbCanTp_Type;
-typedef uint8 CfgServiceComM_Type;
-typedef uint8 CfgServiceCanSM_Type;
-typedef uint8 CfgServicePduR_Type;
-typedef uint8 CfgServiceCom_Type;
-
 typedef struct{
    ServiceSwcEcuM_TypeShutdownTarget DefaultShutdownTarget;
-   const CfgEcuAbCanIf_Type*         CfgEcuAbCanIf_ptr;
-   const CfgEcuAbCanTp_Type*         CfgEcuAbCanTp_ptr;
    const CfgServiceComM_Type*        CfgServiceComM_ptr;
-   const CfgServiceCanSM_Type*       CfgServiceCanSM_ptr;
+   const CfgServiceCanSm_Type*       CfgServiceCanSm_ptr;
    const CfgServicePduR_Type*        CfgServicePduR_ptr;
    const CfgServiceCom_Type*         CfgServiceCom_ptr;
+   const CfgEcuabCanIf_Type*         CfgEcuabCanIf_ptr;
+   const CfgEcuabCanTp_Type*         CfgEcuabCanTp_ptr;
 }CfgServiceSwcEcuM_Type;
 
 /******************************************************************************/
