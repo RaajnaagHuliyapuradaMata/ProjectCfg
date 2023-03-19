@@ -1,13 +1,17 @@
-#pragma once
 /******************************************************************************/
-/* File   : CfgServiceCom.hpp                                                 */
+/* File   : CfgEcuabCanIf.cpp                                                 */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "CompilerCfg_ServiceCom.hpp"
+#include "Std_Types.hpp"
+
+#include "CfgEcuabCanIf.hpp"
+
+#include "infServiceSwcCanTpEcuabCanIf.hpp"
+#include "infServiceSwcPduREcuabCanIf.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -20,11 +24,16 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-typedef uint8 CfgServiceCom_Type;
 
 /******************************************************************************/
 /* CONSTS                                                                     */
 /******************************************************************************/
+const tpcstHardwareObjectHandleCfgElement EcuabCanIf_ConfigHardwareObjectHandle[HardwareObjectHandleCfgLen] = {(tpcstHardwareObjectHandleCfgElement)0};
+
+const fptrEcuabCanIf_RxIndication_UL EcuabCanif_ConfigRxPdu_UL[EcuabCanif_NumUL] = {
+      infServiceSwcCanTpEcuabCanIf_RxIndication
+   ,  infServiceSwcPduREcuabCanIf_RxIndication
+};
 
 /******************************************************************************/
 /* PARAMS                                                                     */
