@@ -12,7 +12,7 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define ServiceSwcDcm_NumProtocols                                             1
+#define CfgServiceSwcDcm_NumMaxRequests                                       10
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -21,16 +21,14 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-typedef enum{
-      ServiceSwcDcm_eIdProtocolUds
-   ,  ServiceSwcDcm_eIdProtocolObd
-   ,  ServiceSwcDcm_eIdProtocolJ1939
-}ServiceSwcDcm_teIdProtocol;
+typedef struct{
+   uint8 u8NumMaxRequests;
+}CfgServiceSwcDcm_tst;
 
 /******************************************************************************/
 /* CONSTS                                                                     */
 /******************************************************************************/
-extern const ServiceSwcDcm_teIdProtocol ServiceSwcDcm_aeTableConnection[ServiceSwcDcm_NumProtocols];
+extern const CfgServiceSwcDcm_tst CfgServiceSwcDcm;
 
 /******************************************************************************/
 /* PARAMS                                                                     */

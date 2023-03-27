@@ -8,12 +8,15 @@
 /* #INCLUDES                                                                  */
 /******************************************************************************/
 #include "CompilerCfg_EcuabCanIf.hpp"
+#include "CanTypes.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define HardwareObjectHandleCfgLen                                            10 //TBD: as per project needs
-#define EcuabCanif_NumUL                                                       2
+#define CfgEcuabCanIf_NumMaxRxPdu                                              3
+#define CfgEcuabCanIf_IdCanFrameExtendedRxUdsFunctional                    0x700
+#define CfgEcuabCanIf_IdCanFrameExtendedRxUdsPhysical                      0x300
+#define CfgEcuabCanIf_IdCanFrameExtendedRxBcmVehicleInfo                   0x100
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -22,21 +25,23 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
+typedef void (*CfgEcuabCanIf_fptrRxIndicationUpperLayer)(uint8 lu8IndexBufferRx);
+
 typedef struct{
-   uint8 u8IdController;
-}CfgEcuabCanIf_tstHardwareObjectHandle;
+   McalCan_tIdFrameExtended                 IdCan;
+   CfgEcuabCanIf_fptrRxIndicationUpperLayer fptrRxIndicationUpperLayer;
+}CfgEcuabCanIf_tstPduInfo;
 
-typedef const CfgEcuabCanIf_tstHardwareObjectHandle* tpcstHardwareObjectHandleCfgElement;
+typedef struct{
+   uint8                                    u8NumMaxRxPdu;
+   CfgEcuabCanIf_tstPduInfo                 astPduInfoTable[CfgEcuabCanIf_NumMaxRxPdu];
+}CfgEcuabCanIf_tst;
 
-typedef void (*fptrEcuabCanIf_RxIndication_UL)(uint8 lu8IndexBufferRx);
-
-typedef uint8 CfgEcuabCanIf_Type;
 
 /******************************************************************************/
 /* CONSTS                                                                     */
 /******************************************************************************/
-extern const tpcstHardwareObjectHandleCfgElement EcuabCanIf_ConfigHardwareObjectHandle[HardwareObjectHandleCfgLen];
-extern const fptrEcuabCanIf_RxIndication_UL EcuabCanif_ConfigRxPdu_UL[EcuabCanif_NumUL];
+extern const CfgEcuabCanIf_tst CfgEcuabCanIf;
 
 /******************************************************************************/
 /* PARAMS                                                                     */

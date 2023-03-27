@@ -10,11 +10,12 @@
 #include "CompilerCfg_ServiceSwcEcuM.hpp"
 
 #include "CfgServiceSwcCanSm.hpp"
+#include "CfgServiceSwcCanTp.hpp"
 #include "CfgServiceSwcCom.hpp"
 #include "CfgServiceSwcComM.hpp"
+#include "CfgServiceSwcDcm.hpp"
 #include "CfgServiceSwcPduR.hpp"
 #include "CfgEcuabCanIf.hpp"
-#include "CfgServiceSwcCanTp.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -46,13 +47,14 @@ typedef struct{
 }ServiceSwcEcuM_TypeShutdownTarget; //TBD: Move to correct header
 
 typedef struct{
-   ServiceSwcEcuM_TypeShutdownTarget DefaultShutdownTarget;
-   const CfgServiceSwcComM_Type*        CfgServiceSwcComM_ptr;
-   const CfgServiceSwcCanSm_Type*       CfgServiceSwcCanSm_ptr;
-   const CfgServiceSwcPduR_Type*        CfgServiceSwcPduR_ptr;
-   const CfgServiceSwcCom_Type*         CfgServiceSwcCom_ptr;
-   const CfgEcuabCanIf_Type*         CfgEcuabCanIf_ptr;
-   const CfgServiceSwcCanTp_Type*         CfgServiceSwcCanTp_ptr;
+   ServiceSwcEcuM_TypeShutdownTarget    DefaultShutdownTarget;
+   const CfgEcuabCanIf_tst*             CfgEcuabCanIf_ptr;
+   const CfgServiceSwcCanSm_tst*        CfgServiceSwcCanSm_ptr;
+   const CfgServiceSwcCanTp_tst*        CfgServiceSwcCanTp_ptr;
+   const CfgServiceSwcCom_tst*          CfgServiceSwcCom_ptr;
+   const CfgServiceSwcComM_tst*         CfgServiceSwcComM_ptr;
+   const CfgServiceSwcDcm_tst*          CfgServiceSwcDcm_ptr;
+   const CfgServiceSwcPduR_tst*         CfgServiceSwcPduR_ptr;
 }CfgServiceSwcEcuM_Type;
 
 /******************************************************************************/

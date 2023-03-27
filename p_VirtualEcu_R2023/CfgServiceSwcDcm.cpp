@@ -6,6 +6,8 @@
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
+#include "Std_Types.hpp"
+
 #include "CfgServiceSwcDcm.hpp"
 
 /******************************************************************************/
@@ -23,8 +25,8 @@
 /******************************************************************************/
 /* CONSTS                                                                     */
 /******************************************************************************/
-const ServiceSwcDcm_teIdProtocol ServiceSwcDcm_aeTableConnection[ServiceSwcDcm_NumProtocols] = {
-   ServiceSwcDcm_eIdProtocolUds
+const CfgServiceSwcDcm_tst CfgServiceSwcDcm = {
+   CfgServiceSwcDcm_NumMaxRequests
 };
 
 /******************************************************************************/

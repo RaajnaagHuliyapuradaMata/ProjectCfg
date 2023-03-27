@@ -28,11 +28,13 @@
 /******************************************************************************/
 /* CONSTS                                                                     */
 /******************************************************************************/
-const tpcstHardwareObjectHandleCfgElement EcuabCanIf_ConfigHardwareObjectHandle[HardwareObjectHandleCfgLen] = {(tpcstHardwareObjectHandleCfgElement)0};
-
-const fptrEcuabCanIf_RxIndication_UL EcuabCanif_ConfigRxPdu_UL[EcuabCanif_NumUL] = {
-      infServiceSwcCanTpEcuabCanIf_RxIndication
-   ,  infServiceSwcPduREcuabCanIf_RxIndication
+const CfgEcuabCanIf_tst CfgEcuabCanIf = {
+      CfgEcuabCanIf_NumMaxRxPdu
+   ,  {
+            {CfgEcuabCanIf_IdCanFrameExtendedRxUdsFunctional,  infServiceSwcCanTpEcuabCanIf_RxIndication}
+         ,  {CfgEcuabCanIf_IdCanFrameExtendedRxUdsPhysical,    infServiceSwcCanTpEcuabCanIf_RxIndication}
+         ,  {CfgEcuabCanIf_IdCanFrameExtendedRxBcmVehicleInfo, infServiceSwcPduREcuabCanIf_RxIndication}
+      }
 };
 
 /******************************************************************************/
