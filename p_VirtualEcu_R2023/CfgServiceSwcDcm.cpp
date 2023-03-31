@@ -26,7 +26,7 @@
 /* CONSTS                                                                     */
 /******************************************************************************/
 const CfgServiceSwcDcm_tst CfgServiceSwcDcm = {
-   CfgServiceSwcDcm_NumMaxRequests
+   CfgServiceSwcDcm_dNumMaxRequests //TBD: Being PBcfg doesn't make sense
 };
 
 /******************************************************************************/
