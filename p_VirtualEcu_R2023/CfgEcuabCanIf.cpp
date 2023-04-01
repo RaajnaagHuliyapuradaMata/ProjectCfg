@@ -10,8 +10,8 @@
 
 #include "CfgEcuabCanIf.hpp"
 
-#include "infServiceSwcCanTpEcuabCanIf.hpp"
-#include "infServiceSwcPduREcuabCanIf.hpp"
+#include "infSwcServiceCanTpEcuabCanIf.hpp"
+#include "infSwcServicePduREcuabCanIf.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -31,9 +31,9 @@
 const CfgEcuabCanIf_tst CfgEcuabCanIf = {
       CfgEcuabCanIf_NumMaxRxPdu
    ,  {
-            {CfgEcuabCanIf_IdCanFrameExtendedRxUdsFunctional,  infServiceSwcCanTpEcuabCanIf_RxIndication}
-         ,  {CfgEcuabCanIf_IdCanFrameExtendedRxUdsPhysical,    infServiceSwcCanTpEcuabCanIf_RxIndication}
-         ,  {CfgEcuabCanIf_IdCanFrameExtendedRxBcmVehicleInfo, infServiceSwcPduREcuabCanIf_RxIndication}
+            {CfgEcuabCanIf_IdCanFrameExtendedRxUdsFunctional,  infSwcServiceCanTpEcuabCanIf_RxIndication}
+         ,  {CfgEcuabCanIf_IdCanFrameExtendedRxUdsPhysical,    infSwcServiceCanTpEcuabCanIf_RxIndication}
+         ,  {CfgEcuabCanIf_IdCanFrameExtendedRxBcmVehicleInfo, infSwcServicePduREcuabCanIf_RxIndication}
       }
 };
 
