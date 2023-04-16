@@ -1,6 +1,5 @@
-#pragma once
 /******************************************************************************/
-/* File   : CfgSwcServiceCanTp.hpp                                            */
+/* File   : CfgSwcServiceEcuM.cpp                                             */
 /*                                                                            */
 /* Author : Raajnaag HULIYAPURADA MATA                                        */
 /*                                                                            */
@@ -24,7 +23,8 @@
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "CompilerCfg_SwcServiceCanTp.hpp"
+#include "Std_Types.hpp"
+#include "CfgSwcServiceEcuM.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -37,11 +37,20 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-typedef uint8 CfgSwcServiceCanTp_tst;
 
 /******************************************************************************/
 /* CONSTS                                                                     */
 /******************************************************************************/
+const CfgSwcServiceEcuM_tst CfgSwcServiceEcuM = {
+      {0, 0, 0, {0, 0, 0, 0, 0, 0}} //TBD: ???
+   ,  (const CfgEcuabCanIf_tst*)      &CfgEcuabCanIf
+   ,  (const CfgSwcServiceCanSm_tst*) NULL_PTR //TBD: &CfgSwcServiceCanSm
+   ,  (const CfgSwcServiceCanTp_tst*) NULL_PTR //TBD: &CfgSwcServiceCanTp
+   ,  (const CfgSwcServiceCom_tst*)   NULL_PTR //TBD: &CfgSwcServiceCom
+   ,  (const CfgSwcServiceComM_tst*)  NULL_PTR //TBD: &CfgSwcServiceComM
+   ,  (const CfgSwcServiceDcm_tst*)   &CfgSwcServiceDcm
+   ,  (const CfgSwcServicePduR_tst*)  NULL_PTR //TBD: &CfgSwcServicePduR
+};
 
 /******************************************************************************/
 /* PARAMS                                                                     */

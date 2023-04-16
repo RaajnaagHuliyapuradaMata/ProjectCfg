@@ -2,7 +2,7 @@
 /******************************************************************************/
 /* File   : CfgSwcServiceEcuM.hpp                                             */
 /*                                                                            */
-/* Author : Nagaraja HULIYAPURADA MATA                                        */
+/* Author : Raajnaag HULIYAPURADA MATA                                        */
 /*                                                                            */
 /* License / Warranty / Terms and Conditions                                  */
 /*                                                                            */
@@ -14,10 +14,10 @@
 /* certain responsibilities, if you distribute copies of the software, or if  */
 /* you modify it: responsibilities to respect the freedom of others.          */
 /*                                                                            */
-/* All rights reserved. Copyright © 1982 Nagaraja HULIYAPURADA MATA           */
+/* All rights reserved. Copyright © 1982 Raajnaag HULIYAPURADA MATA           */
 /*                                                                            */
 /* Always refer latest software version from:                                 */
-/* https://github.com/NagarajaHuliyapuradaMata?tab=repositories               */
+/* https://github.com/RaajnaagHuliyapuradaMata?tab=repositories               */
 /*                                                                            */
 /******************************************************************************/
 
@@ -54,17 +54,18 @@ typedef struct{
    uint8 bInternalReset : 1;
    uint8 bInternalWdg   : 1;
    uint8 bExternalWdg   : 1;
-}SwcServiceEcuM_TypeValidatedWakeupEvents; //TBD: Move to correct header
+   uint8 BitsUnused     : 3;
+}SwcServiceEcuM_tstEventsWakeupValidated; //TBD: Move to correct header
 
 typedef struct{
    uint16                                   Mode;
    uint8                                    Target;
    uint8                                    Cause;
-   SwcServiceEcuM_TypeValidatedWakeupEvents ValidatedWakeupEvents;
-}SwcServiceEcuM_TypeShutdownTarget; //TBD: Move to correct header
+   SwcServiceEcuM_tstEventsWakeupValidated ValidatedWakeupEvents;
+}SwcServiceEcuM_tstTargetShutdown; //TBD: Move to correct header
 
 typedef struct{
-   SwcServiceEcuM_TypeShutdownTarget    DefaultShutdownTarget;
+   SwcServiceEcuM_tstTargetShutdown     DefaultShutdownTarget;
    const CfgEcuabCanIf_tst*             CfgEcuabCanIf_ptr;
    const CfgSwcServiceCanSm_tst*        CfgSwcServiceCanSm_ptr;
    const CfgSwcServiceCanTp_tst*        CfgSwcServiceCanTp_ptr;
@@ -72,11 +73,12 @@ typedef struct{
    const CfgSwcServiceComM_tst*         CfgSwcServiceComM_ptr;
    const CfgSwcServiceDcm_tst*          CfgSwcServiceDcm_ptr;
    const CfgSwcServicePduR_tst*         CfgSwcServicePduR_ptr;
-}CfgSwcServiceEcuM_Type;
+}CfgSwcServiceEcuM_tst;
 
 /******************************************************************************/
 /* CONSTS                                                                     */
 /******************************************************************************/
+extern const CfgSwcServiceEcuM_tst CfgSwcServiceEcuM;
 
 /******************************************************************************/
 /* PARAMS                                                                     */
