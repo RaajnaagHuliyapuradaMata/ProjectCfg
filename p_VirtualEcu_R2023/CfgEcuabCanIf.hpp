@@ -31,9 +31,6 @@
 /* #DEFINES                                                                   */
 /******************************************************************************/
 #define CfgEcuabCanIf_NumMaxRxPdu                                              3
-#define CfgEcuabCanIf_IdCanFrameExtendedRxUdsFunctional                    0x700
-#define CfgEcuabCanIf_IdCanFrameExtendedRxUdsPhysical                      0x300
-#define CfgEcuabCanIf_IdCanFrameExtendedRxBcmVehicleInfo                   0x100
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -45,7 +42,7 @@
 typedef void (*CfgEcuabCanIf_fptrRxIndicationUpperLayer)(uint8 lu8IndexBufferRx);
 
 typedef struct{
-   McalCan_tIdFrameExtended                 IdCan;
+   McalCan_teIdFrameExtended                 IdCan;
    CfgEcuabCanIf_fptrRxIndicationUpperLayer fptrRxIndicationUpperLayer;
 }CfgEcuabCanIf_tstPduInfo;
 
