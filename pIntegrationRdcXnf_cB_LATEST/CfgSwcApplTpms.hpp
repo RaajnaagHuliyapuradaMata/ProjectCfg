@@ -28,8 +28,9 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CfgSwcApplTpms_dSizeLogDev                                             1
+#define CfgSwcApplTpms_dSizeLogDevelopment                                     1
 #define CfgSwcApplTpms_dSizeReqNvM                                             1
+#define CfgSwcApplTpms_dNumberStatusEventDtc                                   1
 
 /******************************************************************************/
 /* MACROS                                                                     */
