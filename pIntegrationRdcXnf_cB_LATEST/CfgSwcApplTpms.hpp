@@ -29,7 +29,7 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CfgSwcApplTpms_dSizeLogDevelopment                                     1
+#define CfgSwcApplTpms_dSizeLogDevelopment                                    32
 #define CfgSwcApplTpms_dNumberStatusEventDtc                                   1
 
 /******************************************************************************/
