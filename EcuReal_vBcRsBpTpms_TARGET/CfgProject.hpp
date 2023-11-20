@@ -1,6 +1,6 @@
 #pragma once
 /******************************************************************************/
-/* File   : CfgSwcServiceSmCan.h                                              */
+/* File   : CfgProject.hpp                                                    */
 /*                                                                            */
 /* Author : Raajnaag HULIYAPURADA MATA                                        */
 /*                                                                            */
@@ -24,12 +24,12 @@
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "ComStack_Types.hpp"
-#include "CanSM_Cfg.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define CfgProject_dSwitchReSim                                          STD_OFF
+//#define CfgProject_dSwitchReSim                                         STD_ON
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -38,33 +38,10 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-typedef struct{
-   P2CONST(uint8,     TYPEDEF, CANSM_APPL_DATA) Cntrl_startidx_pu8;
-   VAR(uint16,     TYPEDEF                 ) BorTimeL1_u16;
-   VAR(uint16,     TYPEDEF                 ) BorTimeL2_u16;
-   VAR(uint16,     TYPEDEF                 ) BorTimeTxEnsured_u16;
-   VAR(Dem_EventIdType,   TYPEDEF                 ) BusOffEventId_uo;
-   VAR(uint8,     TYPEDEF                 ) Trcv_hndle_u8;
-   VAR(uint8,     TYPEDEF                 ) SizeofController_u8;
-   VAR(uint8,     TYPEDEF                 ) BorCntL1L2_u8;
-   VAR(NetworkHandleType, TYPEDEF                 ) ComM_channelId_uo;
-   VAR(boolean,     TYPEDEF                 ) BusOffDelayConfig_b;
-   VAR(boolean,     TYPEDEF                 ) TrcvPnConfig_b;
-}CanSM_NetworkConf_tst;
-
-typedef struct{
-   P2CONST(CanSM_NetworkConf_tst, AUTOMATIC, CANSM_CONST)           CanSM_NetworkConf_pcst;
-   P2CONST(uint8,     AUTOMATIC, SwcServiceSmCan_CONST) CanSM_NetworktoCtrlConf_pcu8;
-     CONST(uint16,     SwcServiceSmCan_CONST) CanSMModeRequestRepetitionTime_u16;
-     CONST(uint8,     SwcServiceSmCan_CONST) CanSMModeRequestRepetitionMax_u8;
-       VAR(uint8,     SwcServiceSmCan_VAR)   CanSM_SizeOfCanSMNetworks_u8;
-       VAR(uint8,     SwcServiceSmCan_VAR)   CanSM_ActiveConfigset_u8;
-}Type_CfgSwcServiceSmCan_st;
 
 /******************************************************************************/
 /* CONSTS                                                                     */
 /******************************************************************************/
-extern CONST(Type_CfgSwcServiceSmCan_st, CANSM_CONST) CfgSwcServiceSmCan_castConfigSet[];
 
 /******************************************************************************/
 /* PARAMS                                                                     */
@@ -73,7 +50,6 @@ extern CONST(Type_CfgSwcServiceSmCan_st, CANSM_CONST) CfgSwcServiceSmCan_castCon
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
-extern P2CONST(Type_CfgSwcServiceSmCan_st, CANSM_VAR, CANSM_APPL_CONST) CfgSwcServiceSmCan_castConfigSet_pcst;
 
 /******************************************************************************/
 /* FUNCTIONS                                                                  */
