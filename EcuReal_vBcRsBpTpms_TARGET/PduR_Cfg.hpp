@@ -6,7 +6,7 @@
 
 #include "CfgSwcServicePduR.hpp"
 
-#define PDUR_VENDOR_ID            6u
+#define PDUR_VENDOR_ID            1u
 #define PDUR_MODULE_ID            51u
 #define PDUR_SW_MAJOR_VERSION     6u
 #define PDUR_SW_MINOR_VERSION     0u
