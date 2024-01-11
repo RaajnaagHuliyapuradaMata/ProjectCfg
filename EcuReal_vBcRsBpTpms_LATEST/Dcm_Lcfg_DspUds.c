@@ -73,37 +73,37 @@ FUNC(uint32,DCM_CODE) Dcm_RCGetSigVal_u32(
    ,  VAR(uint16, AUTOMATIC) idxSignalIndex_u16
 );
 
-FUNC(void,DCM_CODE) Dcm_RCSetSigVal(
+FUNC(void, DCM_CODE) Dcm_RCSetSigVal(
       VAR(uint8,  AUTOMATIC) dataSigType_en
    ,  VAR(uint16, AUTOMATIC) idxSignalIndex_u16
    ,  VAR(uint32, AUTOMATIC) dataSigVal_u32
 );
 
-static FUNC(Std_ReturnType,DCM_CODE) Dcm_Dsp_RC_Fbl_RoutineControl_EraseMemory_65280_Func(
+static FUNC(Std_ReturnType, DCM_CODE) Dcm_Dsp_RC_Fbl_RoutineControl_EraseMemory_65280_Func(
    VAR(uint8, AUTOMATIC) dataSubFunc_u8
 );
 
-static FUNC(Std_ReturnType,DCM_CODE) Dcm_Dsp_RC_Fbl_RoutineControl_VerifyDownload_Func(
+static FUNC(Std_ReturnType, DCM_CODE) Dcm_Dsp_RC_Fbl_RoutineControl_VerifyDownload_Func(
    VAR(uint8, AUTOMATIC) dataSubFunc_u8
 );
 
-static FUNC(Std_ReturnType,DCM_CODE) Dcm_Dsp_RC_RoutineControl_EcuEolTestProcedure_Func(
+static FUNC(Std_ReturnType, DCM_CODE) Dcm_Dsp_RC_RoutineControl_EcuEolTestProcedure_Func(
    VAR(uint8, AUTOMATIC) dataSubFunc_u8
 );
 
-static FUNC(Std_ReturnType,DCM_CODE) Dcm_Dsp_RC_RoutineControl_SelfTest_Func(
+static FUNC(Std_ReturnType, DCM_CODE) Dcm_Dsp_RC_RoutineControl_SelfTest_Func(
    VAR(uint8, AUTOMATIC) dataSubFunc_u8
 );
 
-static FUNC(Std_ReturnType,DCM_CODE) Dcm_Dsp_RC_RoutineControl_VehicleEolTestProcedure_Func(
+static FUNC(Std_ReturnType, DCM_CODE) Dcm_Dsp_RC_RoutineControl_VehicleEolTestProcedure_Func(
    VAR(uint8, AUTOMATIC) dataSubFunc_u8
 );
 
-static FUNC(Std_ReturnType,DCM_CODE) Dcm_Dsp_RC_RoutineControl_ResetEeprom_Func(
+static FUNC(Std_ReturnType, DCM_CODE) Dcm_Dsp_RC_RoutineControl_ResetEeprom_Func(
    VAR(uint8, AUTOMATIC) dataSubFunc_u8
 );
 
-static FUNC(Std_ReturnType,DCM_CODE) Dcm_Dsp_RC_RoutineControl_AuthorizeEcuProgram_Func(
+static FUNC(Std_ReturnType, DCM_CODE) Dcm_Dsp_RC_RoutineControl_AuthorizeEcuProgram_Func(
    VAR(uint8, AUTOMATIC) dataSubFunc_u8
 );
 
@@ -467,7 +467,7 @@ FUNC(uint32,DCM_CODE) Dcm_RCGetSigVal_u32(
    return dataSigVal_u32;
 }
 
-FUNC(void,DCM_CODE) Dcm_RCSetSigVal(
+FUNC(void, DCM_CODE) Dcm_RCSetSigVal(
       VAR(uint8,  AUTOMATIC) dataSigType_en
    ,  VAR(uint16, AUTOMATIC) idxSignalIndex_u16
    ,  VAR(uint32, AUTOMATIC) dataSigVal_u32
@@ -486,7 +486,7 @@ FUNC(void,DCM_CODE) Dcm_RCSetSigVal(
    }
 }
 
-static FUNC(Std_ReturnType,DCM_CODE) Dcm_Dsp_RC_Fbl_RoutineControl_EraseMemory_65280_Func(
+static FUNC(Std_ReturnType, DCM_CODE) Dcm_Dsp_RC_Fbl_RoutineControl_EraseMemory_65280_Func(
    VAR(uint8, AUTOMATIC) dataSubFunc_u8
 ){
    VAR(Std_ReturnType, AUTOMATIC) dataRetVal_u8 = E_NOT_OK;
@@ -509,7 +509,7 @@ static FUNC(Std_ReturnType,DCM_CODE) Dcm_Dsp_RC_Fbl_RoutineControl_EraseMemory_6
    return dataRetVal_u8;
 }
 
-static FUNC(Std_ReturnType,DCM_CODE) Dcm_Dsp_RC_Fbl_RoutineControl_VerifyDownload_Func(
+static FUNC(Std_ReturnType, DCM_CODE) Dcm_Dsp_RC_Fbl_RoutineControl_VerifyDownload_Func(
    VAR(uint8, AUTOMATIC) dataSubFunc_u8
 ){
    VAR(Std_ReturnType, AUTOMATIC) dataRetVal_u8 = E_NOT_OK;
@@ -530,7 +530,7 @@ static FUNC(Std_ReturnType,DCM_CODE) Dcm_Dsp_RC_Fbl_RoutineControl_VerifyDownloa
    return dataRetVal_u8;
 }
 
-static FUNC(Std_ReturnType,DCM_CODE) Dcm_Dsp_RC_RoutineControl_EcuEolTestProcedure_Func(
+static FUNC(Std_ReturnType, DCM_CODE) Dcm_Dsp_RC_RoutineControl_EcuEolTestProcedure_Func(
    VAR(uint8, AUTOMATIC) dataSubFunc_u8
 ){
    VAR(Std_ReturnType, AUTOMATIC) dataRetVal_u8 = E_NOT_OK;
@@ -551,7 +551,7 @@ static FUNC(Std_ReturnType,DCM_CODE) Dcm_Dsp_RC_RoutineControl_EcuEolTestProcedu
    return dataRetVal_u8;
 }
 
-static FUNC(Std_ReturnType,DCM_CODE) Dcm_Dsp_RC_RoutineControl_SelfTest_Func(
+static FUNC(Std_ReturnType, DCM_CODE) Dcm_Dsp_RC_RoutineControl_SelfTest_Func(
    VAR(uint8, AUTOMATIC) dataSubFunc_u8
 ){
    VAR(Std_ReturnType, AUTOMATIC) dataRetVal_u8 = E_NOT_OK;
@@ -580,7 +580,7 @@ static FUNC(Std_ReturnType,DCM_CODE) Dcm_Dsp_RC_RoutineControl_SelfTest_Func(
    return dataRetVal_u8;
 }
 
-static FUNC(Std_ReturnType,DCM_CODE) Dcm_Dsp_RC_RoutineControl_VehicleEolTestProcedure_Func(
+static FUNC(Std_ReturnType, DCM_CODE) Dcm_Dsp_RC_RoutineControl_VehicleEolTestProcedure_Func(
    VAR(uint8, AUTOMATIC) dataSubFunc_u8
 ){
    VAR(Std_ReturnType, AUTOMATIC) dataRetVal_u8 = E_NOT_OK;
@@ -624,7 +624,7 @@ static FUNC(Std_ReturnType,DCM_CODE) Dcm_Dsp_RC_RoutineControl_VehicleEolTestPro
    return dataRetVal_u8;
 }
 
-static FUNC(Std_ReturnType,DCM_CODE) Dcm_Dsp_RC_RoutineControl_ResetEeprom_Func(
+static FUNC(Std_ReturnType, DCM_CODE) Dcm_Dsp_RC_RoutineControl_ResetEeprom_Func(
    VAR(uint8, AUTOMATIC) dataSubFunc_u8
 ){
    VAR(Std_ReturnType, AUTOMATIC) dataRetVal_u8 = E_NOT_OK;
@@ -646,7 +646,7 @@ static FUNC(Std_ReturnType,DCM_CODE) Dcm_Dsp_RC_RoutineControl_ResetEeprom_Func(
    return dataRetVal_u8;
 }
 
-static FUNC(Std_ReturnType,DCM_CODE) Dcm_Dsp_RC_RoutineControl_AuthorizeEcuProgram_Func(
+static FUNC(Std_ReturnType, DCM_CODE) Dcm_Dsp_RC_RoutineControl_AuthorizeEcuProgram_Func(
    VAR(uint8, AUTOMATIC) dataSubFunc_u8
 ){
    VAR(Std_ReturnType, AUTOMATIC) dataRetVal_u8 = E_NOT_OK;

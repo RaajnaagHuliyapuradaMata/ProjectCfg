@@ -3,7 +3,7 @@
 
 #include "Fee_30_SmallSector.hpp"
 
-#define MEMIF_LOCAL static
+#define MEMIF_LOCAL        static
 #define MEMIF_LOCAL_INLINE LOCAL_INLINE
 
 #define MEMIF_START_SEC_CONST_8BIT
@@ -28,15 +28,15 @@ MEMIF_LOCAL_INLINE FUNC (Std_ReturnType, MEMIF_PRIVATE_CODE) MemIf_EcuabFee_Writ
 CONST(MemIf_MemHwAApi_Type, MEMIF_CONST) MemIf_MemHwaApis[MEMIF_NUMBER_OF_DEVICES] =
 {
    {
-    EcuabFee_Read
-   ,   MemIf_EcuabFee_WriteWrapper
-   ,   EcuabFee_EraseImmediateBlock
-   ,   EcuabFee_InvalidateBlock
-   ,   EcuabFee_Cancel
-   ,   EcuabFee_GetStatus
-   ,   EcuabFee_GetJobResult
-   ,   EcuabFee_SetMode
-  }
+          EcuabFee_Read
+      ,   MemIf_EcuabFee_WriteWrapper
+      ,   EcuabFee_EraseImmediateBlock
+      ,   EcuabFee_InvalidateBlock
+      ,   EcuabFee_Cancel
+      ,   EcuabFee_GetStatus
+      ,   EcuabFee_GetJobResult
+      ,   EcuabFee_SetMode
+   }
 };
 #define MEMIF_STOP_SEC_CONST_32BIT
 #include "MemMap.hpp"

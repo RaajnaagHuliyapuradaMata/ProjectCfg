@@ -1071,7 +1071,7 @@ FUNC(Std_ReturnType, DCM_APPL_CODE) Dcm_ManufacturingSupportMode_UserSpecificChe
   return result;
 }
 
-FUNC(void,DCM_CODE) Dcm_Dsp_CCIni(void){
+FUNC(void, DCM_CODE) Dcm_Dsp_CCIni(void){
 }
 
 /******************************************************************************/

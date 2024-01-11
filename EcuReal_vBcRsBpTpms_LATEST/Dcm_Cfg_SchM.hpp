@@ -32,20 +32,23 @@
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-LOCAL_INLINE FUNC(void,DCM_CODE) SchM_Enter_Dcm_Global_NoNest(void){
-    __DI();
+extern void __DI(void);
+extern void __EI(void);
+
+LOCAL_INLINE FUNC(void, DCM_CODE) SchM_Enter_Dcm_Global_NoNest(void){
+   __DI();
 }
 
-LOCAL_INLINE FUNC(void,DCM_CODE) SchM_Exit_Dcm_Global_NoNest(void){
-     __EI();
+LOCAL_INLINE FUNC(void, DCM_CODE) SchM_Exit_Dcm_Global_NoNest(void){
+   __EI();
 }
 
-LOCAL_INLINE FUNC(void,DCM_CODE) SchM_Enter_Dcm_DsldTimer_NoNest(void){
-     __DI();
+LOCAL_INLINE FUNC(void, DCM_CODE) SchM_Enter_Dcm_DsldTimer_NoNest(void){
+   __DI();
 }
 
-LOCAL_INLINE FUNC(void,DCM_CODE) SchM_Exit_Dcm_DsldTimer_NoNest(void){
-     __EI();
+LOCAL_INLINE FUNC(void, DCM_CODE) SchM_Exit_Dcm_DsldTimer_NoNest(void){
+   __EI();
 }
 
 /******************************************************************************/
