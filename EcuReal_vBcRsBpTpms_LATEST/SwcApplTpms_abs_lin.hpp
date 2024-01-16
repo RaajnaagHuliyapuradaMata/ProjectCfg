@@ -25,11 +25,10 @@
 #define cREAR_LEFT                            ((uint8) 0x02)
 #define cREAR_RIGHT                           ((uint8) 0x03)
 
-typedef struct typedef_struct_tABS_DATA
-{
+typedef struct typedef_struct_tABS_DATA{
    uint32 ulAbsTimeStamp;
    uint16 aushAbsCnt[cNUMBER_OF_WHEELS];
-   uint8 aucOverflowCnt[cNUMBER_OF_WHEELS];
+   uint8  aucOverflowCnt[cNUMBER_OF_WHEELS];
 }tABS_DATA;
 
 #endif

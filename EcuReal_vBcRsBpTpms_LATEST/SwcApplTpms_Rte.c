@@ -47,75 +47,102 @@ static void Init_Sys_After_Kl15_Off(void);
 static void Init_Std_Modules_After_Kl30_On(void);
 static void InitSameTGBuffer(void);
 static void ProcessSimulatedTelegram(tsWS_RxDataIn* spRxDataIn);
-static uint8 u8CheckSameTG(const uint8 *u8CurrentRFFrame, uint32 u32_TimeStamp);
+
+static uint8 u8CheckSameTG(const uint8* u8CurrentRFFrame, uint32 u32_TimeStamp);
+#ifndef CfgProject_dSwitchReSim
 #pragma PRQA_NO_SIDE_EFFECTS u8CheckSameTG
+#endif
 
 void HufIf_Init_Huf_SWC(void){
-  InitEEAll();
-  Init_Huf_Common();
-  Init_CAN_Data();
-  DCM_InitCanDebug();
-  DCH_Init();
-  Init_Std_Modules_After_Kl30_On();
+   InitEEAll();
+   Init_Huf_Common();
+   Init_CAN_Data();
+   DCM_InitCanDebug();
+   DCH_Init();
+   Init_Std_Modules_After_Kl30_On();
 }
 
-void HufIf_RCtSaReTelDec(tsWS_RxDataIn* spRxDataIn, const tsEnv_Data* spEnvDataIn)
-{
-  boolean l_bAnalizeAllRF = FALSE;
-  uint16 l_uiSyncPattern;
-  uint8  l_ucTelType;
-  uint32 l_ulRxTimeStamp;
-  uint32 ulId = (spRxDataIn->ucaTelegram[3] << 24) + (spRxDataIn->ucaTelegram[4] << 16) + (spRxDataIn->ucaTelegram[5] << 8) + spRxDataIn->ucaTelegram[6];
-  HufIf_RCtSaEnvData(spEnvDataIn);
-  if(bGetBitFahrzeugzustandFZZ(cKL_15_EIN) == TRUE)
-  {
-    IncrementAllReceivedTelegCnt(); // increment counter for all received telegrams
-    l_uiSyncPattern = (((uint16)spRxDataIn->ucaTelegram[0]) << 8) | (spRxDataIn->ucaTelegram[1]);
-   if(l_uiSyncPattern != SIMULATED_TELEGRAM_SYNC_PATTERN)
-   {
-   }
-   else{
-      ProcessSimulatedTelegram(spRxDataIn);
-   }
-    l_ucTelType = spRxDataIn->ucaTelegram[2];
-    l_ulRxTimeStamp = spRxDataIn->ulRxTimeStamp;
-    l_bAnalizeAllRF = DCH_IsDeveloperModeActive(); // Analyze all received RF frames
-   if((l_bAnalizeAllRF == TRUE) || (u8CheckSameTG( (uint8*)&spRxDataIn->ucaTelegram[2], l_ulRxTimeStamp) == 0))
-   {
-      if(((LearningWheelPosActiveSM() == TRUE) || (DCH_IsContinousAPCReadingActive() == TRUE)) && (l_ucTelType == cTelTypeRotatS))
-      {
-        if((l_ulRxTimeStamp != cRX_TIME_STAMP_INVALID) && (l_ulRxTimeStamp != 0)) //check if the time stamp is valid (0 also not valid because there was a case when BCM delivered always 0 as time stamp because of some internal fault)
-        {
-          PutRotatSDataInBuffer(spRxDataIn);
-        }
-        else{
-        }
+void HufIf_RCtSaReTelDec(
+            tsWS_RxDataIn* spRxDataIn
+   ,  const tsEnv_Data*    spEnvDataIn
+){
+   boolean l_bAnalizeAllRF = FALSE;
+   uint16  l_uiSyncPattern;
+   uint8   l_ucTelType;
+   uint32  l_ulRxTimeStamp;
+
+   uint32 ulId = (spRxDataIn->ucaTelegram[3] << 24) + (spRxDataIn->ucaTelegram[4] << 16) + (spRxDataIn->ucaTelegram[5] << 8) + spRxDataIn->ucaTelegram[6];
+   UNUSED(ulId);
+
+   HufIf_RCtSaEnvData(spEnvDataIn);
+   if(TRUE == bGetBitFahrzeugzustandFZZ(cKL_15_EIN)){
+      IncrementAllReceivedTelegCnt();
+
+      l_uiSyncPattern =    (((uint16)spRxDataIn->ucaTelegram[0]) << 8)
+                        |  (spRxDataIn->ucaTelegram[1]);
+
+      if(SIMULATED_TELEGRAM_SYNC_PATTERN != l_uiSyncPattern){
       }
       else{
-        if((bGetBitFahrzeugzustandFZZ(cFAHRZEUG_FAEHRT) == TRUE) && (l_ucTelType == cTelTypeStandstill)){
-        }
-        else{
-          ReadReDataFromRingBuffer_iBTCM(spRxDataIn);
-        }
+         ProcessSimulatedTelegram(spRxDataIn);
+      }
+      l_ucTelType     = spRxDataIn->ucaTelegram[2];
+      l_ulRxTimeStamp = spRxDataIn->ulRxTimeStamp;
+      l_bAnalizeAllRF = DCH_IsDeveloperModeActive();
+      if(
+            (TRUE == l_bAnalizeAllRF)
+         || (
+                  0
+               == u8CheckSameTG(
+                        (uint8*)&spRxDataIn->ucaTelegram[2]
+                     ,  l_ulRxTimeStamp
+                  )
+            )
+      ){
+         if(
+               (
+                     (TRUE == LearningWheelPosActiveSM())
+                  || (TRUE == DCH_IsContinousAPCReadingActive())
+               )
+            && (l_ucTelType == cTelTypeRotatS)
+         ){
+            if(
+                  (l_ulRxTimeStamp != cRX_TIME_STAMP_INVALID)
+               && (l_ulRxTimeStamp != 0)
+            ){
+               PutRotatSDataInBuffer(spRxDataIn);
+            }
+            else{
+            }
+         }
+         else{
+            if(
+                  (TRUE == bGetBitFahrzeugzustandFZZ(cFAHRZEUG_FAEHRT))
+               && (l_ucTelType == cTelTypeStandstill)
+            ){
+            }
+            else{
+               ReadReDataFromRingBuffer_iBTCM(spRxDataIn);
+            }
+         }
+      }
+      else{
       }
    }
    else{
    }
-  }
-  else{
-  }
 }
 
 void HufIf_RCtSaEnvData(const tsEnv_Data* spRxEnvDataIn){
-  static uint16 sl_uiOldVehSpeed = 0xFFFFU;
-  static uint8  sl_ucOldKLstate = VEH_IGN_OFF;
-  static uint8  sl_ucOldVehDirection = cDriveDirStop;
-  static boolean  sl_bOldBCMFault = FALSE;
-  uint8  l_ucNewVehDirection = 0U;
-  uint16 l_uiNewVehSpeed = 0U;
-  uint8 l_ucNewKLstate = 0U;
-  boolean l_bNewBCMFault = 0U;
-  g_sEnv_Data = *spRxEnvDataIn;
+   static uint16  sl_uiOldVehSpeed     = 0xFFFFU;
+   static uint8   sl_ucOldKLstate      = VEH_IGN_OFF;
+   static uint8   sl_ucOldVehDirection = cDriveDirStop;
+   static boolean sl_bOldBCMFault      = FALSE;
+          uint8   l_ucNewVehDirection  = 0U;
+          uint16  l_uiNewVehSpeed      = 0U;
+          uint8   l_ucNewKLstate       = 0U;
+          boolean l_bNewBCMFault       = 0U;
+          g_sEnv_Data = *spRxEnvDataIn;
   (void)VehStateGetKL15(&l_ucNewKLstate);
   if(sl_ucOldKLstate != l_ucNewKLstate){
    if(Off == l_ucNewKLstate){

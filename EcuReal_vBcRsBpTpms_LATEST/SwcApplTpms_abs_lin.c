@@ -14,23 +14,23 @@ static uint8 ucAbsIndex;
 static uint8 ucABSIndex1, ucABSIndex2;
 static uint8 aucPreviousOverflowCnt[cNUMBER_OF_WHEELS];
 static uint8 aucCurrentOverflowCnt[cNUMBER_OF_WHEELS];
-uint32 ulDebugAbsTimeDiff = 0;
-uint32 ulDebugRfTimeStamp = 0;
+uint32 ulDebugAbsTimeDiff     = 0;
+uint32 ulDebugRfTimeStamp     = 0;
 uint32 ulDebugRfTimeStampDiff = 0;
-uint32 ulDebugAbs2RfTimeDiff = 0;
-uint16 ushDebugAbsCntVlDiff = 0;
-uint16 ushDebugAbsCntVrDiff = 0;
-uint16 ushDebugAbsCntHlDiff = 0;
-uint16 ushDebugAbsCntHrDiff = 0;
-uint16 ushDebugDivisor = 0;
-uint16 ushDebugAbsCntVlLin = 0;
-uint16 ushDebugAbsCntVrLin = 0;
-uint16 ushDebugAbsCntHlLin = 0;
-uint16 ushDebugAbsCntHrLin = 0;
-uint8 ucDebugError = 0;
+uint32 ulDebugAbs2RfTimeDiff  = 0;
+uint16 ushDebugAbsCntVlDiff   = 0;
+uint16 ushDebugAbsCntVrDiff   = 0;
+uint16 ushDebugAbsCntHlDiff   = 0;
+uint16 ushDebugAbsCntHrDiff   = 0;
+uint16 ushDebugDivisor        = 0;
+uint16 ushDebugAbsCntVlLin    = 0;
+uint16 ushDebugAbsCntVrLin    = 0;
+uint16 ushDebugAbsCntHlLin    = 0;
+uint16 ushDebugAbsCntHrLin    = 0;
+uint8  ucDebugError           = 0;
 
 unsigned short ushABSRefOffset[4];
-unsigned char ucABSComp[4];
+unsigned char  ucABSComp[4];
 
 static uint16 ushCalcABS(
    uint32 ulRfTimeStamp,
@@ -160,14 +160,12 @@ uint8 GetLinABS( uint16 ushCnt[] )
   return ucRet;
 }
 
-uint8 LinABS( uint32 ulRfTimeStamp )
-{
+uint8 LinABS(uint32 ulRfTimeStamp){
   uint8 ucRet = 0xFF;
   uint8 ucLoop;
   uint16 aushDivisor[cNUMBER_OF_WHEELS];
   uint8 ucABSTicksFrontAx = 0xFF;
   uint8 ucABSTicksRearAx = 0xFF;
-  uint8 ucRefCorrectionValue = 0;
   uint8 ucWheelCounter;
 
    ucABSTicksFrontAx = ucGetABSTicksFullRevolFrontAx();
@@ -319,28 +317,43 @@ static uint16 ushCalcABS( uint32 ulRfTimeStamp, uint32 ul1stAbsTimeStamp, uint16
   return (uint16)(0xFFFF & ((((ushAbsCntDiff * 100) / ushDiv) + 5) / 10));
 }
 
-static void HandleOverflowABS(uint8 ucWheelPosition, uint8 ucABSTicksAx)
-{
-  uint8 ucOverflowOffset;
-  uint8 ucTempOverflowCntIdx;
-  uint8 ucRefCorrectionValue = 0;
-  if(ushLinAbsData[ucWheelPosition] < tAbsDataBuff[ucABSIndex1].aushAbsCnt[ucWheelPosition])
-  {
-   ucTempOverflowCntIdx = ucABSIndex2;
-  }
-  else{
-   ucTempOverflowCntIdx = ucABSIndex1;
-  }
+static void HandleOverflowABS(
+      uint8 ucWheelPosition
+   ,  uint8 ucABSTicksAx
+){
+   uint8 ucOverflowOffset;
+   uint8 ucTempOverflowCntIdx;
+   uint8 ucRefCorrectionValue = 0;
 
-  ucOverflowOffset = (uint8)((tAbsDataBuff[ucTempOverflowCntIdx].aucOverflowCnt[ucWheelPosition] >= aucPreviousOverflowCnt[ucWheelPosition]) ?
-              (tAbsDataBuff[ucTempOverflowCntIdx].aucOverflowCnt[ucWheelPosition] - aucPreviousOverflowCnt[ucWheelPosition]) :
-              (((0xFFU - aucPreviousOverflowCnt[ucWheelPosition]) + tAbsDataBuff[ucTempOverflowCntIdx].aucOverflowCnt[ucWheelPosition]) + 1));
+   if(ushLinAbsData[ucWheelPosition] < tAbsDataBuff[ucABSIndex1].aushAbsCnt[ucWheelPosition]){ucTempOverflowCntIdx = ucABSIndex2;}
+   else                                                                                      {ucTempOverflowCntIdx = ucABSIndex1;}
 
-  ucRefCorrectionValue = (ucOverflowOffset * ucABSigOFL_MOD_ZAHN(ucABSTicksAx)) % ucABSTicksAx;
+   if(
+         tAbsDataBuff[ucTempOverflowCntIdx].aucOverflowCnt[ucWheelPosition]
+      >= aucPreviousOverflowCnt[ucWheelPosition]
+   ){
+      ucOverflowOffset = (uint8)(
+            tAbsDataBuff[ucTempOverflowCntIdx].aucOverflowCnt[ucWheelPosition]
+         -  (uint8)aucPreviousOverflowCnt[ucWheelPosition]
+      );
+   }
+   else{
+      ucOverflowOffset = (uint8)(
+         (
+            (
+                  0xFFU
+               -  aucPreviousOverflowCnt[ucWheelPosition]
+            )
+            +  tAbsDataBuff[ucTempOverflowCntIdx].aucOverflowCnt[ucWheelPosition]
+         )
+         +  1
+      );
+   }
 
-  RebuildABSRef(ucWheelPosition, ucABSTicksAx, ucRefCorrectionValue);
-  ushABSRefOffset[ucWheelPosition] = (ushABSRefOffset[ucWheelPosition] + (uint16)ucRefCorrectionValue) % (uint8)ucABSTicksAx;
-  aucPreviousOverflowCnt[ucWheelPosition] = tAbsDataBuff[ucTempOverflowCntIdx].aucOverflowCnt[ucWheelPosition];
+   ucRefCorrectionValue = (ucOverflowOffset * ucABSigOFL_MOD_ZAHN(ucABSTicksAx)) % ucABSTicksAx;
+   RebuildABSRef(ucWheelPosition, ucABSTicksAx, ucRefCorrectionValue);
+   ushABSRefOffset[ucWheelPosition]        = (ushABSRefOffset[ucWheelPosition] + (uint16)ucRefCorrectionValue) % (uint8)ucABSTicksAx;
+   aucPreviousOverflowCnt[ucWheelPosition] = tAbsDataBuff[ucTempOverflowCntIdx].aucOverflowCnt[ucWheelPosition];
 }
 
 uint8 DCM_InvIf_AbsLinAngle_FL_GetHistoryValue(void){
