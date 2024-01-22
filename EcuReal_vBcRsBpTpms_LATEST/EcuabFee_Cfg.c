@@ -1,18 +1,18 @@
 #define EcuabFee_IMPLEMENTATION_SOURCE
 
 #include "Std_Types.hpp"
-#include "Fee_30_SmallSector.hpp"
+#include "EcuabFee.hpp"
 #include "NvM_Cbk.hpp"
 
 #define EcuabFee_START_SEC_CONST_8BIT
 #include "MemMap.hpp"
-CONST(uint8, EcuabFee_PRIVATE_CONST) EcuabFee_DatasetSelectionBits = (1U);
+CONST(uint8, ECUABFEE_PRIVATE_CONST) EcuabFee_DatasetSelectionBits = (1U);
 #define EcuabFee_STOP_SEC_CONST_8BIT
 #include "MemMap.hpp"
 
 #define EcuabFee_START_SEC_CONST_UNSPECIFIED
 #include "MemMap.hpp"
-CONST(EcuabFee_PartitionConfigType, EcuabFee_PRIVATE_CONST) EcuabFee_PartitionConfigList[EcuabFee_NUMBER_OF_PARTITIONS] =
+CONST(EcuabFee_PartitionConfigType, ECUABFEE_PRIVATE_CONST) EcuabFee_PartitionConfigList[EcuabFee_NUMBER_OF_PARTITIONS] =
 {
    {
       0x00000800UL
@@ -78,7 +78,7 @@ CONST(EcuabFee_PartitionConfigType, EcuabFee_PRIVATE_CONST) EcuabFee_PartitionCo
   }
 };
 
-CONST(EcuabFee_BlockConfigType, EcuabFee_PRIVATE_CONST) EcuabFee_BlockConfigList[EcuabFee_NUMBER_OF_BLOCKS] =
+CONST(EcuabFee_BlockConfigType, ECUABFEE_PRIVATE_CONST) EcuabFee_BlockConfigList[EcuabFee_NUMBER_OF_BLOCKS] =
 {
   {
       0x00000000UL
@@ -290,7 +290,7 @@ CONST(EcuabFee_BlockConfigType, EcuabFee_PRIVATE_CONST) EcuabFee_BlockConfigList
   }
 };
 
-CONST(EcuabFee_FlsApiType, EcuabFee_PRIVATE_CONST) EcuabFee_FlsApi0 =
+CONST(EcuabFee_FlsApiType, ECUABFEE_PRIVATE_CONST) EcuabFee_FlsApi0 =
 {
     Fls_Read
    ,   Fls_Write
@@ -301,9 +301,9 @@ CONST(EcuabFee_FlsApiType, EcuabFee_PRIVATE_CONST) EcuabFee_FlsApi0 =
    ,   Fls_GetJobResult
 };
 
-CONST(EcuabFee_CbkJobEndNotificationType, EcuabFee_PRIVATE_CONST) EcuabFee_CbkJobEndNotification =
+CONST(EcuabFee_CbkJobEndNotificationType, ECUABFEE_PRIVATE_CONST) EcuabFee_CbkJobEndNotification =
     NvM_JobEndNotification;
-CONST(EcuabFee_CbkJobErrorNotificationType, EcuabFee_PRIVATE_CONST) EcuabFee_CbkJobErrorNotification =
+CONST(EcuabFee_CbkJobErrorNotificationType, ECUABFEE_PRIVATE_CONST) EcuabFee_CbkJobErrorNotification =
     NvM_JobErrorNotification;
 
 #define EcuabFee_STOP_SEC_CONST_UNSPECIFIED

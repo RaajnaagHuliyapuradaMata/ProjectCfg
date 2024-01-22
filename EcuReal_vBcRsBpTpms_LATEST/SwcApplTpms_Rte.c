@@ -43,15 +43,11 @@ static RFTelegramFilter OneRFTelegramInformation[8];
 static uint8 U8_PositionCnt;
 static uint32 U32_SimulatedTimestamp;
 
-static void Init_Sys_After_Kl15_Off(void);
-static void Init_Std_Modules_After_Kl30_On(void);
-static void InitSameTGBuffer(void);
-static void ProcessSimulatedTelegram(tsWS_RxDataIn* spRxDataIn);
-
-static uint8 u8CheckSameTG(const uint8* u8CurrentRFFrame, uint32 u32_TimeStamp);
-#ifndef CfgProject_dSwitchReSim
-#pragma PRQA_NO_SIDE_EFFECTS u8CheckSameTG
-#endif
+static void  Init_Sys_After_Kl15_Off        (void);
+static void  Init_Std_Modules_After_Kl30_On (void);
+static void  InitSameTGBuffer               (void);
+static void  ProcessSimulatedTelegram       (tsWS_RxDataIn* spRxDataIn);
+static uint8 u8CheckSameTG                  (const uint8* u8CurrentRFFrame, uint32 u32_TimeStamp);
 
 void HufIf_Init_Huf_SWC(void){
    InitEEAll();

@@ -91,7 +91,7 @@ CONST(NvM_BlockDescriptorType, NVM_CONFIG_CONST) NvM_BlockDescriptorTable_at[NVM
    ,     2U  
    ,     2U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_REDUNDANT  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -118,7 +118,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     52U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -145,7 +145,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     52U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -172,7 +172,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     96U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -199,7 +199,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     20U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -226,7 +226,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     48U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -253,7 +253,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     48U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -280,7 +280,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     24U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -307,7 +307,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     24U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -334,7 +334,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     32U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -361,7 +361,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     4U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -388,7 +388,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     64U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -415,7 +415,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     20U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -442,7 +442,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     42U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -469,7 +469,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     48U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -496,7 +496,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     48U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -523,7 +523,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     48U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -550,7 +550,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     48U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -577,7 +577,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     48U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -604,7 +604,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     48U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -631,7 +631,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     48U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -658,7 +658,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     48U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -685,7 +685,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     48U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -712,7 +712,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     48U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -739,7 +739,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     18U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_CRC_16_ON  
    ,     (
@@ -766,7 +766,7 @@ NVM_CRC_COMP_MECHANISM_OFF
    ,     130U  
    ,     1U  
    ,     127U  
-   ,     MEMIF_Fee_30_SmallSector  
+   ,     MEMIF_EcuabFee  
    ,     NVM_BLOCK_NATIVE  
    ,     NVM_BLOCK_USE_CRC_OFF  
    ,     (

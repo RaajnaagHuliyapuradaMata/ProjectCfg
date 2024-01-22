@@ -21,7 +21,7 @@
 #define MEMIF_DEV_ERROR_DETECT       (STD_OFF)
 #define MEMIF_DEV_ERROR_REPORT       (STD_OFF)
 #define MEMIF_VERSION_INFO_API  (STD_OFF)
-#define MEMIF_Fee_30_SmallSector (0U)
+#define MEMIF_EcuabFee (0U)
 #define MEMIF_NUMBER_OF_DEVICES      (1U)
 
 typedef P2FUNC (Std_ReturnType, MEMIF_CODE, MemIf_ApiReadType) (uint16 BlockNumber, uint16 BlockOffset, MemIf_DataPtr_pu8 DataBufferPtr, uint16 Length);

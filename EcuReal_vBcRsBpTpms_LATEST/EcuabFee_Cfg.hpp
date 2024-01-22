@@ -67,15 +67,15 @@ typedef uint32 EcuabFee_AddressType;
 #define EcuabFee_STATIC_PATTERN              (0xAAU)
 #define EcuabFee_NVM_POLLING_MODE            (STD_OFF)
 
-typedef P2VAR(uint8, AUTOMATIC, EcuabFee_APPL_DATA) EcuabFee_DataPtr;
-typedef P2CONST(uint8, AUTOMATIC, EcuabFee_APPL_DATA) EcuabFee_ConstDataPtr;
-typedef P2FUNC(Std_ReturnType, EcuabFee_PRIVATE_CODE, EcuabFee_ReadPtrType)(Fls_AddressType FlsAddress, EcuabFee_DataPtr TargetAddressPtr, Fls_LengthType Length);
-typedef P2FUNC(Std_ReturnType, EcuabFee_PRIVATE_CODE, EcuabFee_WritePtrType)(Fls_AddressType FlsAddress, EcuabFee_ConstDataPtr SourceAddressPtr, Fls_LengthType Length);
-typedef P2FUNC(Std_ReturnType, EcuabFee_PRIVATE_CODE, EcuabFee_ComparePtrType)(Fls_AddressType FlsAddress, EcuabFee_ConstDataPtr DataBufferPtr, Fls_LengthType Length);
-typedef P2FUNC(Std_ReturnType, EcuabFee_PRIVATE_CODE, EcuabFee_ErasePtrType)(Fls_AddressType FlsAddress, Fls_LengthType Length);
-typedef P2FUNC(Std_ReturnType, EcuabFee_PRIVATE_CODE, EcuabFee_BlankCheckPtrType)(Fls_AddressType FlsAddress, Fls_LengthType Length);
-typedef P2FUNC(MemIf_StatusType, EcuabFee_PRIVATE_CODE, EcuabFee_GetStatusPtrType)(void);
-typedef P2FUNC(MemIf_JobResultType, EcuabFee_PRIVATE_CODE, EcuabFee_GetJobResultPtrType)(void);
+typedef P2VAR(uint8, AUTOMATIC, ECUABFEE_APPL_DATA) EcuabFee_DataPtr;
+typedef P2CONST(uint8, AUTOMATIC, ECUABFEE_APPL_DATA) EcuabFee_ConstDataPtr;
+typedef P2FUNC(Std_ReturnType, ECUABFEE_PRIVATE_CODE, EcuabFee_ReadPtrType)(Fls_AddressType FlsAddress, EcuabFee_DataPtr TargetAddressPtr, Fls_LengthType Length);
+typedef P2FUNC(Std_ReturnType, ECUABFEE_PRIVATE_CODE, EcuabFee_WritePtrType)(Fls_AddressType FlsAddress, EcuabFee_ConstDataPtr SourceAddressPtr, Fls_LengthType Length);
+typedef P2FUNC(Std_ReturnType, ECUABFEE_PRIVATE_CODE, EcuabFee_ComparePtrType)(Fls_AddressType FlsAddress, EcuabFee_ConstDataPtr DataBufferPtr, Fls_LengthType Length);
+typedef P2FUNC(Std_ReturnType, ECUABFEE_PRIVATE_CODE, EcuabFee_ErasePtrType)(Fls_AddressType FlsAddress, Fls_LengthType Length);
+typedef P2FUNC(Std_ReturnType, ECUABFEE_PRIVATE_CODE, EcuabFee_BlankCheckPtrType)(Fls_AddressType FlsAddress, Fls_LengthType Length);
+typedef P2FUNC(MemIf_StatusType, ECUABFEE_PRIVATE_CODE, EcuabFee_GetStatusPtrType)(void);
+typedef P2FUNC(MemIf_JobResultType, ECUABFEE_PRIVATE_CODE, EcuabFee_GetJobResultPtrType)(void);
 
 typedef struct{
    EcuabFee_ReadPtrType Read;
@@ -87,7 +87,7 @@ typedef struct{
    EcuabFee_GetJobResultPtrType GetJobResult;
 }EcuabFee_FlsApiType;
 
-typedef P2CONST(EcuabFee_FlsApiType, AUTOMATIC, EcuabFee_APPL_DATA) EcuabFee_FlsApiPtrType;
+typedef P2CONST(EcuabFee_FlsApiType, AUTOMATIC, ECUABFEE_APPL_DATA) EcuabFee_FlsApiPtrType;
 
 typedef struct{
     EcuabFee_AddressType PartitionStartAddress;
@@ -110,15 +110,15 @@ typedef struct{
    boolean HasVerificationEnabled;
 }EcuabFee_BlockConfigType;
 
-typedef P2FUNC(void, EcuabFee_NVM_CODE, EcuabFee_CbkJobEndNotificationType)(void);
-typedef P2FUNC(void, EcuabFee_NVM_CODE, EcuabFee_CbkJobErrorNotificationType)(void);
+typedef P2FUNC(void, ECUABFEE_NVM_CODE, EcuabFee_CbkJobEndNotificationType)(void);
+typedef P2FUNC(void, ECUABFEE_NVM_CODE, EcuabFee_CbkJobErrorNotificationType)(void);
 
-extern CONST(uint8, EcuabFee_PRIVATE_CONST) EcuabFee_DatasetSelectionBits;
-extern CONST(EcuabFee_PartitionConfigType, EcuabFee_PRIVATE_CONST) EcuabFee_PartitionConfigList[EcuabFee_NUMBER_OF_PARTITIONS];
-extern CONST(EcuabFee_BlockConfigType, EcuabFee_PRIVATE_CONST) EcuabFee_BlockConfigList[EcuabFee_NUMBER_OF_BLOCKS];
-extern CONST(EcuabFee_FlsApiType, EcuabFee_PRIVATE_CONST) EcuabFee_FlsApi0;
-extern CONST(EcuabFee_CbkJobEndNotificationType, EcuabFee_PRIVATE_CONST) EcuabFee_CbkJobEndNotification;
-extern CONST(EcuabFee_CbkJobErrorNotificationType, EcuabFee_PRIVATE_CONST) EcuabFee_CbkJobErrorNotification;
+extern CONST(uint8, ECUABFEE_PRIVATE_CONST) EcuabFee_DatasetSelectionBits;
+extern CONST(EcuabFee_PartitionConfigType, ECUABFEE_PRIVATE_CONST) EcuabFee_PartitionConfigList[EcuabFee_NUMBER_OF_PARTITIONS];
+extern CONST(EcuabFee_BlockConfigType, ECUABFEE_PRIVATE_CONST) EcuabFee_BlockConfigList[EcuabFee_NUMBER_OF_BLOCKS];
+extern CONST(EcuabFee_FlsApiType, ECUABFEE_PRIVATE_CONST) EcuabFee_FlsApi0;
+extern CONST(EcuabFee_CbkJobEndNotificationType, ECUABFEE_PRIVATE_CONST) EcuabFee_CbkJobEndNotification;
+extern CONST(EcuabFee_CbkJobErrorNotificationType, ECUABFEE_PRIVATE_CONST) EcuabFee_CbkJobErrorNotification;
 
 #endif
 
